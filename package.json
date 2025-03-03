@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.3",
@@ -19,5 +18,14 @@
   "dependencies": {
     "@sendgrid/mail": "^8.1.4",
     "nodemailer": "^6.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Epc-Tech/Epc-Tech.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Epc-Tech/Epc-Tech.github.io/issues"
+  },
+  "homepage": "https://github.com/Epc-Tech/Epc-Tech.github.io#readme",
+  "description": ""
 }

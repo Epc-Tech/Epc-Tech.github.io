@@ -38,186 +38,280 @@
     />
     <link rel="stylesheet" href="dist/style.css" />
   </head>
-  <nav class="flex items-center z-[200] justify-start lg:gap-x-10 text-white py-5 w-full sticky top-[-1px] lg:left-0 bg-black lg:bg-zinc-800 lg:top-[25px] lg:rounded-full lg:py-3 lg:mt-5 lg:px-10"
-  >
-    <div class="flex relative items-center justify-between w-full lg:w-fit">
-      <img
-        class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
-        src="assets/Logos/rounded-logo.jpg"
-        alt=""
-      />
-
-      <div class="flex gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden">
-        <select name="" data-languageSelection="" class="text-black">
-          <option value="English">English</option>
-          <option value="Deutsch">Deutsch</option>
-        </select>
-        <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
-      </div>
-    </div>
-    <div class="flex items-center lg:w-full justify-between">
-      <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
-        <a href="index.html#home">
-          <li
-            class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-          >
-            Home
-          </li>
-        </a>
-        <a href="gallery.html#gallery">
-          <li
-            class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-          >
-            Gallery
-          </li>
-        </a>
-        <a href="service.html#service">
-          <li
-            class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-          >
-            Services
-          </li>
-        </a>
-        <a href="impressum.html">
-          <li
-            class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-          >
-            Impressum
-          </li>
-        </a>
-
-        <a href="non.html">
-          <li
-            class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-          >
-            Non's 3D Printing Corner
-          </li>
-        </a>
-        <a href="about.html">
-          <li
-            class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-          >
-            About Us
-          </li>
-        </a>
-      </ul>
-      <div
-        class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10"
+  <body class="">
+    <main
+      class="px-5 font-RobotoFlex 500:px-7 md:px-12 xl:px-20 2xl:px-40"
+      id="home"
+    >
+      <nav
+        class="flex items-center py-5 z-[200] justify-start lg:gap-x-10 text-white w-full sticky top-[-1px] lg:left-0 bg-black lg:bg-zinc-800 lg:top-[25px] lg:rounded-full lg:py-3 lg:mt-5 lg:px-10"
       >
-        <select name="" data-languageSelection="" class="text-black">
-          <option value="English">English</option>
-          <option value="Deutsch">Deutsch</option>
-        </select>
-        <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
-      </div>
-    </div>
-  </nav>
-  <!--Impressum Section-->
-  <body class="text-gray-600">
-    <section class="min-h-screen flex items-center justify-center bg-gray-100 p-6">
-      <div class="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full text-gray-800">
-          <h1 class="text-4xl font-bold text-center text-gray-900 border-b pb-4">Impressum</h1>
-  
-          <div class="mt-6">
-              <h2 class="text-xl font-semibold text-gray-700">Anschrift</h2>
-              <p class="text-lg text-gray-600 mt-2">
-                  Elwan Bowens<br>
-                  Röthenbacher Hauptstr. 31<br>
-                  90449 Nürnberg
-              </p>
+        <div class="flex relative items-center justify-between w-full lg:w-fit">
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+
+          <div class="flex gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden">
+            <select name="" data-languageSelection="" class="text-black">
+              <option value="English">English</option>
+              <option value="Deutsch">Deutsch</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
           </div>
-  
-          <div class="mt-6">
-              <h2 class="text-xl font-semibold text-gray-700">Kontakt</h2>
-              <p class="text-lg text-gray-600 mt-2">
-                  <strong>Telefon:</strong> <a href="tel:+4917641742121" class="text-blue-600 hover:underline">+49 176 41742121</a><br>
-                  <strong>E-Mail:</strong> <a href="mailto:info@epc-tech.de" class="text-blue-600 hover:underline">info@epc-tech.de</a>
-              </p>
+        </div>
+        <div class="flex items-center lg:w-full justify-between">
+          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html#home">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+          <div
+            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10"
+          >
+            <select name="" data-languageSelection="" class="text-black">
+              <option value="English">English</option>
+              <option value="Deutsch">Deutsch</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
           </div>
-  
-          <div class="mt-6 border-t pt-4 text-center">
-              <p class="text-sm text-gray-500">
-                  Quelle: <a href="https://www.e-recht24.de" class="text-blue-600 hover:underline">e-recht24.de</a>
-              </p>
-          </div>
-      </div>
-  </section>
-   <!-- Footer Section -->
-  </main>
-  <footer class="bg-zinc-800 mt-20" id="footer">
-    <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
-      <div class="font-Inter flex items-start md:gap-x-5 2xl:gap-x-10">
-        <div class="">
-          <a href="#home">
+        </div>
+      </nav>
+      <div
+        class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
+        id="left"
+      >
+        <div
+          class="flex flex-col px-5 500:px-7 md:px-12 pt-7 pb-14 absolute bg-zinc-800 w-full left-0 top-0"
+          id="list"
+        >
+          <div class="flex items-center justify-between w-full mb-10">
             <img
-              class="rounded-md w-[85px]"
+              class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
               src="assets/Logos/rounded-logo.jpg"
               alt=""
-          /></a>
-          <div class="mt-5">
-            <a
-              href="mailto:info@epc-tech.de"
-              class="flex items-start gap-x-2 text-white"
-              ><i
-                class="fa-solid mt-1 fa-envelope text-white text-[16px]"
-              ></i>
-              <p class="425:text-[17px]">info@epc-tech.de</p></a
-            >
-            <a
-              href="tel: +49 176 41742121"
-              class="flex items-start gap-x-2 mt-3 text-white"
-              ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
-              <p class="425:text-[17px]">+49 176 41742121</p></a
-            >
+            />
+            <i
+              class="fa-solid fa-close text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+              id="close"
+            ></i>
           </div>
+          <ul class="flex flex-col gap-y-5">
+            <a href="index.html#home">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
         </div>
       </div>
-      <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
-      <div
-        class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+      <!--Impressum Section-->
+
+      <section
+        class="flex items-center justify-center mt-5 lg:mt-10 bg-gray-100 px-6 py-20"
       >
-        <div class="flex gap-x-5">
-          <div>
-            <div>
-              <i
-                class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
-              ></i>
-            </div>
+        <div
+          class="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full text-gray-800"
+        >
+          <h1
+            class="text-4xl font-bold text-center text-gray-900 border-b pb-4"
+          >
+            Impressum
+          </h1>
+
+          <div class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-700">Anschrift</h2>
+            <p class="text-lg text-gray-600 mt-2">
+              Elwan Bowens<br />
+              Röthenbacher Hauptstr. 31<br />
+              90449 Nürnberg
+            </p>
           </div>
-          <div>
-            <div>
-              <i
-                class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
-              ></i>
-            </div>
+
+          <div class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-700">Kontakt</h2>
+            <p class="text-lg text-gray-600 mt-2">
+              <strong>Telefon:</strong>
+              <a href="tel:+4917641742121" class="text-blue-600 hover:underline"
+                >+49 176 41742121</a
+              ><br />
+              <strong>E-Mail:</strong>
+              <a
+                href="mailto:info@epc-tech.de"
+                class="text-blue-600 hover:underline"
+                >info@epc-tech.de</a
+              >
+            </p>
           </div>
-          <div>
-            <div>
-              <i
-                class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
-              ></i>
-            </div>
+
+          <div class="mt-6 border-t pt-4 text-center">
+            <p class="text-sm text-gray-500">
+              Quelle:
+              <a
+                href="https://www.e-recht24.de"
+                class="text-blue-600 hover:underline"
+                >e-recht24.de</a
+              >
+            </p>
           </div>
-          <div>
-            <div>
-              <i
-                class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
-              ></i>
-            </div>
-          </div>
-          <div>
-            <div>
-              <i
-                class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
-              ></i>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-zinc-800 text-white" id="footer">
+      <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
+        <div class="font-Inter flex items-start md:gap-x-5 2xl:gap-x-10">
+          <div class="">
+            <a href="#home">
+              <img
+                class="rounded-md w-[85px]"
+                src="assets/Logos/rounded-logo.jpg"
+                alt=""
+            /></a>
+            <div class="mt-5">
+              <a
+                href="mailto:info@epc-tech.de"
+                class="flex items-start gap-x-2 text-white"
+                ><i
+                  class="fa-solid mt-1 fa-envelope text-white text-[16px]"
+                ></i>
+                <p class="425:text-[17px]">info@epc-tech.de</p></a
+              >
+              <a
+                href="tel: +49 176 41742121"
+                class="flex items-start gap-x-2 mt-3 text-white"
+                ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
+                <p class="425:text-[17px]">+49 176 41742121</p></a
+              >
             </div>
           </div>
         </div>
-        <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Inter">
-          <span>&#169;</span> Copyright 2025 EPC-Tech
-        </h1>
+        <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
+        <div
+          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+        >
+          <div class="flex gap-x-5">
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Inter">
+            <span>&#169;</span> Copyright 2025 EPC-Tech
+          </h1>
+        </div>
       </div>
-    </div>
-  </footer>
- </body>
+    </footer>
+    <script src="menu.js"></script>
+  </body>
 </html>

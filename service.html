@@ -71,7 +71,7 @@
                 Home
               </li>
             </a>
-            <a href="gallery.html#gallery">
+            <a href="gallery.html">
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
               >
@@ -139,7 +139,7 @@
             ></i>
           </div>
           <ul class="flex flex-col gap-y-5">
-            <a href="#home">
+            <a href="index.html#home">
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
               >
@@ -153,16 +153,16 @@
                 Gallery
               </li>
             </a>
-            <a href="service.html">
+            <a href="service.html#service">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-slate-300 after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
               >
                 Services
               </li>
             </a>
             <a href="impressum.html">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-slate-300 after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
               >
                 Impressum
               </li>
@@ -170,14 +170,14 @@
 
             <a href="non.html">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-slate-300 after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
               >
                 Non's 3D Printing Corner
               </li>
             </a>
             <a href="about.html">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-g after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
               >
                 About Us
               </li>
@@ -195,11 +195,14 @@
           </h1>
         </div>
         <div class="flex justify-center items-center bg-zinc-800 w-fit mx-auto">
-          <div id="serviceInfoBox" class="hidden mt-6 p-6 bg-white text-gray-800 shadow-lg rounded-lg border border-gray-200 max-w-2xl mx-auto">
-            <h3 id="serviceTitle" class="text-2xl font-bold text-gray-800"></h3>
-            <p id="serviceDescription" class="text-lg text-gray-600 mt-2"></p>
-        </div>
-        <span
+          <div
+            id="serviceInfoBox"
+            class="hidden mt-6 p-6 bg-white text-gray-800 shadow-lg rounded-lg border border-gray-200 max-w-2xl mx-auto"
+          >
+            <!-- <h3 id="serviceTitle" class="text-2xl font-bold text-gray-800"></h3>
+            <p id="serviceDescription" class="text-lg text-gray-600 mt-2"></p> -->
+          </div>
+          <span
             data-services=""
             id="pcbuildingText"
             class="border-r rounded-l-sm px-3 py-2 hover:bg-Accent bg-Accent lg:px-6 lg:py-3 font-[500] cursor-pointer"
@@ -523,321 +526,318 @@
       </div>
     </main>
 
-    <script>
-      const toggler = document.querySelectorAll("[data-languageSelection]");
-      const buildingForm = document.getElementById("buildingForm");
-      const tabs = document.querySelectorAll("[data-tabs]");
-      const services = document.querySelectorAll("[data-services]");
-      const upgradesForm = document.getElementById("upgradesForm");
-      const repairsForm = document.getElementById("repairsForm");
-      function sendEmail(category) {
-        let params = {
-          subject: "Get a quote",
-          from: "mkvcinemas945@gmail.com",
-          email:
-            document.getElementById("emailfirst").value ||
-            document.getElementById("emailsecond").value ||
-            document.getElementById("emailthird").value,
-          categoryforpcbuilding:
-            category === "PC-Building" ? "PC-Building" : "--",
+    <!-- Footer Section -->
+    <footer class="bg-zinc-800 mt-20" id="footer">
+      <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
+        <div class="font-Inter flex items-start md:gap-x-5 2xl:gap-x-10">
+          <div class="">
+            <a href="#home">
+              <img
+                class="rounded-md w-[85px]"
+                src="assets/Logos/rounded-logo.jpg"
+                alt=""
+            /></a>
+            <div class="mt-5">
+              <a
+                href="mailto:info@epc-tech.de"
+                class="flex items-start gap-x-2 text-white"
+                ><i
+                  class="fa-solid mt-1 fa-envelope text-white text-[16px]"
+                ></i>
+                <p class="425:text-[17px]">info@epc-tech.de</p></a
+              >
+              <a
+                href="tel: +49 176 41742121"
+                class="flex items-start gap-x-2 mt-3 text-white"
+                ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
+                <p class="425:text-[17px]">+49 176 41742121</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
+        <div
+          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+        >
+          <div class="flex gap-x-5">
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Inter">
+            <span>&#169;</span> Copyright 2025 EPC-Tech
+          </h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const toggler = document.querySelectorAll("[data-languageSelection]");
+    const buildingForm = document.getElementById("buildingForm");
+    const tabs = document.querySelectorAll("[data-tabs]");
+    const services = document.querySelectorAll("[data-services]");
+    const upgradesForm = document.getElementById("upgradesForm");
+    const repairsForm = document.getElementById("repairsForm");
+    function sendEmail(category) {
+      let params = {
+        subject: "Get a quote",
+        from: "mkvcinemas945@gmail.com",
+        email:
+          document.getElementById("emailfirst").value ||
+          document.getElementById("emailsecond").value ||
+          document.getElementById("emailthird").value,
+        categoryforpcbuilding:
+          category === "PC-Building" ? "PC-Building" : "--",
 
-          messageforpcbuilding:
-            category === "PC-Building"
-              ? document.getElementById("messageforpcbuilding").value
-              : "--",
-          options:
-            category === "PC-Building"
-              ? document.getElementById("pricecategoryforpcbuilding").value
-              : "--",
-          custom:
-            category === "PC-Building"
-              ? document.getElementById("custom").value
-              : "--",
-          exp:
-            category === "PC-Building"
-              ? document.getElementById("exp").checked
-                ? "Yes"
-                : "No"
-              : "--",
-          categoryforupgrades: category === "Upgrades" ? "Upgrades" : "--",
-          cpu:
-            category === "Upgrades"
-              ? document.getElementById("cpu").checked
-                ? "Yes"
-                : "No"
-              : "--",
-          gpu:
-            category === "Upgrades"
-              ? document.getElementById("gpu").checked
-                ? "Yes"
-                : "No"
-              : "--",
-          cooler:
-            category === "Upgrades"
-              ? document.getElementById("cooler").checked
-                ? "Yes"
-                : "No"
-              : "--",
-          ram:
-            category === "Upgrades"
-              ? document.getElementById("ram").checked
-                ? "Yes"
-                : "No"
-              : "--",
-          casing:
-            category === "Upgrades"
-              ? document.getElementById("casing").checked
-                ? "Yes"
-                : "No"
-              : "--",
-          motherboard:
-            category === "Upgrades"
-              ? document.getElementById("motherboard").checked
-                ? "Yes"
-                : "No"
-              : "--",
-          budget:
-            category === "Upgrades"
-              ? document.getElementById("budget").value
-                ? document.getElementById("budget").value + "$"
-                : "--"
-              : "--",
-          categoryforrepaires:
-            category === "Small-Repairs" ? "Small-Repairs" : "--",
-
-          categoryofdevice:
-            category === "Small-Repairs"
-              ? document.getElementById("categoryofdevice").value
-              : "--",
-          issue: document.getElementById("issue").value
-            ? document.getElementById("issue").value
+        messageforpcbuilding:
+          category === "PC-Building"
+            ? document.getElementById("messageforpcbuilding").value
             : "--",
-        };
-        emailjs
-          .send("service_tlxv4wh", "template_i41x9qp", params)
-          .then((message) => alert("Email Sent"));
-      }
+        options:
+          category === "PC-Building"
+            ? document.getElementById("pricecategoryforpcbuilding").value
+            : "--",
+        custom:
+          category === "PC-Building"
+            ? document.getElementById("custom").value
+            : "--",
+        exp:
+          category === "PC-Building"
+            ? document.getElementById("exp").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        categoryforupgrades: category === "Upgrades" ? "Upgrades" : "--",
+        cpu:
+          category === "Upgrades"
+            ? document.getElementById("cpu").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        gpu:
+          category === "Upgrades"
+            ? document.getElementById("gpu").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        cooler:
+          category === "Upgrades"
+            ? document.getElementById("cooler").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        ram:
+          category === "Upgrades"
+            ? document.getElementById("ram").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        casing:
+          category === "Upgrades"
+            ? document.getElementById("casing").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        motherboard:
+          category === "Upgrades"
+            ? document.getElementById("motherboard").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        budget:
+          category === "Upgrades"
+            ? document.getElementById("budget").value
+              ? document.getElementById("budget").value + "$"
+              : "--"
+            : "--",
+        categoryforrepaires:
+          category === "Small-Repairs" ? "Small-Repairs" : "--",
 
-      toggler.forEach((items) => {
-        items.addEventListener("change", () => {
-          if (items.value == "Deutsch") {
-            document.querySelectorAll("[data-tabs]")[0].id = "pcgebäude";
-            document.querySelectorAll("[data-tabs]")[2].id =
-              "kleinereparaturen";
-            document.querySelector("#pcbuildingText").innerText = "PC Gebäude";
-            document.querySelector("#pcbuildingPageText").innerText =
-              "PC Gebäude";
-            document.querySelector("#repairText").innerText =
-              "Kleine Reparaturen";
-            document.querySelector("#pcbuildingPagePara").innerText =
-              "Sie können Ihren ersten PC nicht bauen? Bauen Sie Ihren ersten PC bei uns und wir kümmern uns um den Rest.";
-            document.querySelector("#emailfirst").placeholder = "Email Adresse";
-            document.querySelector("#priceCatLabel").innerText =
-              "Wählen Sie die Preiskategorie aus";
-            document.querySelector("#customReqText").innerText =
-              "Benutzerdefinierte Anfragen";
-            document.querySelector("#custom").placeholder =
-              "Benutzerdefinierte Anfragen";
-            document.querySelector("#priorExpText").innerText =
-              "Haben Sie bereits Erfahrungen mit PCs?";
-            document.querySelector("#upgradesPara").innerText =
-              "Warum bringen Sie Ihren Computer nicht zu uns? So können wir Ihren PC nach Ihren Wünschen aufrüsten.";
-            document.querySelector("#emailsecond").placeholder =
-              "Email Adresse";
-            document.querySelector("#enterbudgetText").innerText =
-              "Geben Sie Ihr Budget ein";
-            document.querySelector("#budget").placeholder =
-              "Geben Sie Ihr Budget ein";
-            document.querySelector("#upgradesButton").innerText =
-              "Holen Sie sich ein Angebot";
-            document.querySelector("#smallrepairsTxt").innerText =
-              "Kleine Reparaturen";
-            document.querySelector("#smallrepairsPara").innerText =
-              "Haben Sie ein Telefon, Tablet oder Laptop, das überprüft werden muss? Kontaktieren Sie uns oder bringen Sie Ihr Gerät zu uns.";
-            document.querySelector("#emailthird").placeholder = "Email Adresse";
-            document.querySelector("#deviceText").innerText = "Gerät";
-            document.querySelector("#describeissueText").innerText =
-              "Beschreiben Sie das Problem";
-            document.querySelector("#issue").placeholder =
-              "Beschreiben Sie das Problem";
-            document.querySelector("#repairsButton").innerText =
-              "Holen Sie sich ein Angebot";
-          } else {
-            document.querySelectorAll("[data-tabs]")[0].id = "pcbuilding";
-            document.querySelectorAll("[data-tabs]")[2].id = "smallrepairs";
-            document.querySelector("#pcbuildingText").innerText = "PC Building";
-            document.querySelector("#repairText").innerText = "Small Repairs";
-            document.querySelector("#pcbuildingPageText").innerText =
-              "PC Building";
-            document.querySelector("#pcbuildingPagePara").innerText =
-              "Unable to build your first PC? Build your first pc from us and we'll take care of the rest.";
-            document.querySelector("#emailfirst").placeholder = "Email Address";
-            document.querySelector("#priceCatLabel").innerText =
-              "Select Price Category";
-            document.querySelector("#customReqText").innerText =
-              "Custom Requests";
-            document.querySelector("#priorExpText").innerText =
-              "Do your have prior experience of PCs?";
-            document.querySelector("#custom").placeholder = "Custom Request";
-            document.querySelector("#upgradesPara").innerText =
-              "Why not bring your computer to us? So, we can upgrade your pc to your liking.";
-            document.querySelector("#emailsecond").placeholder =
-              "Email Address";
-            document.querySelector("#enterbudgetText").innerText =
-              "Enter Your Budget";
-            document.querySelector("#budget").placeholder =
-              "Geben Sie Ihr Budget ein";
-            document.querySelector("#upgradesButton").innerText = "Get a quote";
+        categoryofdevice:
+          category === "Small-Repairs"
+            ? document.getElementById("categoryofdevice").value
+            : "--",
+        issue: document.getElementById("issue").value
+          ? document.getElementById("issue").value
+          : "--",
+      };
+      emailjs
+        .send("service_tlxv4wh", "template_i41x9qp", params)
+        .then((message) => alert("Email Sent"));
+    }
 
-            document.querySelector("#smallrepairsTxt").innerText =
-              "Small Repaires";
-            document.querySelector("#smallrepairsPara").text =
-              "Have a phone, tablet or laptop that needs some checkup? Contact us or bring your device to us.";
-            document.querySelector("#emailthird").placeholder = "Email Address";
-            document.querySelector("#deviceText").innerText = "Device";
-            document.querySelector("#describeissueText").innerText =
-              "Describe the issue";
-            document.querySelector("#issue").placeholder = "Describe the issue";
-            document.querySelector("#repairsButton").innerText = "Get a quote";
-          }
-        });
+    toggler.forEach((items) => {
+      items.addEventListener("change", () => {
+        if (items.value == "Deutsch") {
+          document.querySelectorAll("[data-tabs]")[0].id = "pcgebäude";
+          document.querySelectorAll("[data-tabs]")[2].id = "kleinereparaturen";
+          document.querySelector("#pcbuildingText").innerText = "PC Gebäude";
+          document.querySelector("#pcbuildingPageText").innerText =
+            "PC Gebäude";
+          document.querySelector("#repairText").innerText =
+            "Kleine Reparaturen";
+          document.querySelector("#pcbuildingPagePara").innerText =
+            "Sie können Ihren ersten PC nicht bauen? Bauen Sie Ihren ersten PC bei uns und wir kümmern uns um den Rest.";
+          document.querySelector("#emailfirst").placeholder = "Email Adresse";
+          document.querySelector("#priceCatLabel").innerText =
+            "Wählen Sie die Preiskategorie aus";
+          document.querySelector("#customReqText").innerText =
+            "Benutzerdefinierte Anfragen";
+          document.querySelector("#custom").placeholder =
+            "Benutzerdefinierte Anfragen";
+          document.querySelector("#priorExpText").innerText =
+            "Haben Sie bereits Erfahrungen mit PCs?";
+          document.querySelector("#upgradesPara").innerText =
+            "Warum bringen Sie Ihren Computer nicht zu uns? So können wir Ihren PC nach Ihren Wünschen aufrüsten.";
+          document.querySelector("#emailsecond").placeholder = "Email Adresse";
+          document.querySelector("#enterbudgetText").innerText =
+            "Geben Sie Ihr Budget ein";
+          document.querySelector("#budget").placeholder =
+            "Geben Sie Ihr Budget ein";
+          document.querySelector("#upgradesButton").innerText =
+            "Holen Sie sich ein Angebot";
+          document.querySelector("#smallrepairsTxt").innerText =
+            "Kleine Reparaturen";
+          document.querySelector("#smallrepairsPara").innerText =
+            "Haben Sie ein Telefon, Tablet oder Laptop, das überprüft werden muss? Kontaktieren Sie uns oder bringen Sie Ihr Gerät zu uns.";
+          document.querySelector("#emailthird").placeholder = "Email Adresse";
+          document.querySelector("#deviceText").innerText = "Gerät";
+          document.querySelector("#describeissueText").innerText =
+            "Beschreiben Sie das Problem";
+          document.querySelector("#issue").placeholder =
+            "Beschreiben Sie das Problem";
+          document.querySelector("#repairsButton").innerText =
+            "Holen Sie sich ein Angebot";
+        } else {
+          document.querySelectorAll("[data-tabs]")[0].id = "pcbuilding";
+          document.querySelectorAll("[data-tabs]")[2].id = "smallrepairs";
+          document.querySelector("#pcbuildingText").innerText = "PC Building";
+          document.querySelector("#repairText").innerText = "Small Repairs";
+          document.querySelector("#pcbuildingPageText").innerText =
+            "PC Building";
+          document.querySelector("#pcbuildingPagePara").innerText =
+            "Unable to build your first PC? Build your first pc from us and we'll take care of the rest.";
+          document.querySelector("#emailfirst").placeholder = "Email Address";
+          document.querySelector("#priceCatLabel").innerText =
+            "Select Price Category";
+          document.querySelector("#customReqText").innerText =
+            "Custom Requests";
+          document.querySelector("#priorExpText").innerText =
+            "Do your have prior experience of PCs?";
+          document.querySelector("#custom").placeholder = "Custom Request";
+          document.querySelector("#upgradesPara").innerText =
+            "Why not bring your computer to us? So, we can upgrade your pc to your liking.";
+          document.querySelector("#emailsecond").placeholder = "Email Address";
+          document.querySelector("#enterbudgetText").innerText =
+            "Enter Your Budget";
+          document.querySelector("#budget").placeholder =
+            "Geben Sie Ihr Budget ein";
+          document.querySelector("#upgradesButton").innerText = "Get a quote";
+
+          document.querySelector("#smallrepairsTxt").innerText =
+            "Small Repaires";
+          document.querySelector("#smallrepairsPara").text =
+            "Have a phone, tablet or laptop that needs some checkup? Contact us or bring your device to us.";
+          document.querySelector("#emailthird").placeholder = "Email Address";
+          document.querySelector("#deviceText").innerText = "Device";
+          document.querySelector("#describeissueText").innerText =
+            "Describe the issue";
+          document.querySelector("#issue").placeholder = "Describe the issue";
+          document.querySelector("#repairsButton").innerText = "Get a quote";
+        }
       });
-      (function getItems() {
-        services.forEach((items) => {
-          items.addEventListener("click", (e) => {
-            gtItems(items.innerText.replace(" ", "").toLowerCase());
-            items.classList.toggle("bg-[rgba(206_13_94/.7)]");
-            services.forEach((hiddens) => {
-              if (items !== hiddens) {
-                hiddens.classList.remove("bg-Accent");
-                hiddens.classList.remove("bg-[rgba(206_13_94/.7)]");
-              }
-            });
+    });
+    (function getItems() {
+      services.forEach((items) => {
+        items.addEventListener("click", (e) => {
+          gtItems(items.innerText.replace(" ", "").toLowerCase());
+          items.classList.toggle("bg-[rgba(206_13_94/.7)]");
+          services.forEach((hiddens) => {
+            if (items !== hiddens) {
+              hiddens.classList.remove("bg-Accent");
+              hiddens.classList.remove("bg-[rgba(206_13_94/.7)]");
+            }
           });
         });
-      })();
-
-      function gtItems(items) {
-        tabs.forEach((tabItems) => {
-          console.log(items, tabItems);
-
-          if (items == tabItems.id) {
-            document
-              .querySelector(`#${tabItems.id}`)
-              .classList.remove("hidden");
-            document
-              .querySelector(`#${tabItems.id}`)
-              .classList.remove("lg:hidden");
-          } else {
-            tabItems.classList.add("hidden");
-            tabItems.classList.add("lg:hidden");
-          }
-        });
-      }
-      // english
-    </script>
-    <!-- <script src="script.js"></script> -->
-    <script>
-      document.querySelectorAll("[data-services]").forEach(service => {
-          service.addEventListener("click", function () {
-              var infoBox = document.getElementById("serviceInfoBox");
-              var title = document.getElementById("serviceTitle");
-              var description = document.getElementById("serviceDescription");
-  
-              // Define service descriptions
-              var serviceDetails = {
-                  "PC Building": "Every PC I build is fully custom-made, designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.",
-                  "Upgrades": "I offer personalized PC upgrades tailored to your needs. If you're unsure what to upgrade, I can analyze your system and recommend improvements, or if you already know, I can provide and install the components for you.",
-                  "Small Repairs": "I provide repair services for phones, tablets, and laptops. Whether you have a cracked screen, a battery issue, or software problems, I can diagnose and fix the issue efficiently."
-              };
-  
-              // Update title and description
-              title.innerText = this.innerText;
-              description.innerText = serviceDetails[this.innerText] || "Service details coming soon.";
-  
-              // Show the info box
-              infoBox.classList.remove("hidden");
-          });
       });
+    })();
+
+    function gtItems(items) {
+      tabs.forEach((tabItems) => {
+        console.log(items, tabItems);
+
+        if (items == tabItems.id) {
+          document.querySelector(`#${tabItems.id}`).classList.remove("hidden");
+          document
+            .querySelector(`#${tabItems.id}`)
+            .classList.remove("lg:hidden");
+        } else {
+          tabItems.classList.add("hidden");
+          tabItems.classList.add("lg:hidden");
+        }
+      });
+    }
+    // english
   </script>
-  
-  <!-- Footer Section -->
-</main>
-<footer class="bg-zinc-800 mt-20" id="footer">
-  <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
-    <div class="font-Inter flex items-start md:gap-x-5 2xl:gap-x-10">
-      <div class="">
-        <a href="#home">
-          <img
-            class="rounded-md w-[85px]"
-            src="assets/Logos/rounded-logo.jpg"
-            alt=""
-        /></a>
-        <div class="mt-5">
-          <a
-            href="mailto:info@epc-tech.de"
-            class="flex items-start gap-x-2 text-white"
-            ><i
-              class="fa-solid mt-1 fa-envelope text-white text-[16px]"
-            ></i>
-            <p class="425:text-[17px]">info@epc-tech.de</p></a
-          >
-          <a
-            href="tel: +49 176 41742121"
-            class="flex items-start gap-x-2 mt-3 text-white"
-            ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
-            <p class="425:text-[17px]">+49 176 41742121</p></a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
-    <div
-      class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
-    >
-      <div class="flex gap-x-5">
-        <div>
-          <div>
-            <i
-              class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
-            ></i>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i
-              class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
-            ></i>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i
-              class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
-            ></i>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i
-              class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
-            ></i>
-          </div>
-        </div>
-        <div>
-          <div>
-            <i
-              class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
-            ></i>
-          </div>
-        </div>
-      </div>
-      <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Inter">
-        <span>&#169;</span> Copyright 2025 EPC-Tech
-      </h1>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    document.querySelectorAll("[data-services]").forEach((service) => {
+      service.addEventListener("click", function () {
+        var infoBox = document.getElementById("serviceInfoBox");
+        var title = document.getElementById("serviceTitle");
+        var description = document.getElementById("serviceDescription");
 
+        // Define service descriptions
+        var serviceDetails = {
+          "PC Building":
+            "Every PC I build is fully custom-made, designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.",
+          Upgrades:
+            "I offer personalized PC upgrades tailored to your needs. If you're unsure what to upgrade, I can analyze your system and recommend improvements, or if you already know, I can provide and install the components for you.",
+          "Small Repairs":
+            "I provide repair services for phones, tablets, and laptops. Whether you have a cracked screen, a battery issue, or software problems, I can diagnose and fix the issue efficiently.",
+        };
+
+        // Update title and description
+        title.innerText = this.innerText;
+        description.innerText =
+          serviceDetails[this.innerText] || "Service details coming soon.";
+
+        // Show the info box
+        infoBox.classList.remove("hidden");
+      });
+    });
+  </script>
+  <script src="menu.js"></script>
+</html>
