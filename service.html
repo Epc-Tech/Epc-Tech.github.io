@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body class="text-white">
+    <!-- Services section -->
+    <main
+      class="px-5 font-RobotoFlex relative 500:px-7 md:px-12 xl:px-20 2xl:px-40"
+      id="home"
+    >
+      <nav
+        class="flex items-center z-[200] justify-start lg:gap-x-10 text-white py-5 w-full sticky top-[-1px] lg:left-0 bg-black lg:bg-zinc-800 lg:top-[25px] lg:rounded-full lg:py-3 lg:mt-5 lg:px-10"
+      >
+        <div class="flex relative items-center justify-between w-full lg:w-fit">
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+
+          <div class="flex gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden">
+            <select name="" data-languageSelection="" class="text-black">
+              <option value="English">English</option>
+              <option value="Deutsch">Deutsch</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-full justify-between">
+          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html#home">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+          <div
+            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10"
+          >
+            <select name="" data-languageSelection="" class="text-black">
+              <option value="English">English</option>
+              <option value="Deutsch">Deutsch</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
+        id="left"
+      >
+        <div
+          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-zinc-800 w-full left-0 top-0"
+          id="list"
+        >
+          <div class="flex items-center justify-between w-full mb-10">
+            <img
+              class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+              src="assets/Logos/rounded-logo.jpg"
+              alt=""
+            />
+            <i
+              class="fa-solid fa-close text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+              id="close"
+            ></i>
+          </div>
+          <ul class="flex flex-col gap-y-5">
+            <a href="index.html#home">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-14 lg:pt-14 py-5" id="service">
+        <div
+          class="flex mx-auto w-fit items-center justify-center relative mb-12"
+        >
+          <h1 class="text-4xl font-Inter lg:text-5xl" id="servicesHeading">
+            Services
+          </h1>
+        </div>
+        <div class="flex justify-center items-center bg-zinc-800 w-fit mx-auto">
+          <div
+            id="serviceInfoBox"
+            class="hidden mt-6 p-6 bg-white text-gray-800 shadow-lg rounded-lg border border-gray-200 max-w-2xl mx-auto"
+          >
+            <!-- <h3 id="serviceTitle" class="text-2xl font-bold text-gray-800"></h3>
+            <p id="serviceDescription" class="text-lg text-gray-600 mt-2"></p> -->
+          </div>
+          <span
+            data-services=""
+            id="pcbuildingText"
+            class="border-r rounded-l-sm px-3 py-2 hover:bg-Accent bg-Accent lg:px-6 lg:py-3 font-[500] cursor-pointer"
+            >PC Building</span
+          ><span
+            data-services=""
+            id="upgradesText"
+            class="border-r px-3 py-2 hover:bg-Accent lg:px-6 lg:py-3 font-[500] cursor-pointer"
+            >Upgrades</span
+          ><span
+            data-services=""
+            id="repairText"
+            class="px-3 py-2 rounded-r-sm hover:bg-Accent lg:px-6 lg:py-3 font-[500] cursor-pointer"
+            >Small Repairs</span
+          >
+        </div>
+        <div
+          class="500:w-[90%] sm:w-[80%] md:w-full lg:max-w-[1000px] mx-auto lg:flex lg:border lg:border-Accent lg:rounded-[4px] lg:mt-10"
+          id="pcbuilding"
+          data-tabs=""
+        >
+          <div
+            class="flex flex-col lg:w-full lg:text-start lg:items-start lg:px-5 lg:bg-zinc-800 lg:rounded-l-[4px]"
+          >
+            <img
+              class="my-10 lg:my-5 w-full"
+              src="assets/services-asset/Screenshot_20190811_000858.jpg"
+              alt=""
+            />
+            <h1 class="text-3xl" id="pcbuildingPageText">PC Building</h1>
+            <p class="text-[17px] mt-5 lg:mt-5 lg:mb-7" id="pcbuildingPagePara">
+              Unable to build your first PC? Build your first pc from us and
+              we'll take care of the rest.
+            </p>
+          </div>
+          <div
+            class="flex lg:w-full flex-col gap-y-5 bg-[rgba(73,71,71,0.5)] px-5 py-[20px] my-5 lg:my-0 lg:border-none rounded-[4px] border border-Accent lg:rounded-none lg:rounded-r-[4px] lg:bg-zinc-800"
+          >
+            <form class="" id="buildingForm">
+              <div class="flex flex-col items-start gap-y-3 lg:gap-y-5">
+                <div class="w-full">
+                  <div class="flex items-center gap-x-2">
+                    <div class="rounded-full text-Accent mt-1">&ast;</div>
+                    <label for="" class="">Email</label>
+                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Email Address"
+                    id="emailfirst"
+                    class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="flex items-center gap-x-2">
+                    <div class="rounded-full text-Accent mt-1">&ast;</div>
+                    <label for="" class="">Computer Details</label>
+                  </div>
+                  <input
+                    type="text"
+                    required
+                    placeholder="Computer Details"
+                    name="Computer Details"
+                    id="messageforpcbuilding"
+                    class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="flex items-center gap-x-2">
+                    <div class="rounded-full text-Accent mt-1">&ast;</div>
+                    <label
+                      for="pricecategoryforpcbuilding"
+                      class=""
+                      id="priceCatLabel"
+                      >Select Price Category</label
+                    >
+                  </div>
+                  <select
+                    name=""
+                    id="pricecategoryforpcbuilding"
+                    class="rounded-sm px-4 w-full py-3 text-black text-[17px] font-Inter outline-Primary"
+                  >
+                    <option value="Budget ($500 - $1000)">
+                      Budget ($500 - $1000)
+                    </option>
+                    <option value="Mid-Range ($1000 - $2000)">
+                      Mid-Range ($1000 - $2000)
+                    </option>
+                    <option value="High-End ($2000+)">High-End ($2000+)</option>
+                  </select>
+                </div>
+                <div class="w-full">
+                  <div class="flex items-center gap-x-2">
+                    <label for="" class="" id="customReqText"
+                      >Custom Requests</label
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    name="custom request"
+                    id="custom"
+                    placeholder="Custom Request"
+                    class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                  />
+                </div>
+                <div class="flex gap-x-2 mt-2 lg:mt-2">
+                  <input
+                    type="checkbox"
+                    name="Do your have prior experience of PCs?"
+                    class="size-5 cursor-pointer"
+                    id="exp"
+                  />
+                  <label
+                    for="exp"
+                    class="font-[15px] cursor-pointer"
+                    id="priorExpText"
+                    >Do your have prior experience of PCs?</label
+                  >
+                </div>
+              </div>
+              <button
+                class="bg-Accent w-full mt-5 py-3 rounded-sm lg:mt-10 hover:bg-[rgb(221_52_122)] hover:shadow-[0px_0px_30px_0px_#ce0d5e]"
+                id="buildingButton"
+              >
+                Get a quote
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="500:w-[90%] sm:w-[80%] md:w-full lg:max-w-[1000px] mx-auto mt-10 lg:flex lg:border lg:border-Accent lg:hidden hidden"
+          id="upgrades"
+          data-tabs=""
+        >
+          <div class="w-full lg:bg-zinc-800 lg:p-5 rounded-l-[4px]">
+            <img
+              class="my-5 rounded-sm opacity-85 lg:my-0"
+              src="assets/services-asset/computer-motherboard-with-dolls.jpg"
+              alt=""
+            />
+            <h1 class="text-3xl lg:mt-5">Upgrades</h1>
+            <p class="text-[17px] mt-3 lg:mt-5" id="upgradesPara">
+              Why not bring your computer to us? So, we can upgrade your pc to
+              your liking.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-y-5 items-start bg-[rgba(73,71,71,0.5)] px-5 py-5 my-5 rounded-[4px] border border-Accent w-full lg:my-0 lg:border-none lg:bg-zinc-800 lg:rounded-none lg:rounded-r-[4px]"
+          >
+            <form class="w-full" id="upgradesForm">
+              <div class="flex gap-y-2 flex-col">
+                <div class="flex items-center gap-x-2">
+                  <input
+                    type="checkbox"
+                    id="cpu"
+                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                  />
+                  <label for="cpu" class="cursor-pointer">CPU</label>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <input
+                    type="checkbox"
+                    id="motherboard"
+                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                  />
+                  <label for="motherboard" class="cursor-pointer"
+                    >Motherboard</label
+                  >
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <input
+                    type="checkbox"
+                    id="gpu"
+                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                  />
+                  <label for="gpu" class="cursor-pointer"
+                    >GPU (Graphics Card)</label
+                  >
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <input
+                    type="checkbox"
+                    id="cooler"
+                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                  />
+                  <label for="cooler" class="cursor-pointer">Cooler</label>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <input
+                    type="checkbox"
+                    id="ram"
+                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                  />
+                  <label for="ram" class="cursor-pointer">RAM</label>
+                </div>
+                <div class="flex items-center gap-x-2">
+                  <input
+                    type="checkbox"
+                    id="casing"
+                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                  />
+                  <label for="casing" class="cursor-pointer">Casing</label>
+                </div>
+              </div>
+              <div class="w-full mt-5">
+                <div class="flex items-center gap-x-2">
+                  <div class="rounded-full text-Accent mt-1">&ast;</div>
+                  <label for="" class="">Email</label>
+                </div>
+                <input
+                  type="email"
+                  required
+                  id="emailsecond"
+                  placeholder="Email Address"
+                  class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                />
+              </div>
+              <div class="w-full mt-3">
+                <div class="flex items-center gap-x-2">
+                  <div class="rounded-full text-Accent mt-1">&ast;</div>
+                  <label for="" class="" id="enterbudgetText"
+                    >Enter Your Budget</label
+                  >
+                </div>
+                <input
+                  type="number"
+                  required
+                  id="budget"
+                  placeholder="Enter Your Budget..."
+                  class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                />
+              </div>
+              <button
+                class="bg-Accent w-full mt-6 py-3 rounded-sm hover:bg-[rgb(221_52_122)] hover:shadow-[0px_0px_30px_0px_#ce0d5e]"
+                id="upgradesButton"
+              >
+                Get a quote
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="500:w-[90%] sm:w-[80%] md:w-full lg:max-w-[1000px] mx-auto lg:flex lg:border lg:border-Accent lg:rounded-[4px] lg:mt-10 lg:hidden hidden"
+          id="smallrepairs"
+          data-tabs=""
+        >
+          <div class="w-full lg:bg-zinc-800 lg:px-5 lg:rounded-l-[4px]">
+            <img
+              class="my-10 lg:my-5 rounded-sm opacity-85"
+              src="assets/services-asset/laptop.jpg"
+              alt=""
+            />
+            <h1 class="text-3xl" id="smallrepairsTxt">Small Repaires</h1>
+            <p class="text-[17px] mt-5 mb-6" id="smallrepairsPara">
+              Have a phone, tablet or laptop that needs some checkup? Contact us
+              or bring your device to us.
+            </p>
+          </div>
+          <div
+            class="flex flex-col gap-y-5 bg-[rgba(73,71,71,0.5)] px-5 py-5 my-5 w-full rounded-[4px] border lg:my-0 border-Accent lg:border-none lg:rounded-none lg:rounded-r-[4px] lg:bg-zinc-800"
+          >
+            <form class="" id="repairsForm">
+              <div class="flex flex-col items-start gap-y-3">
+                <div class="w-full">
+                  <div class="flex items-center gap-x-2">
+                    <div class="rounded-full text-Accent mt-1">&ast;</div>
+                    <label for="" class="">Email</label>
+                  </div>
+                  <input
+                    type="email"
+                    required
+                    id="emailthird"
+                    placeholder="Email Address"
+                    class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="flex items-center gap-x-2">
+                    <div class="rounded-full text-Accent mt-1">&ast;</div>
+                    <label for="categoryofdevice" class="" id="deviceText"
+                      >Device</label
+                    >
+                  </div>
+                  <select
+                    id="categoryofdevice"
+                    class="rounded-sm px-4 w-full py-3 text-black text-[17px] font-Inter outline-Primary"
+                  >
+                    <option value="Phone">Phone</option>
+                    <option value="Tablet">Tablet</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <div class="w-full">
+                  <div class="flex items-center gap-x-2">
+                    <div class="rounded-full text-Accent mt-1">&ast;</div>
+                    <label for="issue" class="" id="describeissueText"
+                      >Describe the issue</label
+                    >
+                  </div>
+                  <textarea
+                    name=""
+                    id="issue"
+                    required
+                    placeholder="Describe the issue"
+                    class="text-black w-full h-[150px] p-2 rounded-sm outline-Primary"
+                  ></textarea>
+                </div>
+              </div>
+              <button
+                class="bg-Accent w-full mt-5 py-3 rounded-sm hover:bg-[rgb(221_52_122)] hover:shadow-[0px_0px_30px_0px_#ce0d5e]"
+                id="repairsButton"
+              >
+                Get a quote
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-zinc-800 mt-20" id="footer">
+      <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
+        <div class="font-Inter flex items-start md:gap-x-5 2xl:gap-x-10">
+          <div class="">
+            <a href="#home">
+              <img
+                class="rounded-md w-[85px]"
+                src="assets/Logos/rounded-logo.jpg"
+                alt=""
+            /></a>
+            <div class="mt-5">
+              <a
+                href="mailto:info@epc-tech.de"
+                class="flex items-start gap-x-2 text-white"
+                ><i
+                  class="fa-solid mt-1 fa-envelope text-white text-[16px]"
+                ></i>
+                <p class="425:text-[17px]">info@epc-tech.de</p></a
+              >
+              <a
+                href="tel: +49 176 41742121"
+                class="flex items-start gap-x-2 mt-3 text-white"
+                ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
+                <p class="425:text-[17px]">+49 176 41742121</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
+        <div
+          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+        >
+          <div class="flex gap-x-5">
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Inter">
+            <span>&#169;</span> Copyright 2025 EPC-Tech
+          </h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const toggler = document.querySelectorAll("[data-languageSelection]");
+    const buildingForm = document.getElementById("buildingForm");
+    const tabs = document.querySelectorAll("[data-tabs]");
+    const services = document.querySelectorAll("[data-services]");
+    const upgradesForm = document.getElementById("upgradesForm");
+    const repairsForm = document.getElementById("repairsForm");
+    function sendEmail(category) {
+      let params = {
+        subject: "Get a quote",
+        from: "mkvcinemas945@gmail.com",
+        email:
+          document.getElementById("emailfirst").value ||
+          document.getElementById("emailsecond").value ||
+          document.getElementById("emailthird").value,
+        categoryforpcbuilding:
+          category === "PC-Building" ? "PC-Building" : "--",
+
+        messageforpcbuilding:
+          category === "PC-Building"
+            ? document.getElementById("messageforpcbuilding").value
+            : "--",
+        options:
+          category === "PC-Building"
+            ? document.getElementById("pricecategoryforpcbuilding").value
+            : "--",
+        custom:
+          category === "PC-Building"
+            ? document.getElementById("custom").value
+            : "--",
+        exp:
+          category === "PC-Building"
+            ? document.getElementById("exp").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        categoryforupgrades: category === "Upgrades" ? "Upgrades" : "--",
+        cpu:
+          category === "Upgrades"
+            ? document.getElementById("cpu").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        gpu:
+          category === "Upgrades"
+            ? document.getElementById("gpu").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        cooler:
+          category === "Upgrades"
+            ? document.getElementById("cooler").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        ram:
+          category === "Upgrades"
+            ? document.getElementById("ram").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        casing:
+          category === "Upgrades"
+            ? document.getElementById("casing").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        motherboard:
+          category === "Upgrades"
+            ? document.getElementById("motherboard").checked
+              ? "Yes"
+              : "No"
+            : "--",
+        budget:
+          category === "Upgrades"
+            ? document.getElementById("budget").value
+              ? document.getElementById("budget").value + "$"
+              : "--"
+            : "--",
+        categoryforrepaires:
+          category === "Small-Repairs" ? "Small-Repairs" : "--",
+
+        categoryofdevice:
+          category === "Small-Repairs"
+            ? document.getElementById("categoryofdevice").value
+            : "--",
+        issue: document.getElementById("issue").value
+          ? document.getElementById("issue").value
+          : "--",
+      };
+      emailjs
+        .send("service_tlxv4wh", "template_i41x9qp", params)
+        .then((message) => alert("Email Sent"));
+    }
+
+    toggler.forEach((items) => {
+      items.addEventListener("change", () => {
+        if (items.value == "Deutsch") {
+          document.querySelectorAll("[data-tabs]")[0].id = "pcgebäude";
+          document.querySelectorAll("[data-tabs]")[2].id = "kleinereparaturen";
+          document.querySelector("#pcbuildingText").innerText = "PC Gebäude";
+          document.querySelector("#pcbuildingPageText").innerText =
+            "PC Gebäude";
+          document.querySelector("#repairText").innerText =
+            "Kleine Reparaturen";
+          document.querySelector("#pcbuildingPagePara").innerText =
+            "Sie können Ihren ersten PC nicht bauen? Bauen Sie Ihren ersten PC bei uns und wir kümmern uns um den Rest.";
+          document.querySelector("#emailfirst").placeholder = "Email Adresse";
+          document.querySelector("#priceCatLabel").innerText =
+            "Wählen Sie die Preiskategorie aus";
+          document.querySelector("#customReqText").innerText =
+            "Benutzerdefinierte Anfragen";
+          document.querySelector("#custom").placeholder =
+            "Benutzerdefinierte Anfragen";
+          document.querySelector("#priorExpText").innerText =
+            "Haben Sie bereits Erfahrungen mit PCs?";
+          document.querySelector("#upgradesPara").innerText =
+            "Warum bringen Sie Ihren Computer nicht zu uns? So können wir Ihren PC nach Ihren Wünschen aufrüsten.";
+          document.querySelector("#emailsecond").placeholder = "Email Adresse";
+          document.querySelector("#enterbudgetText").innerText =
+            "Geben Sie Ihr Budget ein";
+          document.querySelector("#budget").placeholder =
+            "Geben Sie Ihr Budget ein";
+          document.querySelector("#upgradesButton").innerText =
+            "Holen Sie sich ein Angebot";
+          document.querySelector("#smallrepairsTxt").innerText =
+            "Kleine Reparaturen";
+          document.querySelector("#smallrepairsPara").innerText =
+            "Haben Sie ein Telefon, Tablet oder Laptop, das überprüft werden muss? Kontaktieren Sie uns oder bringen Sie Ihr Gerät zu uns.";
+          document.querySelector("#emailthird").placeholder = "Email Adresse";
+          document.querySelector("#deviceText").innerText = "Gerät";
+          document.querySelector("#describeissueText").innerText =
+            "Beschreiben Sie das Problem";
+          document.querySelector("#issue").placeholder =
+            "Beschreiben Sie das Problem";
+          document.querySelector("#repairsButton").innerText =
+            "Holen Sie sich ein Angebot";
+        } else {
+          document.querySelectorAll("[data-tabs]")[0].id = "pcbuilding";
+          document.querySelectorAll("[data-tabs]")[2].id = "smallrepairs";
+          document.querySelector("#pcbuildingText").innerText = "PC Building";
+          document.querySelector("#repairText").innerText = "Small Repairs";
+          document.querySelector("#pcbuildingPageText").innerText =
+            "PC Building";
+          document.querySelector("#pcbuildingPagePara").innerText =
+            "Unable to build your first PC? Build your first pc from us and we'll take care of the rest.";
+          document.querySelector("#emailfirst").placeholder = "Email Address";
+          document.querySelector("#priceCatLabel").innerText =
+            "Select Price Category";
+          document.querySelector("#customReqText").innerText =
+            "Custom Requests";
+          document.querySelector("#priorExpText").innerText =
+            "Do your have prior experience of PCs?";
+          document.querySelector("#custom").placeholder = "Custom Request";
+          document.querySelector("#upgradesPara").innerText =
+            "Why not bring your computer to us? So, we can upgrade your pc to your liking.";
+          document.querySelector("#emailsecond").placeholder = "Email Address";
+          document.querySelector("#enterbudgetText").innerText =
+            "Enter Your Budget";
+          document.querySelector("#budget").placeholder =
+            "Geben Sie Ihr Budget ein";
+          document.querySelector("#upgradesButton").innerText = "Get a quote";
+
+          document.querySelector("#smallrepairsTxt").innerText =
+            "Small Repaires";
+          document.querySelector("#smallrepairsPara").text =
+            "Have a phone, tablet or laptop that needs some checkup? Contact us or bring your device to us.";
+          document.querySelector("#emailthird").placeholder = "Email Address";
+          document.querySelector("#deviceText").innerText = "Device";
+          document.querySelector("#describeissueText").innerText =
+            "Describe the issue";
+          document.querySelector("#issue").placeholder = "Describe the issue";
+          document.querySelector("#repairsButton").innerText = "Get a quote";
+        }
+      });
+    });
+    (function getItems() {
+      services.forEach((items) => {
+        items.addEventListener("click", (e) => {
+          gtItems(items.innerText.replace(" ", "").toLowerCase());
+          items.classList.toggle("bg-[rgba(206_13_94/.7)]");
+          services.forEach((hiddens) => {
+            if (items !== hiddens) {
+              hiddens.classList.remove("bg-Accent");
+              hiddens.classList.remove("bg-[rgba(206_13_94/.7)]");
+            }
+          });
+        });
+      });
+    })();
+
+    function gtItems(items) {
+      tabs.forEach((tabItems) => {
+        console.log(items, tabItems);
+
+        if (items == tabItems.id) {
+          document.querySelector(`#${tabItems.id}`).classList.remove("hidden");
+          document
+            .querySelector(`#${tabItems.id}`)
+            .classList.remove("lg:hidden");
+        } else {
+          tabItems.classList.add("hidden");
+          tabItems.classList.add("lg:hidden");
+        }
+      });
+    }
+    // english
+  </script>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    document.querySelectorAll("[data-services]").forEach((service) => {
+      service.addEventListener("click", function () {
+        var infoBox = document.getElementById("serviceInfoBox");
+        var title = document.getElementById("serviceTitle");
+        var description = document.getElementById("serviceDescription");
+
+        // Define service descriptions
+        var serviceDetails = {
+          "PC Building":
+            "Every PC I build is fully custom-made, designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.",
+          Upgrades:
+            "I offer personalized PC upgrades tailored to your needs. If you're unsure what to upgrade, I can analyze your system and recommend improvements, or if you already know, I can provide and install the components for you.",
+          "Small Repairs":
+            "I provide repair services for phones, tablets, and laptops. Whether you have a cracked screen, a battery issue, or software problems, I can diagnose and fix the issue efficiently.",
+        };
+
+        // Update title and description
+        title.innerText = this.innerText;
+        description.innerText =
+          serviceDetails[this.innerText] || "Service details coming soon.";
+
+        // Show the info box
+        infoBox.classList.remove("hidden");
+      });
+    });
+  </script>
+  <script src="menu.js"></script>
+</html>

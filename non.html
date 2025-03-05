@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPC-Tech</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+<link rel="stylesheet" href="dist/style.css">
+  </head>
+  <body>
+    <!-- Header start -->
+    <div class="bg-primary py-4 text-white">
+      <div class="container mx-auto grid grid-cols-12">
+        <div
+          class="col-span-12 lg:col-span-7 space-x-3 text-center lg:text-left mb-5 lg:mb-0"
+        >
+          <a class="text-white" href="mailto:info@epc-tech.de"
+            ><i class="fa-regular fa-envelope"></i> &nbsp; info@epc-tech.de</a
+          >
+
+          <a href="tel:+4917641742121"
+            ><i class="fa-solid fa-phone"></i> &nbsp; +49 176 41742121</a
+          >
+        </div>
+        <div
+          class="col-span-12 lg:col-span-5 text-center lg:text-right space-x-3"
+        >
+          <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"> <i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-discord"></i></a>
+        </div>
+      </div>
+    </div>
+  <body class="text-white">
+      <nav class="flex items-center z-[200] justify-start lg:gap-x-10 text-white py-5 w-full sticky top-[-1px] lg:left-0 bg-black lg:bg-zinc-800 lg:top-[25px] lg:rounded-full lg:py-3 lg:mt-5 lg:px-10"
+      >
+        <div class="flex relative items-center justify-between w-full lg:w-fit">
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+  
+          <div class="flex gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden">
+            <select name="" data-languageSelection="" class="text-black">
+              <option value="English">English</option>
+              <option value="Deutsch">Deutsch</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-full justify-between">
+          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html#home">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html#gallery">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Impressum
+              </li>
+            </a>
+  
+            <a href="non.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+          <div
+            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10"
+          >
+            <select name="" data-languageSelection="" class="text-black">
+              <option value="English">English</option>
+              <option value="Deutsch">Deutsch</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+          </div>
+        </div>
+      </nav>
+    <!-- services start -->
+    <section class="container mx-auto my-20 px-5 lg:px-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md my-auto order-2 lg:order-1"
+        >
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            PC Building Section
+          </h2>
+          <!-- Price Categories -->
+          <label class="block mb-2 font-medium text-gray-700"
+            >Select Price Category:</label
+          >
+          <select
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          >
+            <option>Budget ($500 - $1000)</option>
+            <option>Mid-Range ($1000 - $2000)</option>
+            <option>High-End ($2000+)</option>
+          </select>
+          <!-- Custom Request Box -->
+          <label class="block mt-4 font-medium text-gray-700"
+            >Custom Requests:</label
+          >
+          <textarea
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            rows="3"
+            placeholder="Describe any custom requests..."
+          ></textarea>
+          <!-- PC Experience Checkbox -->
+          <div class="mt-4 flex items-center">
+            <input
+              id="pc-experience"
+              type="checkbox"
+              class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+            />
+            <label for="pc-experience" class="ml-2 text-gray-700"
+              >I have experience building PCs</label
+            >
+          </div>
+          <!-- PC Case Style Selection -->
+          <label class="block mt-4 font-medium text-gray-700"
+            >Preferred PC Case Style:</label
+          >
+          <input
+            type="text"
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Describe your preferred case style..."
+          />
+          <!-- Submit Button -->
+          <button
+            class="mt-6 w-full text-white py-2 rounded btn-one transition"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="order-1 lg:order-2">
+          <img class="rounded-xl" src="images/01.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- services end -->
+
+    <!-- Upgrades Section -->
+    <section class="container mx-auto my-20 px-5 lg:px-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div class="my-auto">
+          <img class="rounded-xl" src="images/02.jpg" alt="" />
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md my-auto">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Upgrades Section
+          </h2>
+          <label class="block mb-2 font-medium text-gray-700"
+            >Select Upgrades:</label
+          >
+          <div class="space-y-2">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="cpu"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="cpu" class="ml-2 text-gray-700">Upgrade CPU</label>
+            </div>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="gpu"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="gpu" class="ml-2 text-gray-700">Upgrade GPU</label>
+            </div>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="ram"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="ram" class="ml-2 text-gray-700">Upgrade RAM</label>
+            </div>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="storage"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="storage" class="ml-2 text-gray-700"
+                >Upgrade Storage</label
+              >
+            </div>
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="cooling"
+                class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+              />
+              <label for="cooling" class="ml-2 text-gray-700"
+                >Upgrade Cooling System</label
+              >
+            </div>
+          </div>
+          <!-- Price Input -->
+          <label class="block mt-4 font-medium text-gray-700"
+            >Enter Budget for Upgrades ($):</label
+          >
+          <input
+            type="number"
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Enter your budget..."
+          />
+          <!-- Submit Button -->
+          <button
+            class="mt-6 w-full btn-one text-white py-2 rounded transition"
+          >
+            Submit Upgrades
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small Repairs Section -->
+    <section class="container mx-auto my-20 px-5 lg:px-0">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div class="bg-white p-6 rounded-lg shadow-xl order-2 lg:order-1">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Small Repairs Section
+          </h2>
+          <p class="text-gray-600 mb-6">
+            Select a device category and describe the issue. We will contact you
+            with a quote.
+          </p>
+
+          <!-- Repairable Devices -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <button
+              onclick="showForm('Phone')"
+              class="flex flex-col items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
+            >
+              📱
+              <span class="mt-2 text-gray-700">Phone</span>
+            </button>
+            <button
+              onclick="showForm('Tablet')"
+              class="flex flex-col items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
+            >
+              📟
+              <span class="mt-2 text-gray-700">Tablet</span>
+            </button>
+            <button
+              onclick="showForm('Laptop')"
+              class="flex flex-col items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
+            >
+              💻
+              <span class="mt-2 text-gray-700">Laptop</span>
+            </button>
+            <button
+              onclick="showForm('Other')"
+              class="flex flex-col items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition"
+            >
+              🔧
+              <span class="mt-2 text-gray-700">Other</span>
+            </button>
+          </div>
+
+          <!-- Repair Request Form -->
+          <div id="repair-form" class="mt-6">
+            <h3 class="text-xl font-medium text-gray-800 mb-2">
+              Describe Your Issue:
+            </h3>
+            <input
+              type="text"
+              id="selected-device"
+              class="w-full p-2 border border-gray-300 rounded bg-gray-100 mb-4"
+              readonly
+            />
+
+            <textarea
+              id="issue-description"
+              class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              rows="3"
+              placeholder="Explain the issue..."
+            ></textarea>
+
+            <label class="block mt-4 font-medium text-gray-700"
+              >Contact Email or Phone:</label
+            >
+            <input
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Enter your contact details..."
+            />
+
+            <!-- Submit Button -->
+            <button
+              class="mt-6 w-full btn-one text-white py-2 rounded transition"
+            >
+              Request a Quote
+            </button>
+          </div>
+        </div>
+        <div class="my-auto order-1 lg:order-2">
+          <img class="rounded-lg" src="images/03.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function showForm(device) {
+        document.getElementById("repair-form").classList.remove("hidden");
+        document.getElementById("selected-device").value = device;
+      }
+    </script>
+
+     <!-- Footer Section -->
+  </main>
+  <footer class="bg-zinc-800 mt-20" id="footer">
+    <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
+      <div class="font-Inter flex items-start md:gap-x-5 2xl:gap-x-10">
+        <div class="">
+          <a href="#home">
+            <img
+              class="rounded-md w-[85px]"
+              src="assets/Logos/rounded-logo.jpg"
+              alt=""
+          /></a>
+          <div class="mt-5">
+            <a
+              href="mailto:info@epc-tech.de"
+              class="flex items-start gap-x-2 text-white"
+              ><i
+                class="fa-solid mt-1 fa-envelope text-white text-[16px]"
+              ></i>
+              <p class="425:text-[17px]">info@epc-tech.de</p></a
+            >
+            <a
+              href="tel: +49 176 41742121"
+              class="flex items-start gap-x-2 mt-3 text-white"
+              ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
+              <p class="425:text-[17px]">+49 176 41742121</p></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
+      <div
+        class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+      >
+        <div class="flex gap-x-5">
+          <div>
+            <div>
+              <i
+                class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div>
+            <div>
+              <i
+                class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div>
+            <div>
+              <i
+                class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div>
+            <div>
+              <i
+                class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div>
+            <div>
+              <i
+                class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Inter">
+          <span>&#169;</span> Copyright 2025 EPC-Tech
+        </h1>
+      </div>
+    </div>
+  </footer>
+ </body>
+</html>
