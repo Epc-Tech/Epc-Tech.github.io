@@ -55,107 +55,21 @@
   <body class="bg-black scroll-smooth transition-all duration-300" data-body="">
     <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
       <nav
-        class="flex items-center px-5 z-[200] justify-start lg:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-10"
-        data-bgzinc400=""
+      class="flex items-center px-5 z-[200] justify-start lg:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-10"
+      data-bgzinc400=""
+    >
+      <div
+        class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
       >
+        <img
+          class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+          src="assets/Logos/rounded-logo.jpg"
+          alt=""
+        />
         <div
-          class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
+          class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
         >
-          <img
-            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
-            src="assets/Logos/rounded-logo.jpg"
-            alt=""
-          />
-          <div
-            class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
-          >
-            <div>
-              <div
-                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
-                id="toggleBtn"
-              >
-                <div
-                  class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
-                  id="toggleDiv"
-                  data-toggleDiv=""
-                >
-                  <i
-                    class="fa-solid fa-moon text-yellow-400 transition-all"
-                    id="moonsun"
-                  ></i>
-                </div>
-              </div>
-            </div>
-            <select
-              name=""
-              data-languageSelection=""
-              class="py-2 bg-white text-black px-1 rounded-md"
-            >
-              <option class="" value="Deutsch">Deutsch</option>
-              <option class="" value="English">English</option>
-            </select>
-            <i
-              class="fa-solid fa-bars text-white text-2xl lg:hidden"
-              id="hamburger"
-              data-textblack=""
-            ></i>
-          </div>
-        </div>
-        <div class="flex items-center lg:w-full justify-between">
-          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
-            <a href="index.html">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-                data-allListItems=""
-              >
-                Home
-              </li>
-            </a>
-            <a href="gallery.html">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-                data-allListItems=""
-              >
-                Gallery
-              </li>
-            </a>
-            <a href="service.html#service">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-                data-allListItems=""
-              >
-                Services
-              </li>
-            </a>
-            <a href="impressum.html">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-                data-allListItems=""
-              >
-                Impressum
-              </li>
-            </a>
-
-            <a href="non.html">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-                data-allListItems=""
-              >
-                Non's 3D Printing Corner
-              </li>
-            </a>
-            <a href="about.html">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-                data-allListItems=""
-              >
-                About Us
-              </li>
-            </a>
-          </ul>
-          <div
-            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
-          >
+          <div>
             <div
               class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
               id="toggleBtn"
@@ -171,91 +85,184 @@
                 ></i>
               </div>
             </div>
-            <select
-              name=""
-              data-languageSelection=""
-              class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
-            >
-              <option class="outline-none" value="Deutsch">Deutsch</option>
-              <option class="outline-none" value="English">English</option>
-            </select>
-            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
           </div>
-        </div>
-      </nav>
-      <div
-        class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
-        id="left"
-      >
-        <div
-          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
-          id="list"
-        >
-          <div class="flex items-center justify-between w-full mb-10">
-            <img
-              class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
-              src="assets/Logos/rounded-logo.jpg"
-              alt=""
-            />
-            <i
-              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
-              id="close"
-              data-textblack=""
-            ></i>
-          </div>
-          <ul class="flex flex-col gap-y-5">
-            <a href="index.html">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-                data-allListItems=""
-              >
-                Home
-              </li>
-            </a>
-            <a href="gallery.html">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-                data-allListItems=""
-              >
-                Gallery
-              </li>
-            </a>
-            <a href="service.html#service">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-                data-allListItems=""
-              >
-                Services
-              </li>
-            </a>
-            <a href="impressum.html">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-                data-allListItems=""
-              >
-                Impressum
-              </li>
-            </a>
-
-            <a href="non.html">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-                data-allListItems=""
-              >
-                Non's 3D Printing Corner
-              </li>
-            </a>
-            <a href="about.html">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-                data-allListItems=""
-              >
-                About Us
-              </li>
-            </a>
-          </ul>
+          <select
+            name=""
+            data-languageSelection=""
+            class="py-2 bg-white text-black px-1 rounded-md"
+          >
+            <option class="" value="Deutsch">Deutsch</option>
+            <option class="" value="English">English</option>
+          </select>
+          <i
+            class="fa-solid fa-bars text-white text-2xl lg:hidden"
+            id="hamburger"
+            data-textblack=""
+          ></i>
         </div>
       </div>
+      <div class="flex items-center lg:w-full justify-between">
+        <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+          <a href="index.html">
+            <li
+              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              data-allListItems=""
+              data-home=""
+            >
+              Startseite
+            </li>
+          </a>
+          <a href="service.html#service">
+            <li
+              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              data-allListItems=""
+              data-service=""
+            >
+              Unsere Leistungen
+            </li>
+          </a>
+          <a href="gallery.html">
+            <li
+              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              data-allListItems=""
+              data-gallery=""
+            >
+              Galerie
+            </li>
+          </a>
+          <a href="non.html">
+            <li
+              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              data-allListItems=""
+            >
+              Aktuelles
+            </li>
+          </a>
+          <a href="about.html">
+            <li
+              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              data-allListItems=""
+              data-aboutus=""
+            >
+              Über uns
+            </li>
+          </a>
+          <a href="impressum.html">
+            <li
+              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+              data-allListItems=""
+              data-impressum=""
+            >
+              Impressum
+            </li>
+          </a>
+        </ul>
+        <div
+          class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
+        >
+          <div
+            class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+            id="toggleBtn"
+          >
+            <div
+              class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
+              id="toggleDiv"
+              data-toggleDiv=""
+            >
+              <i
+                class="fa-solid fa-moon text-yellow-400 transition-all"
+                id="moonsun"
+              ></i>
+            </div>
+          </div>
+          <select
+            name=""
+            data-languageSelection=""
+            class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
+          >
+            <option class="outline-none" value="Deutsch">Deutsch</option>
+            <option class="outline-none" value="English">English</option>
+          </select>
+          <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
+      id="left"
+    >
+      <div
+        class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
+        id="list"
+      >
+        <div class="flex items-center justify-between w-full mb-10">
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+          <i
+            class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+            id="close"
+            data-textblack=""
+          ></i>
+        </div>
+        <ul class="flex flex-col gap-y-5">
+          <a href="index.html">
+            <li
+              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              data-allListItems=""
+              data-home=""
+            >
+              Home
+            </li>
+          </a>
+        <a href="service.html#service">
+          <li
+            class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+            data-allListItems=""
+            data-services=""
+          >
+            Services
+          </li>
+        </a>
+          <a href="gallery.html">
+            <li
+              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              data-allListItems=""
+              data-gallery=""
+            >
+              Gallery
+            </li>
+            </a>
+          <a href="non.html">
+            <li
+              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              data-allListItems=""
+            >
+              Announcements
+            </li>
+          </a>
+          <a href="about.html">
+            <li
+              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              data-allListItems=""
+              data-aboutus=""
+            >
+              About Us
+            </li>
+          </a>
+          <a href="impressum.html">
+            <li
+              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+              data-allListItems=""
+            >
+              Impressum
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
       <!--Impressum Section-->
 
       <section
