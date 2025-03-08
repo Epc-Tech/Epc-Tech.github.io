@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "t73ugZimhXqGDox_u",
+        });
+      })();
+    </script>
+    <link href="dist/style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <script defer src="changeNav.js"></script>
+    <script defer src="toggleOthers.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-black scroll-smooth transition-all duration-300" data-body="">
+    <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
+      <nav
+        class="flex items-center px-5 z-[200] justify-start lg:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-10"
+        data-bgzinc400=""
+      >
+        <div
+          class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
+        >
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+          <div
+            class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
+          >
+            <div>
+              <div
+                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+                id="toggleBtn"
+              >
+                <div
+                  class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
+                  id="toggleDiv"
+                  data-toggleDiv=""
+                >
+                  <i
+                    class="fa-solid fa-moon text-yellow-400 transition-all"
+                    id="moonsun"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-white text-black px-1 rounded-md"
+            >
+              <option class="" value="Deutsch">Deutsch</option>
+              <option class="" value="English">English</option>
+            </select>
+            <i
+              class="fa-solid fa-bars text-white text-2xl lg:hidden"
+              id="hamburger"
+              data-textblack=""
+            ></i>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-full justify-between">
+          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html#home">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+          <div
+            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
+          >
+            <div
+              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+              id="toggleBtn"
+            >
+              <div
+                class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
+                id="toggleDiv"
+                data-toggleDiv=""
+              >
+                <i
+                  class="fa-solid fa-moon text-yellow-400 transition-all"
+                  id="moonsun"
+                ></i>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
+            >
+              <option class="outline-none" value="Deutsch">Deutsch</option>
+              <option class="outline-none" value="English">English</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
+        id="left"
+      >
+        <div
+          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
+          id="list"
+        >
+          <div class="flex items-center justify-between w-full mb-10">
+            <img
+              class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+              src="assets/Logos/rounded-logo.jpg"
+              alt=""
+            />
+            <i
+              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+              id="close"
+              data-textblack=""
+            ></i>
+          </div>
+          <ul class="flex flex-col gap-y-5">
+            <a href="index.html#home">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="lg:flex lg:items-center lg:justify-center lg:mt-10 2xl:mt-24 lg:gap-x-10 px-5 500:px-7 md:px-12 lg:px-0"
+      >
+        <div class="lg:w-[50%]">
+          <h1
+            class="mt-10 w-full lg:mt-0 text-4xl tracking-wide font-Overpass 500:text-5xl sm:text-5xl text-white 2xl:text-6xl"
+            id="heading"
+            data-textblack=""
+          >
+            <span class="text-Accent font-[600]" id="spans">Custom PC's</span>
+            are on the Horizon
+          </h1>
+          <p
+            class="text-lg sm:text-xl w-[80%] mt-3 lg:mt-5 lg:mb-5 text-white"
+            data-textblack=""
+            id="titleP"
+          >
+            No need for overpriced custom builds. Built per customer, no hidden
+            costs.
+          </p>
+          <div class="mt-5 relative w-fit h-full group">
+            <a
+              href="service.html#service"
+              class="bg-Accent block font-[500] px-16 py-4 text-md text-lg rounded-md"
+              id="quoteBtn"
+            >
+              Get a quote
+            </a>
+            <a
+              href="service.html#service"
+              class="absolute top-0 left-0 w-full h-full bg-zinc-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"
+            >
+              <div class="flex items-center gap-x-3 text-white justify-center">
+                <i class="fa-solid fa-envelope text-white text-[16px]"></i>
+                <p class="">info@epc-tech.de</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full h-[4px] rounded-lg bg-Accent mt-10 lg:hidden"
+          id="black"
+        ></div>
+        <img
+          class="mt-10 mb-6 border-Accent lg:border-l-4 lg:rounded-sm lg:pl-24 lg:w-[50%] 2xl:w-[50%] 2xl:max-w-[1300px]"
+          id="borderleftcolor"
+          src="assets/homepage-image.png"
+          alt=""
+        />
+      </div>
+      <div class="flex items-center mt-52 px-5 500:px-7 md:px-12 lg:px-0">
+        <div class="w-full h-[4px] bg-white" data-sameClr=""></div>
+        <i
+          class="fa-solid fa-arrow-right text-[30px] text-white"
+          data-arrow=""
+        ></i>
+      </div>
+      <!-- <div
+        class="relative px-5 500:px-7 md:px-12 lg:px-0 mt-32 lg:mt-60 rounded-md"
+      >
+        <div
+          class="relative w-full flex items-center justify-center px-5 flex-col pb-7 rounded-xl overflow-hidden group bg-clip-allClip border-[3px] border-solid border-transparent bg-origin-border [background-clip:padding-box,border-box] [background-image:linear-gradient(90deg,#27272a,#27272a),linear-gradient(to_bottom_right,#b827fc_0%,#2c90fc_25%,#b8fd33_50%,#fec837_75%,#fd1892_100%)]"
+          id="roundedBg"
+        >
+          <img
+            class="rotate-[270deg] mx-auto w-[50%] 500:w-[180px]"
+            src="assets/arrow.svg"
+            alt=""
+          />
+          <h1
+            class="text-2xl text-[#ada9a9] group-hover:text-white transition-all duration-300"
+            id="textHover"
+          >
+            Timeline Coming Soon
+          </h1>
+        </div>
+      </div> -->
+
+      <!-- services we provide -->
+      <div
+        class="mt-32 2xl:mt-40 lg:gap-x-10 px-5 500:px-7 md:px-12 xl:px-20 2xl:px-40"
+      >
+        <div class="flex items-center justify-center mt-10">
+          <h1
+            class="text-4xl font-Overpass text-center lg:text-4xl text-white"
+            data-textblack=""
+            id="serviceweprovideHeading"
+          >
+            Services We Provide
+          </h1>
+        </div>
+        <div
+          class="flex items-center flex-col lg:w-full justify-center text-center gap-y-7 mt-10 mx-auto md:gap-y-10 lg:gap-x-5 xl:gap-x-10 font-Overpass lg:max-w-[800px] xl:max-w-[1000px] sm:text-start lg:gap-y-14"
+        >
+          <div
+            class="rounded-lg flex flex-col items-center sm:items-stretch justify-center border-4 border-Accent sm:flex-row transition-all hover:scale-105"
+            data-borderPrimary=""
+          >
+            <img
+              class="rounded-t-md w-full sm:w-[300px] xl:w-[350px] sm:rounded-none sm:rounded-l-md"
+              src="assets/resized-images/2.jpg"
+              alt=""
+            />
+            <div
+              class="pt-1 pb-6 px-5 bg-zinc-800 rounded-b-md sm:rounded-r-md w-full lg:pt-3"
+              data-bgzinc100=""
+            >
+              <h1
+                class="text-xl my-3 lg:text-3xl text-white font-[600]"
+                data-textblack=""
+                id="ourservices"
+              >
+                Our Services
+              </h1>
+              <p
+                class="lg:mt-5 text-lg text-[#d6d6d6] font-[500]"
+                data-textzinc700=""
+                id="servicesPara"
+              >
+                We provide a lot of services. You can choose the service you
+                need by contacting us. we have been serving for 2 years.
+              </p>
+              <a
+                href="service.html#service"
+                id="servicesBtn"
+                class="flex items-center gap-x-2 font-[500] bg-Primary px-5 py-2 rounded-md mt-5 w-fit mx-auto sm:mx-0 text-white lg:text-lg lg:mt-7"
+                data-textblack=""
+                >Services <i class="fa-solid fa-arrow-right lg:text-xl"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col items-center sm:items-stretch justify-center border-4 border-Accent sm:flex-row-reverse transition-all hover:scale-105"
+            data-borderPrimary=""
+          >
+            <img
+              class="rounded-t-md w-full sm:w-[300px] xl:w-[350px] sm:rounded-none sm:rounded-r-md"
+              src="assets/resized-images/3.jpg"
+              alt=""
+            />
+            <div
+              class="pt-1 pb-6 px-5 bg-zinc-800 rounded-b-md sm:rounded-l-md w-full lg:pt-3"
+              data-bgzinc100=""
+            >
+              <h1
+                class="text-xl my-3 lg:text-3xl text-white font-[600]"
+                data-textblack=""
+                id="ourgallery"
+              >
+                Our Gallery
+              </h1>
+              <p
+                class="lg:mt-5 text-lg text-[#d6d6d6] font-[500]"
+                id="galleryPara"
+                data-textzinc700=""
+              >
+                Check out our gallery. The gallery shows the projects we have
+                done so far. Our RIG's contain a lot of PC's.
+              </p>
+              <a
+                href="service.html#service"
+                id="galleryBtn"
+                data-textblack=""
+                class="flex items-center gap-x-2 font-[500] bg-Primary px-5 py-2 rounded-md mt-5 w-fit mx-auto sm:mx-0 text-white lg:text-lg lg:mt-7"
+                >Gallery <i class="fa-solid fa-arrow-right lg:text-xl"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="rounded-lg flex flex-col items-center sm:items-stretch justify-center border-4 border-Accent sm:flex-row transition-all hover:scale-105"
+            data-borderPrimary=""
+          >
+            <img
+              class="rounded-t-md w-full sm:w-[300px] xl:w-[350px] sm:rounded-none sm:rounded-l-md"
+              src="assets/resized-images/4.jpg"
+              alt=""
+            />
+            <div
+              class="pt-1 pb-6 px-5 bg-zinc-800 rounded-b-md sm:rounded-r-md w-full lg:pt-3"
+              data-bgzinc100=""
+            >
+              <h1
+                class="text-xl my-3 lg:text-3xl text-white font-[600]"
+                id="aboutusText"
+                data-textblack=""
+              >
+                About Us
+              </h1>
+              <p
+                class="lg:mt-5 text-lg text-[#d6d6d6] font-[500]"
+                id="aboutusPara"
+                data-textzinc700=""
+              >
+                We are EPC-Tech. We have been building PC's since 2019. With
+                over 3000+ customers served till now.
+              </p>
+              <a
+                href="service.html#service"
+                id="aboutusBtn"
+                data-textblack=""
+                class="flex items-center gap-x-2 font-[500] bg-Primary px-5 py-2 rounded-md mt-5 w-fit mx-auto sm:mx-0 lg:text-lg text-white lg:mt-7"
+                >About Us <i class="fa-solid fa-arrow-right lg:text-xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us -->
+      <div
+        class="font-Overpass 2xl:mt-24 lg:gap-x-10 px-5 500:px-7 md:px-12 xl:px-20 2xl:px-40"
+      >
+        <div class="flex items-center justify-center mt-20">
+          <h1
+            class="text-4xl lg:text-4xl text-white"
+            id="contacHeading"
+            data-textblack=""
+          >
+            Contact Us
+          </h1>
+        </div>
+        <div
+          class="max-w-[640px] lg:max-w-[1000px] mt-10 mx-auto bg-zinc-800 p-5 lg:px-7 lg:pt-7 lg:pb-0 rounded-md"
+          data-bgzinc300=""
+        >
+          <div class="flex items-center gap-x-2">
+            <h1
+              class="text-xl font-[500] text-white"
+              id="getintouch"
+              data-textblack=""
+            >
+              Get In Touch
+            </h1>
+            <div class="w-[30px] h-[2px] bg-Accent" id="touchBar"></div>
+          </div>
+          <div class="w-full h-[2px] bg-white my-5" data-bgblack=""></div>
+          <div class="lg:flex lg:gap-x-10">
+            <div class="lg:w-full">
+              <p class="mt-2 text-white" data-textblack="" id="contactPara">
+                Contact us via the methods provided below:
+              </p>
+              <div class="">
+                <div class="mt-5">
+                  <a
+                    href="mailto:info@epc-tech.de"
+                    class="flex items-center gap-x-2 text-white"
+                    data-textblack=""
+                    ><i class="fa-solid text-xl fa-envelope text-[16px]"></i>
+                    <p class="text-lg font-[500] mt-1">Email us</p></a
+                  >
+                  <a
+                    href="tel: +49 176 41742121"
+                    class="flex items-center gap-x-2 mt-2 text-white"
+                    data-textblack=""
+                    ><i class="fa-solid fa-phone text-xl text-[16px]"></i>
+                    <p class="text-lg font-[500] mt-1">Call us</p></a
+                  >
+                  <a
+                    href="tel: +49 176 41742121"
+                    class="flex items-center gap-x-2 mt-2 text-white"
+                    data-textblack=""
+                    ><i class="fa-solid fa-location-dot text-xl"></i>
+                    <p class="text-lg font-[500] mt-1">Nürnberg, Germany</p></a
+                  >
+                  <a
+                    href="whatsapp://send?text=Hallo, ich interessiere mich für einen PC!&phone=+49 176 41742121"
+                    class="flex items-center gap-x-2 mt-2 text-white"
+                    data-textblack=""
+                    ><i class="fa-brands fa-whatsapp text-xl"></i>
+                    <p class="text-lg font-[500] mt-1">
+                      Write us on Whatsapp
+                    </p></a
+                  >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.2189984431245!2d11.032724921755213!3d49.41863561456515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f56cf79bcd5d1%3A0xc33fcd0731675e89!2sR%C3%B6thenbacher%20Hauptstra%C3%9Fe%2031%2C%2090449%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1740953985303!5m2!1sde!2sde"
+                    class="w-full h-[300px] mt-5 lg:h-[182px] rounded-md"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <form
+              class="lg:w-full flex flex-col gap-y-3 mt-5 lg:mt-0 lg:gap-y-5 text-white"
+              id="formForContact"
+              data-textblack=""
+            >
+              <div class="flex flex-col gap-y-1">
+                <div class="flex items-center gap-x-1">
+                  <span class="text-Accent mt-1">*</span>
+                  <label for="emailcontact" id="emailcontactplaceholder"
+                    >Name
+                  </label>
+                </div>
+                <input
+                  id="nameForContact"
+                  type="text"
+                  required
+                  class="w-full py-2 rounded-[3px] text-black px-3 outline-Primary"
+                />
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <div class="flex items-center gap-x-1">
+                  <span class="text-Accent mt-1">*</span>
+                  <label for="emailcontact">Email</label>
+                </div>
+                <input
+                  type="email"
+                  id="emailForContact"
+                  required
+                  class="w-full py-2 rounded-[3px] text-black px-3 outline-Primary"
+                />
+              </div>
+              <div class="flex flex-col gap-y-1">
+                <div class="flex items-center gap-x-1">
+                  <span class="text-Accent mt-1">*</span>
+                  <label for="emailcontact" id="messagePlaceholder"
+                    >Message
+                  </label>
+                </div>
+                <textarea
+                  name=""
+                  required
+                  class="p-2 text-black outline-none h-[100px]"
+                  placeholder="Message"
+                  id="textareaContact"
+                ></textarea>
+              </div>
+              <button
+                class="py-3 bg-Accent my-5 text-white rounded-md"
+                id="contactBtn"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery section -->
+
+      <!-- Footer Section -->
+    </main>
+    <footer class="bg-zinc-800 mt-20 text-white" data-bggray500="" id="footer">
+      <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
+        <div class="font-Overpass flex items-start md:gap-x-5 2xl:gap-x-10">
+          <div class="">
+            <a href="#home">
+              <img
+                class="rounded-md w-[85px]"
+                src="assets/Logos/rounded-logo.jpg"
+                alt=""
+            /></a>
+            <div class="mt-5">
+              <a href="mailto:info@epc-tech.de" class="flex items-start gap-x-2"
+                ><i class="fa-solid mt-1 fa-envelope text-[16px]"></i>
+                <p class="425:text-[17px]">info@epc-tech.de</p></a
+              >
+              <a
+                href="tel: +49 176 41742121"
+                class="flex items-start gap-x-2 mt-3"
+                ><i class="fa-solid fa-phone mt-1 text-[16px]"></i>
+                <p class="425:text-[17px]">+49 176 41742121</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[2px] bg-white mt-5 hidden sm:block"></div>
+        <div
+          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+        >
+          <div class="flex gap-x-5">
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Overpass">
+            <span>&#169;</span> Copyright 2025 EPC-Tech
+          </h1>
+        </div>
+      </div>
+    </footer>
+    <script src="menu.js"></script>
+    <script src="toggle.js"></script>
+    <script>
+      function sendEmail(category) {
+        let params = {
+          subject: "Get a quote",
+          from: "mkvcinemas945@gmail.com",
+          email: document.querySelector("#emailForContact").value,
+          name: document.querySelector("#nameForContact").value,
+          message: document.querySelector("#messagePlaceholder").value,
+        };
+        emailjs
+          .send("service_eeyxqg5", "<template-here-new>", params)
+          .then((message) => alert("Email Sent"));
+      }
+      document
+        .querySelector("#formForContact")
+        .addEventListener("submit", (e) => {
+          e.preventDefault();
+          document.querySelector("#textareaContact").value = "";
+          document.querySelectorAll("input").forEach((items) => {
+            items.value = "";
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="dist/style.css" rel="stylesheet" />
+    <script defer src="menu.js"></script>
+    <script defer src="changeNav.js"></script>
+    <script defer src="toggleOthers.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-black scroll-smooth transition-all duration-300" data-body="">
+    <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
+      <nav
+        class="flex items-center px-5 z-[200] justify-start lg:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-10"
+        data-bgzinc400=""
+      >
+        <div
+          class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
+        >
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+          <div
+            class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
+          >
+            <div>
+              <div
+                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+                id="toggleBtn"
+              >
+                <div
+                  class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
+                  id="toggleDiv"
+                  data-toggleDiv=""
+                >
+                  <i
+                    class="fa-solid fa-moon text-yellow-400 transition-all"
+                    id="moonsun"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-white text-black px-1 rounded-md"
+            >
+              <option class="" value="Deutsch">Deutsch</option>
+              <option class="" value="English">English</option>
+            </select>
+            <i
+              class="fa-solid fa-bars text-white text-2xl lg:hidden"
+              id="hamburger"
+              data-textblack=""
+            ></i>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-full justify-between">
+          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html#home">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+          <div
+            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
+          >
+            <div
+              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+              id="toggleBtn"
+            >
+              <div
+                class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
+                id="toggleDiv"
+                data-toggleDiv=""
+              >
+                <i
+                  class="fa-solid fa-moon text-yellow-400 transition-all"
+                  id="moonsun"
+                ></i>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
+            >
+              <option class="outline-none" value="Deutsch">Deutsch</option>
+              <option class="outline-none" value="English">English</option>
+            </select>
+            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
+        id="left"
+      >
+        <div
+          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
+          id="list"
+        >
+          <div class="flex items-center justify-between w-full mb-10">
+            <img
+              class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+              src="assets/Logos/rounded-logo.jpg"
+              alt=""
+            />
+            <i
+              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+              id="close"
+              data-textblack=""
+            ></i>
+          </div>
+          <ul class="flex flex-col gap-y-5">
+            <a href="index.html#home">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Home
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="impressum.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Impressum
+              </li>
+            </a>
+
+            <a href="non.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                Non's 3D Printing Corner
+              </li>
+            </a>
+            <a href="about.html">
+              <li
+                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                data-allListItems=""
+              >
+                About Us
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <!--Impressum Section-->
+
+      <section
+        class="flex flex-col items-center justify-center mt-5 lg:mt-10 px-6 py-20"
+      >
+        <div
+          class="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full text-gray-800"
+        >
+          <h1
+            class="text-4xl font-bold text-center text-gray-900 border-b pb-4"
+          >
+            Impressum
+          </h1>
+          <div class="mt-5">
+            <div
+              class="itrk-legaltext"
+              data-itrk-legaltext-url="https://itrk.legal/PDp.0.JlS-iframe.html"
+            ></div>
+            <script src="https://www.it-recht-kanzlei.de/js/itrk-legaltext.js"></script>
+          </div>
+        </div>
+        <a href="datenschutz.html">
+          <button
+            class="text-white bg-Primary px-10 py-3 mt-5 rounded-md font-[500]"
+          >
+            Datenschutz
+          </button></a
+        >
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-zinc-800 text-white" id="footer">
+      <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
+        <div class="font-Overpass flex items-start md:gap-x-5 2xl:gap-x-10">
+          <div class="">
+            <a href="#home">
+              <img
+                class="rounded-md w-[85px]"
+                src="assets/Logos/rounded-logo.jpg"
+                alt=""
+            /></a>
+            <div class="mt-5">
+              <a
+                href="mailto:info@epc-tech.de"
+                class="flex items-start gap-x-2 text-white"
+                ><i
+                  class="fa-solid mt-1 fa-envelope text-white text-[16px]"
+                ></i>
+                <p class="425:text-[17px]">info@epc-tech.de</p></a
+              >
+              <a
+                href="tel: +49 176 41742121"
+                class="flex items-start gap-x-2 mt-3 text-white"
+                ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
+                <p class="425:text-[17px]">+49 176 41742121</p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
+        <div
+          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
+        >
+          <div class="flex gap-x-5">
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-facebook text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-x-twitter text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-discord text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-instagram text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+            <div>
+              <div>
+                <i
+                  class="fa-brands fa-linkedin text-2xl hover:text-Secondary cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Overpass">
+            <span>&#169;</span> Copyright 2025 EPC-Tech
+          </h1>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="menu.js"></script> -->
+    <script>
+      const toggleBtn = document.querySelectorAll("#toggleBtn");
+      toggleBtn.forEach((items, index) => {
+        items.addEventListener("click", (e) => {
+          if (localStorage.getItem("theme") === "dark") {
+            document.querySelectorAll("[data-toggleDiv]").forEach((items3) => {
+              items3.classList.toggle("translate-x-[40px]");
+              items3.classList.remove("bg-white");
+              items3.classList.add("bg-slate-900");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-sun");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-moon");
+            });
+
+            toggleBtn.forEach((items2) => {
+              items2.classList.add("bg-slate-300");
+            });
+            toggleBtn.forEach((items2) => {
+              items2.classList.remove("bg-slate-900");
+            });
+
+            document
+              .querySelectorAll("#moonsun")
+              [index].classList.add("animate-[spin_.6s_ease-out]");
+            setTimeout(() => {
+              document
+                .querySelectorAll("#moonsun")
+                [index].classList.remove("animate-[spin_.6s_ease-out]");
+            }, 600);
+
+            document.querySelector("[data-body]").classList.add("bg-white");
+            document.querySelector("[data-body]").classList.remove("bg-black");
+
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-400");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-800");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
+
+            document.querySelector("#footer").classList.toggle("bg-gray-500");
+            document.querySelector("#footer").classList.toggle("bg-zinc-800");
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-black");
+                items.classList.toggle("bg-slate-900");
+                items.classList.toggle("bg-white");
+                items.classList.toggle("text-white");
+              });
+          } else {
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-black");
+                items.classList.toggle("bg-slate-900");
+                items.classList.toggle("bg-white");
+                items.classList.toggle("text-white");
+              });
+            document.querySelectorAll("[data-toggleDiv]").forEach((items2) => {
+              items2.classList.toggle("translate-x-[40px]");
+              items2.classList.add("bg-white");
+              items2.classList.remove("bg-slate-900");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-sun");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-moon");
+            });
+
+            toggleBtn.forEach((items2) => {
+              items2.classList.remove("bg-slate-300");
+            });
+            toggleBtn.forEach((items2) => {
+              items2.classList.add("bg-slate-900");
+            });
+            document
+              .querySelectorAll("#moonsun")
+              [index].classList.add("animate-[spin_.6s_ease-out]");
+            setTimeout(() => {
+              document
+                .querySelectorAll("#moonsun")
+                [index].classList.remove("animate-[spin_.6s_ease-out]");
+            }, 600);
+
+            document.querySelector("[data-body]").classList.toggle("bg-white");
+            document.querySelector("[data-body]").classList.toggle("bg-black");
+
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-400");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-800");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
+
+            document.querySelector("#footer").classList.toggle("bg-gray-500");
+            document.querySelector("#footer").classList.toggle("bg-zinc-800");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
