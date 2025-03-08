@@ -117,6 +117,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
@@ -125,6 +126,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-gallery=""
               >
                 Gallery
               </li>
@@ -133,6 +135,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-service=""
               >
                 Services
               </li>
@@ -158,6 +161,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-aboutus=""
               >
                 About Us
               </li>
@@ -219,6 +223,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
@@ -227,6 +232,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-gallery=""
               >
                 Gallery
               </li>
@@ -235,6 +241,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-service=""
               >
                 Services
               </li>
@@ -260,6 +267,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-aboutus=""
               >
                 About Us
               </li>
@@ -1066,21 +1074,10 @@
               items.classList.add("bg-Accent");
             }
           });
-          // getItems();
         }
       });
     });
-    // if (document.body.classList.contains("bg-black")) {
-    //   services.forEach((items) => {
-    //     if (items.classList.contains("bg-Accent")) {
-    //       items.classList.remove("bg-Primary");
-    //       items.classList.add("bg-Accent");
-    //     } else if (items.classList.contains("bg-Primary")) {
-    //       items.classList.remove("bg-Primary");
-    //       items.classList.add("bg-Accent");
-    //     }
-    //   });
-    // }
+
     function sendEmail(category) {
       let params = {
         subject: "Get a quote",
@@ -1189,20 +1186,21 @@
         items.value = "";
       });
     });
-
-    // if (!localStorage.getItem("theme") === "dark") {
-    //   document.querySelector("[data-allService]").classList.add("text-white");
-    //   document
-    //     .querySelector("[data-allService]")
-    //     .classList.remove("text-black");
-    //   document
-    //     .querySelector("[data-allService]")
-    //     .classList.remove("bg-zinc-800");
-    //   document.querySelector("[data-allService]").classList.add("bg-slate-100");
-    // }
-
     toggler.forEach((items) => {
       if (items.value == "Deutsch") {
+        document.querySelectorAll("[data-home]").forEach((items, i) => {
+          items.innerText = "Hime";
+        });
+        document.querySelectorAll("[data-gallery]").forEach((items) => {
+          items.innerText = "Galerie";
+        });
+        document.querySelectorAll("[data-service]").forEach((items, i) => {
+          items.innerText = "Dienstleistungen";
+        });
+        document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+          items.innerText = "Über uns";
+        });
+
         document.querySelectorAll("[data-tabs]")[0].id = "pcgebäude";
         document.querySelectorAll("[data-tabs]")[2].id = "kleinereparaturen";
         document.querySelector("#pcbuildingText").innerText = "PC Gebäude";
@@ -1241,6 +1239,18 @@
         document.querySelector("#repairsButton").innerText =
           "Holen Sie sich ein Angebot";
       } else {
+        document.querySelectorAll("[data-home]").forEach((items, i) => {
+          items.innerText = "Home";
+        });
+        document.querySelectorAll("[data-gallery]").forEach((items) => {
+          items.innerText = "Gallery";
+        });
+        document.querySelectorAll("[data-service]").forEach((items, i) => {
+          items.innerText = "Services";
+        });
+        document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+          items.innerText = "About Us";
+        });
         document.querySelectorAll("[data-tabs]")[0].id = "pcbuilding";
         document.querySelectorAll("[data-tabs]")[2].id = "smallrepairs";
         document.querySelector("#pcbuildingText").innerText = "PC Building";
@@ -1276,6 +1286,18 @@
       }
       items.addEventListener("change", () => {
         if (items.value == "Deutsch") {
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Hime";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Galerie";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Dienstleistungen";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "Über uns";
+          });
           document.querySelectorAll("[data-tabs]")[0].id = "pcgebäude";
           document.querySelectorAll("[data-tabs]")[2].id = "kleinereparaturen";
           document.querySelector("#pcbuildingText").innerText = "PC Gebäude";
@@ -1316,6 +1338,18 @@
           document.querySelector("#repairsButton").innerText =
             "Holen Sie sich ein Angebot";
         } else {
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Home";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Gallery";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Services";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "About Us";
+          });
           document.querySelectorAll("[data-tabs]")[0].id = "pcbuilding";
           document.querySelectorAll("[data-tabs]")[2].id = "smallrepairs";
           document.querySelector("#pcbuildingText").innerText = "PC Building";

@@ -107,6 +107,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
@@ -115,6 +116,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-gallery=""
               >
                 Gallery
               </li>
@@ -123,6 +125,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-service=""
               >
                 Services
               </li>
@@ -148,6 +151,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-aboutus=""
               >
                 About Us
               </li>
@@ -208,6 +212,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
@@ -216,6 +221,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-gallery=""
               >
                 Gallery
               </li>
@@ -224,6 +230,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-service=""
               >
                 Services
               </li>
@@ -249,6 +256,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-aboutus=""
               >
                 About Us
               </li>
@@ -264,7 +272,7 @@
         >
           <div class="w-full md:w-1/3 flex justify-center">
             <img
-              src="https://www.kommune21.de/wp-content/uploads/2025/01/3D-Modell-Nuernberg-Screen-1320x883.jpg"
+              src="https://placehold.co/300"
               alt="Your Picture"
               class="rounded-2xl shadow-lg w-64 h-64 object-cover"
             />
@@ -454,6 +462,18 @@
       const toggler = document.querySelectorAll("[data-languageSelection]");
       toggler.forEach((items) => {
         if (items.value == "Deutsch") {
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Hime";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Galerie";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Dienstleistungen";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "Über uns";
+          });
           document.querySelector("#aboutmeText").innerText = "Über mich";
           document.querySelector("#aboutmePara").innerHTML =
             "Ich hatte eine Leidenschaft dafür<strong> PC-Bau und technische Reparaturen</strong> seit ich jung war. Was als Hobby begann, entwickelte sich schnell zu etwas mehr, als mir klar wurde, wie überteuert vorgefertigte Systeme waren. Ich wollte anbieten <strong>erschwingliche, hochwertige und maßgeschneiderte Lösungen</strong> für Menschen, die einen zuverlässigen PC benötigen, der genau ihren Anforderungen entspricht.";
@@ -470,6 +490,18 @@
           document.querySelector("#warrantyBtn").innerHTML =
             "Holen Sie sich Unterstützung";
         } else {
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Home";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Gallery";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Services";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "About Us";
+          });
           document.querySelector("#aboutmeText").innerText = "About Me";
           document.querySelector("#aboutmePara").innerHTML =
             "I've been passionate about <strong> PC building and tech repairs</strong>since I was young. What started as a hobby quickly turned into something more when I realized how overpriced pre-built systems were. I wanted to offer <strong>affordable, high-quality, and customized solutions</strong> or people who need a reliable PC that fits their exact needs.";
@@ -486,6 +518,18 @@
         }
         items.addEventListener("change", () => {
           if (items.value == "Deutsch") {
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Hime";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Galerie";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Dienstleistungen";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "Über uns";
+            });
             document.querySelector("#aboutmeText").innerText = "Über mich";
             document.querySelector("#aboutmePara").innerHTML =
               "Ich hatte eine Leidenschaft dafür<strong> PC-Bau und technische Reparaturen</strong> seit ich jung war. Was als Hobby begann, entwickelte sich schnell zu etwas mehr, als mir klar wurde, wie überteuert vorgefertigte Systeme waren. Ich wollte anbieten <strong>erschwingliche, hochwertige und maßgeschneiderte Lösungen</strong> für Menschen, die einen zuverlässigen PC benötigen, der genau ihren Anforderungen entspricht.";
@@ -502,6 +546,18 @@
             document.querySelector("#warrantyBtn").innerHTML =
               "Holen Sie sich Unterstützung";
           } else {
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Home";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Gallery";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Services";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "About Us";
+            });
             document.querySelector("#aboutmeText").innerText = "About Me";
             document.querySelector("#aboutmePara").innerHTML =
               "I've been passionate about <strong> PC building and tech repairs</strong>since I was young. What started as a hobby quickly turned into something more when I realized how overpriced pre-built systems were. I wanted to offer <strong>affordable, high-quality, and customized solutions</strong> or people who need a reliable PC that fits their exact needs.";

@@ -99,10 +99,11 @@
         </div>
         <div class="flex items-center lg:w-full justify-between">
           <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
-            <a href="index.html#home">
+            <a href="index.html">
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
@@ -111,6 +112,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-gallery=""
               >
                 Gallery
               </li>
@@ -119,6 +121,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-services=""
               >
                 Services
               </li>
@@ -144,6 +147,7 @@
               <li
                 class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-aboutus=""
               >
                 About Us
               </li>
@@ -200,10 +204,11 @@
             ></i>
           </div>
           <ul class="flex flex-col gap-y-5">
-            <a href="index.html#home">
+            <a href="index.html">
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
@@ -212,6 +217,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-gallery=""
               >
                 Gallery
               </li>
@@ -220,6 +226,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-services=""
               >
                 Services
               </li>
@@ -245,6 +252,7 @@
               <li
                 class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
                 data-allListItems=""
+                data-aboutus=""
               >
                 About Us
               </li>
@@ -330,7 +338,7 @@
       <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
         <div class="flex items-start md:gap-x-5 2xl:gap-x-10">
           <div class="">
-            <a href="#home">
+            <a href="">
               <img
                 class="rounded-md w-[85px]"
                 src="assets/Logos/rounded-logo.jpg"
@@ -407,12 +415,61 @@
       toggler.forEach((items) => {
         if (items.value == "Deutsch") {
           document.querySelector("#galleryHeading").innerText = "Galerie";
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Hime";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Galerie";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Dienstleistungen";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "Über uns";
+          });
+        } else {
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Home";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Gallery";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Services";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "About Us";
+          });
         }
         items.addEventListener("change", (e) => {
           if (items.value == "Deutsch") {
             document.querySelector("#galleryHeading").innerText = "Galerie";
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Hime";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Galerie";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Dienstleistungen";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "Über uns";
+            });
           } else {
             document.querySelector("#galleryHeading").innerText = "Gallery";
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Home";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Gallery";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Services";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "About Us";
+            });
           }
         });
       });

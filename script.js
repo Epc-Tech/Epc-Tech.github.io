@@ -1,10 +1,25 @@
 const toggler = document.querySelectorAll("[data-languageSelection]");
-
-// translate-x-[40px]
 toggler.forEach((items) => {
   if (items.value == "Deutsch") {
-    document.querySelector("#heading").innerHTML =
-      "<span class='text-Accent font-[600]' id='spans'>Benutzerdefinierte PCs</span> sind in Sicht";
+    if (localStorage.getItem("theme") === "white") {
+      document.querySelector("#heading").innerHTML =
+        "<span class='text-Primary font-[600]' id='spans'>Benutzerdefinierte PCs</span> sind in Sicht";
+    } else {
+      document.querySelector("#heading").innerHTML =
+        "<span class='text-Accent font-[600]' id='spans'>Benutzerdefinierte PCs</span> sind in Sicht";
+    }
+    document.querySelectorAll("[data-home]").forEach((items, i) => {
+      items.innerText = "Hime";
+    });
+    document.querySelectorAll("[data-gallery]").forEach((items) => {
+      items.innerText = "Galerie";
+    });
+    document.querySelectorAll("[data-service]").forEach((items, i) => {
+      items.innerText = "Dienstleistungen";
+    });
+    document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+      items.innerText = "Über uns";
+    });
     document.querySelector("#titleP").innerText =
       "Keine Notwendigkeit für überteuerte Sonderanfertigungen. Pro Kunde erstellt, keine versteckten Kosten.";
     document.querySelector("#quoteBtn").innerText =
@@ -34,8 +49,25 @@ toggler.forEach((items) => {
     document.querySelector("#textareaContact").placeholder = "Nachricht";
     document.querySelector("#contactBtn").innerText = "einreichen";
   } else {
-    document.querySelector("#heading").innerHTML =
-      "<span class='text-Accent font-[600]' id='spans'>Custom PC's </span> are on the Horizon";
+    if (localStorage.getItem("theme") === "white") {
+      document.querySelector("#heading").innerHTML =
+        "<span class='text-Primary font-[600]' id='spans'>Custom PCs</span> are on the horizon";
+    } else {
+      document.querySelector("#heading").innerHTML =
+        "<span class='text-Accent font-[600]' id='spans'>Custom PCs</span> are on the horizon";
+    }
+    document.querySelectorAll("[data-home]").forEach((items, i) => {
+      items.innerText = "Home";
+    });
+    document.querySelectorAll("[data-gallery]").forEach((items) => {
+      items.innerText = "Gallery";
+    });
+    document.querySelectorAll("[data-service]").forEach((items, i) => {
+      items.innerText = "Services";
+    });
+    document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+      items.innerText = "About Us";
+    });
     document.querySelector("#titleP").innerText =
       "No need for overpriced custom builds. Built per customer, no hidden costs.";
     document.querySelector("#quoteBtn").innerText = "Get a quote";
@@ -68,8 +100,29 @@ toggler.forEach((items) => {
   }
   items.addEventListener("change", () => {
     if (items.value == "Deutsch") {
-      document.querySelector("#heading").innerHTML =
-        "<span class='text-newAccent font-[600]'>Benutzerdefinierte PCs</span> sind in Sicht";
+      if (localStorage.getItem("theme") === "white") {
+        document.querySelector("#heading").innerHTML =
+          "<span class='text-Primary font-[600]' id='spans'>Benutzerdefinierte PCs</span> sind in Sicht";
+      } else {
+        document.querySelector("#heading").innerHTML =
+          "<span class='text-Accent font-[600]' id='spans'>Benutzerdefinierte PCs</span> sind in Sicht";
+      }
+      document.querySelectorAll("[data-home]").forEach((items, i) => {
+        items.innerText = "Hime";
+      });
+      document.querySelectorAll("[data-gallery]").forEach((items) => {
+        items.innerText = "Galerie";
+      });
+      document.querySelectorAll("[data-service]").forEach((items, i) => {
+        items.innerText = "Dienstleistungen";
+      });
+      document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+        items.innerText = "Über uns";
+      });
+      document.querySelector("[data-home]").innerText = "Hime";
+      document.querySelector("[data-gallery]").innerText = "Galerie";
+      document.querySelector("[data-service]").innerText = "Dienstleistungen";
+      document.querySelector("[data-aboutus]").innerText = "Über uns";
       document.querySelector("#titleP").innerText =
         "Keine Notwendigkeit für überteuerte Sonderanfertigungen. Pro Kunde erstellt, keine versteckten Kosten.";
       document.querySelector("#quoteBtn").innerText =
@@ -101,8 +154,25 @@ toggler.forEach((items) => {
       document.querySelector("#textareaContact").placeholder = "Nachricht";
       document.querySelector("#contactBtn").innerText = "einreichen";
     } else {
-      document.querySelector("#heading").innerHTML =
-        "<span class='text-Accent font-[600]'>Custom PC's </span> are on the Horizon";
+      if (localStorage.getItem("theme") === "white") {
+        document.querySelector("#heading").innerHTML =
+          "<span class='text-Primary font-[600]' id='spans'>Custom PCs</span> are on the horizon";
+      } else {
+        document.querySelector("#heading").innerHTML =
+          "<span class='text-Accent font-[600]' id='spans'>Custom PCs</span> are on the horizon";
+      }
+      document.querySelectorAll("[data-home]").forEach((items, i) => {
+        items.innerText = "Home";
+      });
+      document.querySelectorAll("[data-gallery]").forEach((items) => {
+        items.innerText = "Gallery";
+      });
+      document.querySelectorAll("[data-service]").forEach((items, i) => {
+        items.innerText = "Services";
+      });
+      document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+        items.innerText = "About Us";
+      });
       document.querySelector("#titleP").innerText =
         "No need for overpriced custom builds. Built per customer, no hidden costs.";
       document.querySelector("#quoteBtn").innerText = "Get a quote";
