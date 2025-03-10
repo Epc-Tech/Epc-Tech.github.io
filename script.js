@@ -38,17 +38,17 @@ toggler.forEach((items) => {
       "Einblick in unsere Arbeit";
     document.querySelector("#ourservices").innerText = "Unsere Leistungen";
     document.querySelector("#servicesPara").innerText =
-      "Wir bieten eine Vielzahl an Reparatur- und Anpassungsservices. Egal, ob dueine schnelle Reparatur oder einen individuellen PC-Bau benötigst – wir helfendir weiter. Schau dir hier an, was wir anbieten, und finde die passende Lösung für dich.";
+      "Wir bieten eine Vielzahl an Reparatur- und Anpassungsservices. Egal, ob Sie eine schnelle Reparatur oder einen individuellen PC-Bau benötigen – wir helfen Ihnen weiter. Schauen Sie hier an, was wir anbieten, und finden Sie die passende Lösung.";
     document.querySelector("#servicesBtn").innerHTML =
       "Dienstleistungen<i class='fa-solid fa-arrow-right'></i>";
     document.querySelector("#ourgallery").innerHTML = "Unsere Galerie";
     document.querySelector("#galleryPara").innerHTML =
-      "Werfe einen Blick auf unsere bisherigen Projekte! Unsere Galerie zeigt die PC's Builds und Reparaturen, die wir bereits durchgeführt haben. Lass dich inspirieren!";
+      "Werfen Sie einen Blick auf unsere bisherigen Projekte! Unsere Galerie zeigt die PC's Builds und Reparaturen, die wir bereits durchgeführt haben. Lass dich inspirieren!";
     document.querySelector("#galleryBtn").innerHTML =
       "Galerie<i class='fa-solid fa-arrow-right'></i>";
     document.querySelector("#aboutusText").innerHTML = "Über uns";
     document.querySelector("#aboutusPara").innerHTML =
-      "Bei EPC-Tech bauen und reparieren wir PCs seit 2019. Mit jedem Projekt wächst unsere Erfahrung, sodass wir stets hochwertige Ergebnisse liefern können. Deine Technik ist bei uns in guten Händen.";
+      "Bei EPC-Tech bauen und reparieren wir PCs seit 2019. Mit jedem Projekt wächst unsere Erfahrung, sodass wir stets hochwertige Ergebnisse liefern können. Ihre Technik ist bei uns in guten Händen.";
     document.querySelector("#aboutusBtn").innerHTML =
       "Über uns<i class='fa-solid fa-arrow-right'></i>";
     document.querySelector("#contacHeading").innerText = "Kontaktieren Sie uns";
@@ -154,7 +154,7 @@ toggler.forEach((items) => {
       });
       document.querySelector("[data-daten]").innerText = "Datenschutz";
       document.querySelector("#titleP").innerText =
-        "Nie wieder zu viel für einen PC bezahlen. Individuell zusammengestellt für jeden Kunden.";
+        "Nie wieder zu viel für Ihren PC bezahlen. Individuell zusammengestellt für jeden Kunden.";
       document.querySelector("#quoteBtn").innerText =
         "Holen Sie sich ein Angebot";
       document.querySelector("#serviceweprovideHeading").innerText =
