@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
@@ -36,83 +41,149 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="dist/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script defer src="toggleOthers.js"></script>
+    <script defer src="changeNav.js"></script>
+    <link href="dist/style.css" rel="stylesheet" />
+    <title>Document</title>
   </head>
-  <body class="text-white">
-    <main
-      class="px-5 font-RobotoFlex relative 500:px-7 md:px-12 xl:px-20 2xl:px-40"
-      id=""
-    >
+  <body class="bg-black scroll-smooth transition-all duration-300" data-body="">
+    <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
       <nav
-        class="flex items-center z-[200] justify-start lg:gap-x-10 text-white py-5 w-full sticky top-[-1px] lg:left-0 bg-black lg:bg-zinc-800 lg:top-[25px] lg:rounded-full lg:py-3 lg:mt-5 lg:px-10"
+        class="flex items-center px-5 z-[200] justify-start lg:gap-x-0 2xl:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-5 xl:px-10"
+        data-bgzinc400=""
       >
-        <div class="flex relative items-center justify-between w-full lg:w-fit">
+        <div
+          class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
+        >
           <img
             class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
             src="assets/Logos/rounded-logo.jpg"
             alt=""
           />
-
-          <div class="flex gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden">
-            <select name="" data-languageSelection="" class="text-black">
-              <option value="English">English</option>
-              <option value="Deutsch">Deutsch</option>
+          <div
+            class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
+          >
+            <div>
+              <div
+                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all cursor-pointer"
+                id="toggleBtn"
+              >
+                <div
+                  class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
+                  id="toggleDiv"
+                  data-toggleDiv=""
+                >
+                  <i
+                    class="fa-solid fa-moon text-yellow-400 transition-all"
+                    id="moonsun"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-white text-black px-1 rounded-md"
+            >
+              <option class="" value="Deutsch">Deutsch</option>
+              <option class="" value="English">English</option>
             </select>
-            <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
+            <i
+              class="fa-solid fa-bars text-white text-2xl cursor-pointer lg:hidden"
+              id="hamburger"
+              data-textblack=""
+            ></i>
           </div>
         </div>
         <div class="flex items-center lg:w-full justify-between">
-          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+          <ul class="hidden lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
             <a href="index.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
             </a>
-            <a href="gallery.html">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              >
-                Gallery
-              </li>
-            </a>
             <a href="service.html#service">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-service=""
               >
                 Services
               </li>
             </a>
-            <a href="impressum.html">
+            <a href="gallery.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-gallery=""
               >
-                Impressum
+                Gallery
+              </li>
+            </a>
+            <a href="announcement.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-accounce=""
+              >
+                Announcements
               </li>
             </a>
 
-            <a href="non.html">
+            <a href="about.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              >
-                Non's 3D Printing Corner
-              </li>
-            </a>
-            <a href="about.html">
-              <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-aboutus=""
               >
                 About Us
               </li>
             </a>
+
+            <a href="impressum.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-legal=""
+              >
+                Legal Notice
+              </li>
+            </a>
           </ul>
           <div
-            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10"
+            class="flex gap-x-5 sm:gap-x-5 2xl:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
           >
-            <select name="" data-languageSelection="" class="text-black">
-              <option value="English">English</option>
-              <option value="Deutsch">Deutsch</option>
+            <div
+              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+              id="toggleBtn"
+            >
+              <div
+                class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms] cursor-pointer"
+                id="toggleDiv"
+                data-toggleDiv=""
+              >
+                <i
+                  class="fa-solid fa-moon text-yellow-400 transition-all"
+                  id="moonsun"
+                ></i>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
+            >
+              <option class="outline-none" value="Deutsch">Deutsch</option>
+              <option class="outline-none" value="English">English</option>
             </select>
             <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
           </div>
@@ -123,7 +194,7 @@
         id="left"
       >
         <div
-          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-zinc-800 w-full left-0 top-0"
+          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
           id="list"
         >
           <div class="flex items-center justify-between w-full mb-10">
@@ -133,174 +204,584 @@
               alt=""
             />
             <i
-              class="fa-solid fa-close text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+              class="fa-solid fa-close cursor-pointer text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
               id="close"
+              data-textblack=""
             ></i>
           </div>
           <ul class="flex flex-col gap-y-5">
             <a href="index.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-home=""
               >
                 Home
               </li>
             </a>
-            <a href="gallery.html">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              >
-                Gallery
-              </li>
-            </a>
             <a href="service.html#service">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-service=""
               >
                 Services
               </li>
             </a>
-            <a href="impressum.html">
+            <a href="gallery.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-gallery=""
               >
-                Impressum
+                Gallery
+              </li>
+            </a>
+            <a href="announcement.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-accounce=""
+              >
+                Announcements
               </li>
             </a>
 
-            <a href="non.html">
+            <a href="about.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              >
-                Non's 3D Printing Corner
-              </li>
-            </a>
-            <a href="about.html">
-              <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-aboutus=""
               >
                 About Us
+              </li>
+            </a>
+
+            <a href="impressum.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-legal=""
+              >
+                Legal Notice
               </li>
             </a>
           </ul>
         </div>
       </div>
       <!-- About Me Section -->
-      <section
-        class="flex flex-col md:flex-row items-center justify-center bg-zinc-800 px-6 py-16 mt-10"
-      >
-        <div class="w-full md:w-1/3 flex justify-center">
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Your Picture"
-            class="rounded-2xl shadow-lg w-64 h-64 object-cover"
-          />
-        </div>
-        <div
-          class="w-full md:w-2/3 text-center md:text-left mt-6 md:mt-0 md:pl-10"
+      <div class="px-5 500:px-7 md:px-12 lg:px-0">
+        <section
+          class="flex flex-col md:flex-row justify-start bg-zinc-800 py-16 mt-10 rounded-lg"
+          data-sectionColor=""
         >
-          <h2 class="text-4xl font-bold text-white" id="aboutmeText">
-            About Me
-          </h2>
-          <p class="text-lg text-gray-200 mt-4" id="aboutmePara">
-            I've been passionate about
-            <strong>PC building and tech repairs</strong> since I was young.
-            What started as a hobby quickly turned into something more when I
-            realized how overpriced pre-built systems were. I wanted to offer
-            <strong>affordable, high-quality, and customized solutions</strong>
-            for people who need a reliable PC that fits their exact needs.
-          </p>
-          <p class="text-lg text-gray-200 mt-4" id="aboutmeParaTwo">
-            Unlike big retailers, I work closely with my customers to ensure
-            they get a personalized experience. Whether you're new to PCs or a
-            tech enthusiast, I'm here to provide
-            <strong
-              >expert guidance, honest pricing, and hands-on support</strong
+          <div
+            class="mx-auto w-[300px] md:w-[350px] lg:w-[50%] lg:max-w-[500px]"
+          >
+            <img
+              src="assets/tools-support.png"
+              alt="Warranty Support"
+              class="rounded-2xl shadow-lg w-full"
+            />
+          </div>
+          <div
+            class="w-full md:w-[50%] text-start md:text-left mt-6 md:mt-0 px-5 lg:px-10"
+          >
+            <h2
+              class="text-4xl font-bold text-white"
+              id="aboutmeText"
+              data-whitemode=""
             >
-            for your system. Let’s build something great together!
-          </p>
-          <a
-            href="/contact"
-            id="aboutusTouchBtn"
-            class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
-          >
-            Get in Touch
-          </a>
-        </div>
-      </section>
+              About Me
+            </h2>
+            <p
+              class="text-lg text-gray-200 mt-4"
+              id="aboutmePara"
+              data-whitemodePara=""
+            >
+              I've been passionate about
+              <strong>PC building and tech repairs</strong> since I was young.
+              What started as a hobby quickly turned into something more when I
+              realized how overpriced pre-built systems were. I wanted to offer
+              <strong
+                >affordable, high-quality, and customized solutions</strong
+              >
+              for people who need a reliable PC that fits their exact needs.
+            </p>
+            <p
+              class="text-lg text-gray-200 mt-4"
+              id="aboutmeParaTwo"
+              data-whitemodePara=""
+            >
+              Unlike big retailers, I work closely with my customers to ensure
+              they get a personalized experience. Whether you're new to PCs or a
+              tech enthusiast, I'm here to provide
+              <strong
+                >expert guidance, honest pricing, and hands-on support</strong
+              >
+              for your system. Let’s build something great together!
+            </p>
+            <p
+              class="text-lg text-gray-200 mt-4"
+              id="aboutmeParaThree"
+              data-whitemodePara=""
+            >
+              My goal isn’t just to make money—it’s to make technology
+              <b>accessible and fair.</b> I believe in <b>honest pricing</b>,
+              clear communication, and giving people exactly what they need
+              without unnecessary extras. If you're looking for a
+              <b>custom-built PC, an upgrade, or a small repair,</b> I’d be
+              happy to help!
+            </p>
+            <a
+              href="/contact"
+              id="aboutusTouchBtn"
+              class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </section>
 
-      <!-- Warranty & Support Section -->
-      <section
-        class="flex flex-col md:flex-row items-center justify-center bg-zinc-800 px-6 py-16 mt-5"
-      >
-        <div class="w-full md:w-1/3 flex justify-center">
-          <img
-            src="assets/tools-support.png"
-            alt="Warranty Support"
-            class="rounded-2xl shadow-lg w-64 h-64 object-cover"
-          />
-        </div>
-        <div
-          class="w-full md:w-2/3 text-center md:text-left mt-6 md:mt-0 md:pl-10"
+        <!-- Warranty & Support Section -->
+        <section
+          class="flex flex-col md:flex-row items-center justify-start bg-zinc-800 px-10 py-16 mt-5 rounded-lg"
+          data-sectionColor=""
         >
-          <h2 class="text-4xl font-bold text-white" id="warrantyText">
-            Warranty & Support
-          </h2>
-          <p class="text-lg text-gray-200 mt-4" id="warrantyPara">
-            I offer a <strong>two-year general warranty</strong> on every PC I
-            build, ensuring that if anything goes wrong within that time, I will
-            take care of it. Every component also comes with its
-            <strong>own manufacturer warranty</strong>, and if a part like your
-            RAM, CPU, or GPU has extended coverage (up to 5 years in some
-            cases), I will personally assist in navigating the warranty process.
-          </p>
-          <p class="text-lg text-gray-200 mt-4" id="warrantyParaTwo">
-            My commitment doesn’t stop when my own warranty ends. If something
-            happens, I will check with the **manufacturer or retailer** to see
-            if you’re still eligible for a replacement or repair. No unnecessary
-            complications—just honest and reliable support to ensure your system
-            runs smoothly.
-          </p>
-          <a
-            href="/contact"
-            id="warrantyBtn"
-            class="mt-6 inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-300"
+          <div class="w-full lg:flex lg:gap-x-10 text-start mt-6 md:mt-0">
+            <div class="mx-auto w-full">
+              <img
+                src="https://placehold.co/400"
+                alt="Warranty Support"
+                class="rounded-2xl shadow-lg w-full"
+              />
+            </div>
+
+            <div
+              class="text-lg text-gray-200 mt-4"
+              id="warrantyPara"
+              data-whitemodePara=""
+            >
+              <h2
+                class="text-4xl font-bold text-white"
+                data-whitemode=""
+                id="warrantyText"
+              >
+                What Makes Me Different
+              </h2>
+              <p id="firstSectionAbout">
+                Unlike big retailers, I offer <b>fully custom-built PCs</b>—no
+                generic pre-built systems, no one-size-fits-all solutions. I
+                believe that
+                <b>every person is different, and their PC should be too.</b>
+                Whether you need a powerful workstation, a budget-friendly
+                gaming setup, or something in between, I make sure that your
+                build is tailored to your specific needs, preferences, and
+                budget.
+              </p>
+              <p class="mt-5" id="firstSectionAboutTwo">
+                What also sets me apart is my
+                <b>direct and personal customer support.</b> There’s no AI
+                chatbot, no long wait times—when you have a question or an
+                issue, you can reach out to me directly. If something isn’t
+                working, I’ll check it out—no hassle, no unnecessary delays. I
+                value clear and open communication, meaning you won’t have to
+                wait <b>three to five business days</b> for a response. If you
+                text me, I’ll get back to you as soon as I can.
+              </p>
+              <div>
+                <p class="mt-5" id="firstSectionAboutThree">
+                  Additionally, I make sure that:
+                </p>
+                <ul class="ml-10 mt-3 list-disc">
+                  <li id="firstSectionAboutFirstDisc">
+                    <b>Every PC is tested</b> before it reaches the customer
+                  </li>
+                  <li id="firstSectionAboutSecondDisc">
+                    I provide <b>ongoing support,</b> so you're not left
+                    figuring things out alone.
+                  </li>
+                  <li id="firstSectionAboutThirdDisc">
+                    I take the time to <b>understand your needs,</b> ensuring
+                    you get the best build possible.
+                  </li>
+                </ul>
+              </div>
+              <p class="mt-5" id="firstSectionAboutFour">
+                When you buy a PC from me, you're not just getting a
+                product—you're getting
+                <b
+                  >a service built on trust, expertise, and real customer
+                  care</b
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex flex-col md:flex-row items-center justify-start bg-zinc-800 px-10 py-16 mt-5 rounded-lg hidden"
+          data-sectionColor=""
+        >
+          <div class="w-full text-start md:text-left mt-6 md:mt-0">
+            <h2
+              class="text-4xl font-bold text-white"
+              data-whitemode=""
+              id="PcText"
+            >
+              Custom PC Building
+            </h2>
+            <div
+              class="text-lg text-gray-200 mt-4"
+              id="warrantyPara"
+              data-whitemodePara=""
+            >
+              <p id="secondAbout">
+                Every PC I build is <b>fully custom-made,</b> designed
+                specifically for your needs—no generic pre-built systems.
+                Whether you’re a first-time buyer or a tech enthusiast, I’ll
+                guide you through the process to ensure you get the best
+                possible setup.
+              </p>
+            </div>
+            <div class="mt-5" data-whitemode="">
+              <p id="secondAboutTwo" class="mt-5 text-lg">
+                <b>For Beginners</b>
+              </p>
+              <p class="mt-3" id="secondAboutThree">
+                Not sure what you need? No problem! You’ll simply
+                <b>check a box</b>
+                indicating that this is your <b>first PC,</b> and I’ll guide you
+                step by step. You’ll answer a few simple questions like:
+              </p>
+              <div>
+                <ul class="ml-10 mt-3 list-disc">
+                  <li id="secondDiscOne">
+                    <b>What will you use the PC for?</b> (e.g., gaming, work,
+                    video editing, general use)
+                  </li>
+                  <li id="secondDiscTwo"><b>What’s your budget?</b></li>
+                </ul>
+                <p class="mt-5" id="secondAboutFour">
+                  From there, I’ll recommend the best possible build for your
+                  needs and explain everything in
+                  <b>clear, easy-to-understand terms.</b> No overwhelming tech
+                  jargon—just honest advice.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="flex flex-col md:flex-row items-center justify-start bg-zinc-800 px-10 py-16 mt-5 rounded-lg hidden"
+          data-sectionColor=""
+        >
+          <div class="w-full text-start md:text-left mt-6 md:mt-0">
+            <h2
+              class="text-4xl font-bold text-white"
+              data-whitemode=""
+              id="Expe"
+            >
+              For Experienced Users
+            </h2>
+            <div
+              class="text-lg text-gray-200 mt-4"
+              id="warrantyPara"
+              data-whitemodePara=""
+            >
+              <p id="thirdAbout">
+                If you already know what you want, you can select your
+                <b>preferred components</b> directly, including:
+              </p>
+              <ul class="ml-10 mt-3 list-disc">
+                <li><b>GPU</b></li>
+                <li><b>CPU</b></li>
+                <li><b>RAM</b></li>
+                <li id="storage"><b>Storage</b></li>
+                <li id="caseStyle"><b>Case style</b></li>
+                <li id="priceRange"><b>Overall price range</b></li>
+              </ul>
+              <p id="thirdAboutTwo" class="mt-5">
+                Once submitted, I’ll review your selections and fine-tune the
+                build to ensure compatibility, performance, and efficiency.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex flex-col md:flex-row items-center justify-start bg-zinc-800 px-10 py-16 mt-5 rounded-lg hidden"
+          data-sectionColor=""
+        >
+          <div class="w-full text-start md:text-left mt-6 md:mt-0">
+            <h2
+              class="text-4xl font-bold text-white"
+              data-whitemode=""
+              id="includeText"
+            >
+              What's Included?
+            </h2>
+
+            <div
+              class="text-lg text-gray-200 mt-4"
+              id="warrantyPara"
+              data-whitemodePara=""
+            >
+              <p class="mt-5" id="fourAbout">Every PC comes with:</p>
+              <ul class="ml-10 mt-3 list-disc">
+                <li
+                  class="flex items-center gap-2 before:content-['✔'] before:text-green-500 before:font-bold"
+                  id="fourDisc"
+                >
+                  <b>A full setup and stress test</b> before delivery
+                </li>
+                <li
+                  class="flex items-center gap-2 before:content-['✔'] before:text-green-500 before:font-bold"
+                  id="fourDiscTwo"
+                >
+                  <b> Optional software installation</b> (upon request).
+                </li>
+                <li
+                  class="flex items-center gap-2 before:content-['✔'] before:text-green-500 before:font-bold"
+                  id="fourDiscThree"
+                >
+                  <b>Direct support if you have any questions</b> after your
+                  purchase
+                </li>
+              </ul>
+              <p class="mt-5" id="fourAboutTwo">
+                Your PC should work <b>exactly how you need it t</b>o—and I make
+                sure it does!
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex flex-col md:flex-row items-center justify-start bg-zinc-800 px-10 py-16 mt-5 rounded-lg"
+          data-sectionColor=""
+        >
+          <div
+            class="mx-auto w-[300px] md:w-[350px] lg:w-[50%] lg:max-w-[500px]"
           >
-            Get Support
-          </a>
-        </div>
-      </section>
+            <img
+              src="https://placehold.co/400"
+              alt="Warranty Support"
+              class="rounded-2xl shadow-lg w-full"
+            />
+          </div>
+
+          <div class="w-full lg:w-[50%] text-start md:text-left mt-6 md:mt-0">
+            <h2
+              class="text-4xl font-bold text-white"
+              data-whitemode=""
+              id="supportText"
+            >
+              Warranty & Support
+            </h2>
+
+            <div
+              class="text-lg text-gray-200 mt-4"
+              id="warrantyPara"
+              data-whitemodePara=""
+            >
+              <p id="warrantyAbout">
+                I offer a <b>two-year general warranty</b> on every PC I build,
+                ensuring that if anything goes wrong within that period, I’ll
+                take care of it. However, I also go beyond that— since every
+                component comes with its <b>own manufacturer warranty,</b> I
+                make sure you get the best possible coverage. If a part like
+                your <b>RAM, CPU, or GPU</b> has a warranty that extends beyond
+                my two-year coverage—such as a b five-year manufacturer
+                warranty—I will personally check with the manufacturer or
+                retailer to see if it can still be repaired or replaced. My
+                commitment doesn’t stop when my own warranty ends; I will always
+                help you <b>navigate the warranty process, </b> troubleshoot
+                issues, and ensure you get the most out of your system. Whether
+                it’s within my warranty period or covered by the manufacturer,
+                I’ll make sure you’re not left dealing with problems alone.
+              </p>
+              <a
+                href="/contact"
+                id="warrantyBtn"
+                class="mt-6 inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-300"
+              >
+                Get Support
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex flex-col md:flex-row items-center justify-start bg-zinc-800 px-10 py-16 mt-5 rounded-lg hidden"
+          data-sectionColor=""
+        >
+          <div class="w-full text-start md:text-left mt-6 md:mt-0">
+            <h2
+              class="text-4xl font-bold text-white"
+              data-whitemode=""
+              id="upgradeText"
+            >
+              PC Upgrades
+            </h2>
+
+            <div
+              class="text-lg text-gray-200 mt-4"
+              id="warrantyPara"
+              data-whitemodePara=""
+            >
+              <p id="fiveAbout">
+                Whether you’re upgrading your PC for the first time or you
+                already know exactly what you need, I offer a
+                <b>personalized approach</b> to ensure you get the best
+                performance for your budget.
+              </p>
+              <p class="mt-10"><b>For Beginners</b></p>
+              <p class="mt-2">
+                If you’re unsure about what needs to be upgraded,
+                <b>I can analyze your system</b> and help you figure it out.
+                Whether you’re trying to
+                <b>run a specific game or software,</b> I’ll check your current
+                setup, identify potential bottlenecks, and recommend the best
+                upgrade options. If something isn’t performing as it should,
+                I’ll run tests and benchmarks to <b>find the exact issue</b> and
+                suggest solutions that fit your needs.
+              </p>
+              <p class="mt-10"><b>For Experienced Users </b></p>
+              <p class="mt-2">
+                If you already know what you want, you can simply tell me which
+                parts you need, and I’ll let you know what pricing and
+                availability I can offer. Whether it’s a
+                <b>GPU, CPU, RAM, or storage upgrade,</b> I’ll ensure
+                compatibility and provide installation if needed
+              </p>
+              <p class="mt-10"><b>My Process: </b></p>
+              <ul class="ml-10 mt-3 list-disc">
+                <li
+                  class="gap-2 before:content-['✔'] before:text-green-500 before:font-bold list-none"
+                  id="fourDisc"
+                >
+                  <b>Personalized recommendations</b> based on your needs and
+                  budget.
+                </li>
+                <li
+                  class="gap-2 before:content-['✔'] before:text-green-500 before:font-bold list-none"
+                  id="fourDisc"
+                >
+                  <b>System analysis & benchmarking</b> to identify bottlenecks.
+                </li>
+                <li
+                  class="gap-2 before:content-['✔'] before:text-green-500 before:font-bold list-none"
+                  id="fourDisc"
+                >
+                  <b>Upgrade installation & testing</b> to ensure everything
+                  works smoothly
+                </li>
+                <li
+                  class="gap-2 before:content-['✔'] list-none before:text-green-500 before:font-bold"
+                  id="fourDisc"
+                >
+                  <b class="">Direct consultation</b>
+                  no unnecessary upselling, just the right upgrade for you.
+                </li>
+              </ul>
+              <p class="mt-5">
+                No matter your experience level, I take a personal look at your
+                system and make sure you get exactly what you need—nothing more,
+                nothing less
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <!-- Footer Section -->
     </main>
-    <footer class="bg-zinc-800 mt-20" id="footer">
+    <footer class="bg-zinc-800 mt-20 text-white" data-bggray500="" id="footer">
       <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
-        <div class="font-Inter flex items-start md:gap-x-5 2xl:gap-x-10">
+        <div
+          class="font-Overpass flex flex-col items-start md:gap-x-5 2xl:gap-x-10"
+        >
           <div class="">
-            <a href="#home">
+            <a href="">
               <img
                 class="rounded-md w-[85px]"
                 src="assets/Logos/rounded-logo.jpg"
                 alt=""
             /></a>
             <div class="mt-5">
-              <a
-                href="mailto:info@epc-tech.de"
-                class="flex items-start gap-x-2 text-white"
-                ><i
-                  class="fa-solid mt-1 fa-envelope text-white text-[16px]"
-                ></i>
+              <a href="mailto:info@epc-tech.de" class="flex items-start gap-x-2"
+                ><i class="fa-solid mt-1 fa-envelope text-[16px]"></i>
                 <p class="425:text-[17px]">info@epc-tech.de</p></a
               >
               <a
                 href="tel: +49 176 41742121"
-                class="flex items-start gap-x-2 mt-3 text-white"
-                ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
+                class="flex items-start gap-x-2 mt-3"
+                ><i class="fa-solid fa-phone mt-1 text-[16px]"></i>
                 <p class="425:text-[17px]">+49 176 41742121</p></a
               >
             </div>
           </div>
+          <div class="mt-5">
+            <h1 class="font-[500] text-xl tracking-wide">Links</h1>
+
+            <ul class="flex flex-col md:flex-row gap-y-2 gap-x-5 mt-2">
+              <a href="index.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-home=""
+                >
+                  Home
+                </li>
+              </a>
+              <a href="service.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-service=""
+                >
+                  Services
+                </li>
+              </a>
+              <a href="gallery.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-gallery=""
+                >
+                  Gallery
+                </li>
+              </a>
+              <a href="announcement.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-accounce=""
+                >
+                  Announcements
+                </li>
+              </a>
+
+              <a href="impressum.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-legal=""
+                >
+                  Legal Notice
+                </li>
+              </a>
+              <a href="datenschutz.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-daten=""
+                >
+                  Datenschutz
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
+        <div class="w-full h-[2px] bg-white mt-5 sm:block"></div>
         <div
           class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
         >
@@ -341,8 +822,9 @@
               </div>
             </div>
           </div>
-          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Inter">
-            <span>&#169;</span> Copyright 2025 EPC-Tech
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Overpass">
+            <span>&#169;</span>
+            <span id="copyright">Copyright 2025 EPC-Tech</span>
           </h1>
         </div>
       </div>
@@ -350,38 +832,574 @@
     <script>
       const toggler = document.querySelectorAll("[data-languageSelection]");
       toggler.forEach((items) => {
+        if (items.value == "Deutsch") {
+          document.querySelector("#copyright").innerText =
+            "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
+
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Startseite";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Galerie";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Unsere Leistungen";
+          });
+          document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+            items.innerText = "Aktuelles";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "Über uns";
+          });
+          document.querySelectorAll("[data-legal]").forEach((items, i) => {
+            items.innerText = "Impressum";
+          });
+
+          document.querySelector("[data-daten]").innerText = "Datenschutz";
+          document.querySelector("#aboutmeText").innerText = "Über mich";
+          document.querySelector("#aboutmePara").innerHTML =
+            "Ich baue und reperiere schon seit ich jung bin leidenschaftlich gerne PCs. Was einst als Hobby gestartet hat, entwickelte sich schnell in etwas größeres, als ich feststellte, wie überteuert „pre Built Systeme“ sind – egal ob online oder in Läden. Als ich das sah, dachte ich „Das kann nicht so schwer sein, ich weiß, was ich machen muss!“";
+          document.querySelector("#aboutmeParaTwo").innerHTML =
+            "Seitdem habe ich es mir zur Aufgabe gemacht, Menschen zu helfen, das beste Preis-Leistungs-Verhältnis zu erhalten, indem ich PCs baue und aufrüste, die sowohl erschwinglich als auch qualitativ hochwertig sind. Nicht jeder hat das technische Wissen und ich bin gerne die Brücke dazu – sei es, indem ich ich Anfänger anleite oder mich mit anderen Technikbegeisterten austausche.";
+          document.querySelector("#aboutmeParaThree").innerHTML =
+            "Mein Ziel ist es nicht nur Geld zu verdienen – ich will Technologie zugänglich und fair machen. Ich glaube an ehrliche Preise, klare Kommunikation und Menschen genau das zu geben, was sie brauchen – ohne unnötige Extras. Wenn Sie individuell zusammengestellten PCs, einem Upgrade oder Kleine Reperaturen brauchen, würde ich gerne helfen.";
+          document.querySelector("#aboutusTouchBtn").innerHTML =
+            "Nehmen Sie Kontakt auf";
+          document.querySelector("#warrantyText").innerHTML =
+            "Was unterscheidet mich von anderen?";
+          document.querySelector("#firstSectionAbout").innerHTML =
+            "Im Gegensatz zu großen Einzelhändlern biete ich vollständig individuell zusammengestellte PCs an – keine generischen vorgefertigten Systeme, keine Einheitslösungen. Ich glaube, dass jeder Mensch anders ist und sein PC das auch sein sollte. Egal, ob Sie eine leistungsstarke Workstation, ein preisgünstiges Gaming-Setup oder etwas dazwischen benötigen, ich stelle sicher, dass Ihr Computer auf Ihre spezifischen Bedürfnisse, Vorlieben und Ihr Budget zugeschnitten ist.";
+          document.querySelector("#firstSectionAboutTwo").innerHTML =
+            "Was mich außerdem auszeichnet, ist mein direkter und persönlicher Kundensupport. Es gibt keinen KI-Chatbot, keine langen Wartezeiten – wenn Sie eine Frage oder ein Problem haben, können Sie sich direkt an mich wenden. Wenn etwas nicht funktioniert, schaue ich es mir an – kein Ärger, keine unnötigen Verzögerungen. Ich lege Wert auf klare und offene Kommunikation, sodass Sie nicht drei bis fünf Werktage auf eine Antwort warten müssen. Wenn Sie mir eine SMS schreiben, melde ich mich so schnell wie möglich bei Ihnen. ";
+
+          document.querySelector("#firstSectionAboutThree").innerHTML =
+            "Zusätzlich stelle ich sicher, dass";
+          document.querySelector("#firstSectionAboutFirstDisc").innerHTML =
+            "Jeder PC getestet wird, bevor er den Kunden erreicht.";
+          document.querySelector("#firstSectionAboutSecondDisc").innerHTML =
+            "Ich biete kontinuierliche Unterstützung, sodass Sie nichts alleine herausfinden müssen.";
+          document.querySelector("#firstSectionAboutThirdDisc").innerHTML =
+            "Ich nehme mir Zeit, ihre Bedürfnisse zu verstehen, sodass sie die für sie Beste Zusammenstellung erhalten.";
+          document.querySelector("#firstSectionAboutFour").innerHTML =
+            "Wenn Sie von mir einen PC kaufen, kriegen Sie nicht nur ein Produkt – Sie erhalten einen Service, der auf Vertrauen, Fachwissen und ech Kundenbetreuung basiert.";
+          //
+          document.querySelector("#PcText").innerHTML = "Personalisierte PC‘s";
+          document.querySelector("#secondAbout").innerHTML =
+            "Jeden PC, den ich baue, ist komplett maßangefertigt, speziell an Ihre Bedürfnisse angepasst - keine generischen vorgefertigten Systeme. Egal, ob Sie ein Erstkäufer sind oder ein Technik-Enthusiast – ich leite Sie durch den Prozess, um sicherzustellen, dass sie das Bestmögliche Setup bekommen";
+          document.querySelector("#secondAboutTwo").innerHTML = "Für Anfänger";
+          document.querySelector("#secondAboutThree").innerHTML =
+            "Sie sind nicht sicher, was Sie brauchen? Kein Problem! Sie klicken einfach ein Kästchen, das angibt, dass dies Ihr erster PC ist, und ich werde Sie Schritt für Schritt anleiten. Sie beantworten ein paar einfache Fragen wie:";
+          document.querySelector("#secondDiscOne").innerHTML =
+            "Wofür werden Sie den PC verwenden? (z. B. Spielen, Arbeiten, Videobearbeitung, allgemeine Verwendung";
+          document.querySelector("#secondDiscTwo").innerHTML =
+            "Wie hoch ist Ihr Budget?";
+          document.querySelector("#secondAboutFour").innerHTML =
+            "Anschließend empfehle ich Ihnen die bestmögliche Lösung für Ihre Anforderungen und erkläre Ihnen alles in klaren, leicht verständlichen Worten. Kein überwältigender Fachjargon – nur ehrliche Beratung.";
+          document.querySelector("#Expe").innerHTML = "Für Fortgeschrittene:";
+          document.querySelector("#thirdAbout").innerHTML =
+            "Wenn Sie schon wissen, was Sie brauchen, können Sie Ihre benötigte Komponente direkt auswählen. Folgende stehen zur Auswahl:";
+          document.querySelector("#storage").innerHTML = "<b>Speicher</b>";
+          document.querySelector("#caseStyle").innerHTML = "<b>Gehäuse</b>";
+          document.querySelector("#priceRange").innerHTML =
+            "<b>Preisspanne</b>";
+          document.querySelector("#thirdAboutTwo").innerHTML =
+            "Nach dem Absenden überprüfe ich Ihre Auswahl und optimiere den Bau, um Kompatibilität, Leistung und Effizienz sicherzustellen.";
+          //
+          //
+          //
+          document.querySelector("#includeText").innerHTML =
+            "Was ist inbegriffen?";
+          document.querySelector("#fourAbout").innerHTML =
+            "Jeder PC kommt mit:";
+          document.querySelector("#fourDisc").innerHTML =
+            "Eine vollständige Einrichtung und ein Belastungstest vor der Auslieferung";
+          document.querySelector("#fourDiscTwo").innerHTML =
+            "Optionale Softwae Installation (soweit gewünscht).";
+          document.querySelector("#fourDiscThree").innerHTML =
+            "Direkter Support, falls sie nach dem Kauf Fragen haben";
+          document.querySelector("#fourAboutTwo").innerHTML =
+            "Ihr PC soll genau so funktionieren, wie sie es brauchen - und ich stelle sicher, dass er es tut! ";
+          ///
+          document.querySelector("#supportText").innerHTML =
+            "Garantie und Support";
+          document.querySelector("#warrantyAbout").innerHTML =
+            "Ich biete auf jeden PC, den ich baue, eine zweijährige allgemeine Garantie, die sicherstellt, dass ich mich darum kümmere, wenn innerhalb dieses Zeitraums etwa schiefgeht. Ich gehe jedoch auch darüber hinaus – da jede Komponente mit einer eigenen Herstellergarantie ausgestattet ist, stelle ich sicher, dass Sie den bestmöglichen Schutz erhalten. Wenn für ein Teil wie Ihren RAM, Ihre CPU oder Ihre GPU eine Garantie gilt, die über meine zweijährige Abdeckung hinausgeht – beispielsweise eine fünfjährige Herstellergarantie –, prüfe ich persönlich beim Hersteller oder Händler, ob es noch repariert oder ersetzt werden kann. Mein Engagement endet nicht, wenn meine eigene Garantie endet. Ich werde Ihnen immer dabei helfen, sich im Garantieprozess zurechtzufinden, Probleme zu beheben und sicherzustellen, dass Sie das Beste aus Ihrem System herausholen. Ob es innerhalb meiner Garantiezeit liegt oder vom Hersteller abgedeckt wird, ich stelle sicher, dass Sie mit Problemen nicht allein gelassen werden";
+        } else {
+          document.querySelector("#copyright").innerText =
+            "Copyright 2025 EPC-Tech";
+          document.querySelectorAll("[data-home]").forEach((items, i) => {
+            items.innerText = "Home";
+          });
+          document.querySelectorAll("[data-gallery]").forEach((items) => {
+            items.innerText = "Gallery";
+          });
+          document.querySelectorAll("[data-service]").forEach((items, i) => {
+            items.innerText = "Services";
+          });
+          document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+            items.innerText = "About Us";
+          });
+
+          document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+            items.innerText = "Announcements";
+          });
+
+          document.querySelectorAll("[data-legal]").forEach((items, i) => {
+            items.innerText = "Legal Notice";
+          });
+
+          document.querySelector("[data-daten]").innerText = "Privacy Policy";
+          document.querySelector("#aboutmeText").innerText = "About Me";
+          document.querySelector("#aboutmePara").innerHTML =
+            "I've been passionate about <b>PC building and tech repairs</b> since I was young. What started as a hobby quickly turned into something more when I realized how overpriced pre-built systems were—both online and in stores. Seeing this, I thought, this can’t be too hard—I know how to do this!";
+          document.querySelector("#aboutmeParaTwo").innerHTML =
+            "Since then, I’ve been dedicated to <b>helping people get the best value for their money</b> by building and upgrading PCs that are both <b>affordable and high-quality.</b> Not everyone has the technical know-how, and I love being able to bridge that gap— whether it’s by guiding beginners or exchanging ideas with fellow tech enthusiasts.";
+          document.querySelector("#aboutmeParaThree").innerHTML =
+            "My goal isn’t just to make money—it’s to make technology <b>accessible and fair.</b> I believe in <b>honest pricing</b>, clear communication, and giving people exactly what they need without unnecessary extras. If you're looking for a <b>custom-built PC, an upgrade, or a small repair,</b> I’d be happy to help!";
+          document.querySelector("#aboutusTouchBtn").innerHTML = "Get in Touch";
+          document.querySelector("#warrantyText").innerHTML =
+            "What Makes Me Different?";
+          document.querySelector("#firstSectionAbout").innerHTML =
+            "Unlike big retailers, I offer <b>fully custom-built PCs</b>—no generic pre-built systems, no one-size-fits-all solutions. I believe that <b>every person is different, and their PC should be too.</b> Whether you need a powerful workstation, a budget-friendly gaming setup, or something in between, I make sure that your build is tailored to your specific needs, preferences, and budget.";
+          document.querySelector("#firstSectionAboutTwo").innerHTML =
+            "What also sets me apart is my <b>direct and personal customer support.</b> There’s no AI chatbot, no long wait times—when you have a question or an issue, you can reach out to me directly. If something isn’t working, I’ll check it out—no hassle, no unnecessary delays. I value clear and open communication, meaning you won’t have to wait <b>three to five business days</b> for a response. If you text me, I’ll get back to you as soon as I can.";
+          document.querySelector("#firstSectionAboutThree").innerHTML =
+            "Additionally, I make sure that:";
+          document.querySelector("#firstSectionAboutFirstDisc").innerHTML =
+            "<b>Every PC is tested</b> before it reaches the customer";
+          document.querySelector("#firstSectionAboutSecondDisc").innerHTML =
+            "I provide <b>ongoing support,</b> so you're not left figuring things out alone.";
+          document.querySelector("#firstSectionAboutThirdDisc").innerHTML =
+            "I take the time to <b>understand your needs,</b> ensuring you get the best build possible. ";
+          document.querySelector("#firstSectionAboutFour").innerHTML =
+            "When you buy a PC from me, you're not just getting a product—you're getting <b>a service built on trust, expertise, and real customer care</b>";
+          //
+          document.querySelector("#PcText").innerHTML = "Custom PC Building";
+          document.querySelector("#secondAbout").innerHTML =
+            "Every PC I build is <b>fully custom-made,</b> designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.";
+          document.querySelector("#secondAboutTwo").innerHTML =
+            "<b>For Beginners</b>";
+          document.querySelector("#secondAboutThree").innerHTML =
+            "Not sure what you need? No problem! You’ll simply <b>check a box</b> indicating that this is your <b>first PC,</b> and I’ll guide you step by step. You’ll answer a few simple questions like:";
+          document.querySelector("#secondDiscOne").innerHTML =
+            "<b>What will you use the PC for?</b> (e.g., gaming, work, video editing, general use)";
+          document.querySelector("#secondDiscTwo").innerHTML =
+            "<b>What’s your budget?</b>";
+          document.querySelector("#secondAboutFour").innerHTML =
+            "From there, I’ll recommend the best possible build for your needs and explain everything in <b>clear, easy-to-understand terms.</b> No overwhelming tech jargon—just honest advice.";
+          document.querySelector("#thirdAbout").innerHTML =
+            "If you already know what you want, you can select your <b>preferred components</b> directly, including:";
+          document.querySelector("#storage").innerHTML = "<b>Storage</b>";
+          document.querySelector("#caseStyle").innerHTML = "<b>Case style</b>";
+          document.querySelector("#priceRange").innerHTML =
+            "<b>Overall price range</b>";
+          document.querySelector("#thirdAboutTwo").innerHTML =
+            "  Once submitted, I’ll review your selections and fine-tune the build to ensure compatibility, performance, and efficiency.";
+          document.querySelector("#includeText").innerHTML = "What's Included?";
+          document.querySelector("#fourAbout").innerHTML =
+            "Every PC comes with:";
+          document.querySelector("#fourDisc").innerHTML =
+            "<b>A full setup and stress test</b> before delivery";
+          document.querySelector("#fourDiscTwo").innerHTML =
+            "<b> Optional software installation</b> (upon request).";
+          document.querySelector("#fourDiscThree").innerHTML =
+            "  <b>Direct support if you have any questions</b> after your purchase";
+          document.querySelector("#fourAboutTwo").innerHTML =
+            "Your PC should work <b>exactly how you need it t</b>o—and I make sure it does!";
+
+          //
+
+          document.querySelector("#supportText").innerHTML =
+            "Warranty & Support";
+          document.querySelector("#warrantyAbout").innerHTML =
+            "I offer a <b>two-year general warranty</b> on every PC I build, ensuring that if anything goes wrong within that period, I’ll take care of it. However, I also go beyond that— since every component comes with its <b>own manufacturer warranty,</b> I make sure you get the best possible coverage. If a part like your <b>RAM, CPU, or GPU</b> has a warranty that extends beyond my two-year coverage—such as a b five-year manufacturer warranty—I will personally check with the manufacturer or retailer to see if it can still be repaired or replaced. My commitment doesn’t stop when my own warranty ends; I will always help you <b>navigate the warranty process, </b> troubleshoot issues, and ensure you get the most out of your system. Whether it’s within my warranty period or covered by the manufacturer, I’ll make sure you’re not left dealing with problems alone.";
+        }
+
         items.addEventListener("change", () => {
           if (items.value == "Deutsch") {
+            document.querySelector("#copyright").innerText =
+              "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
+
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Startseite";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Galerie";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Unsere Leistungen";
+            });
+            document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+              items.innerText = "Aktuelles";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "Über uns";
+            });
+            document.querySelectorAll("[data-legal]").forEach((items, i) => {
+              items.innerText = "Impressum";
+            });
+            document.querySelector("[data-daten]").innerText = "Datenschutz";
             document.querySelector("#aboutmeText").innerText = "Über mich";
             document.querySelector("#aboutmePara").innerHTML =
-              "Ich hatte eine Leidenschaft dafür<strong> PC-Bau und technische Reparaturen</strong> seit ich jung war. Was als Hobby begann, entwickelte sich schnell zu etwas mehr, als mir klar wurde, wie überteuert vorgefertigte Systeme waren. Ich wollte anbieten <strong>erschwingliche, hochwertige und maßgeschneiderte Lösungen</strong> für Menschen, die einen zuverlässigen PC benötigen, der genau ihren Anforderungen entspricht.";
+              "Ich baue und reperiere schon seit ich jung bin leidenschaftlich gerne PCs. Was einst als Hobby gestartet hat, entwickelte sich schnell in etwas größeres, als ich feststellte, wie überteuert „pre Built Systeme“ sind – egal ob online oder in Läden. Als ich das sah, dachte ich „Das kann nicht so schwer sein, ich weiß, was ich machen muss!“";
             document.querySelector("#aboutmeParaTwo").innerHTML =
-              "Im Gegensatz zu großen Einzelhändlern arbeite ich eng mit meinen Kunden zusammen, um sicherzustellen, dass sie ein personalisiertes Erlebnis erhalten. Ganz gleich, ob Sie PC-Neuling oder Technikbegeisterter sind, ich bin für Sie da <strong>Fachkundige Beratung, ehrliche Preise und praktische Unterstützung</strong> für Ihr System. Lasst uns gemeinsam etwas Großartiges aufbauen!";
+              "Seitdem habe ich es mir zur Aufgabe gemacht, Menschen zu helfen, das beste Preis-Leistungs-Verhältnis zu erhalten, indem ich PCs baue und aufrüste, die sowohl erschwinglich als auch qualitativ hochwertig sind. Nicht jeder hat das technische Wissen und ich bin gerne die Brücke dazu – sei es, indem ich ich Anfänger anleite oder mich mit anderen Technikbegeisterten austausche.";
+            document.querySelector("#aboutmeParaThree").innerHTML =
+              "Mein Ziel ist es nicht nur Geld zu verdienen – ich will Technologie zugänglich und fair machen. Ich glaube an ehrliche Preise, klare Kommunikation und Menschen genau das zu geben, was sie brauchen – ohne unnötige Extras. Wenn Sie individuell zusammengestellten PCs, einem Upgrade oder Kleine Reperaturen brauchen, würde ich gerne helfen.";
             document.querySelector("#aboutusTouchBtn").innerHTML =
               "Nehmen Sie Kontakt auf";
-            document.querySelector("#warrantyText").innerHTML =
-              "Garantie und Support";
-            document.querySelector("#warrantyPara").innerHTML =
-              "Ich biete ein <strong>Zweijährige allgemeine Garantie</strong> auf jedem PC, den ich baue, und stelle sicher, dass ich mich darum kümmere, wenn innerhalb dieser Zeit etwas schief geht. Zu jeder Komponente gehört auch ihre eigene <strong>Eigene Herstellergarantie,</strong> Und wenn für ein Teil wie Ihren RAM, Ihre CPU oder Ihre GPU eine erweiterte Garantie gilt (in manchen Fällen bis zu 5 Jahre), helfe ich Ihnen persönlich bei der Abwicklung des Garantieprozesses.";
-            document.querySelector("#warrantyParaTwo").innerHTML =
-              "Mein Engagement endet nicht, wenn meine eigene Garantie endet. Wenn etwas passiert, werde ich beim **Hersteller oder Händler** nachfragen, ob Sie noch Anspruch auf Ersatz oder Reparatur haben. Keine unnötigen Komplikationen – nur ehrlicher und zuverlässiger Support, um sicherzustellen, dass Ihr System reibungslos läuft.";
+
             document.querySelector("#warrantyBtn").innerHTML =
               "Holen Sie sich Unterstützung";
+            document.querySelector("#warrantyText").innerHTML =
+              "Was unterscheidet mich von anderen?";
+            document.querySelector("#firstSectionAbout").innerHTML =
+              "Im Gegensatz zu großen Einzelhändlern biete ich vollständig individuell zusammengestellte PCs an – keine generischen vorgefertigten Systeme, keine Einheitslösungen. Ich glaube, dass jeder Mensch anders ist und sein PC das auch sein sollte. Egal, ob Sie eine leistungsstarke Workstation, ein preisgünstiges Gaming-Setup oder etwas dazwischen benötigen, ich stelle sicher, dass Ihr Computer auf Ihre spezifischen Bedürfnisse, Vorlieben und Ihr Budget zugeschnitten ist.";
+            document.querySelector("#firstSectionAboutTwo").innerHTML =
+              "Was mich außerdem auszeichnet, ist mein direkter und persönlicher Kundensupport. Es gibt keinen KI-Chatbot, keine langen Wartezeiten – wenn Sie eine Frage oder ein Problem haben, können Sie sich direkt an mich wenden. Wenn etwas nicht funktioniert, schaue ich es mir an – kein Ärger, keine unnötigen Verzögerungen. Ich lege Wert auf klare und offene Kommunikation, sodass Sie nicht drei bis fünf Werktage auf eine Antwort warten müssen. Wenn Sie mir eine SMS schreiben, melde ich mich so schnell wie möglich bei Ihnen. ";
+
+            document.querySelector("#firstSectionAboutThree").innerHTML =
+              "Zusätzlich stelle ich sicher, dass";
+            document.querySelector("#firstSectionAboutFirstDisc").innerHTML =
+              "Jeder PC getestet wird, bevor er den Kunden erreicht.";
+            document.querySelector("#firstSectionAboutSecondDisc").innerHTML =
+              "Ich biete kontinuierliche Unterstützung, sodass Sie nichts alleine herausfinden müssen.";
+            document.querySelector("#firstSectionAboutThirdDisc").innerHTML =
+              "Ich nehme mir Zeit, ihre Bedürfnisse zu verstehen, sodass sie die für sie Beste Zusammenstellung erhalten.";
+            document.querySelector("#firstSectionAboutFour").innerHTML =
+              "Wenn Sie von mir einen PC kaufen, kriegen Sie nicht nur ein Produkt – Sie erhalten einen Service, der auf Vertrauen, Fachwissen und ech Kundenbetreuung basiert.";
+            document.querySelector("#PcText").innerHTML =
+              "Personalisierte PC‘s";
+            document.querySelector("#secondAbout").innerHTML =
+              "Jeden PC, den ich baue, ist komplett maßangefertigt, speziell an Ihre Bedürfnisse angepasst - keine generischen vorgefertigten Systeme. Egal, ob Sie ein Erstkäufer sind oder ein Technik-Enthusiast – ich leite Sie durch den Prozess, um sicherzustellen, dass sie das Bestmögliche Setup bekommen";
+            document.querySelector("#secondAboutTwo").innerHTML =
+              "Für Anfänger";
+            document.querySelector("#secondAboutThree").innerHTML =
+              "Sie sind nicht sicher, was Sie brauchen? Kein Problem! Sie klicken einfach ein Kästchen, das angibt, dass dies Ihr erster PC ist, und ich werde Sie Schritt für Schritt anleiten. Sie beantworten ein paar einfache Fragen wie:";
+            document.querySelector("#secondDiscOne").innerHTML =
+              "Wofür werden Sie den PC verwenden? (z. B. Spielen, Arbeiten, Videobearbeitung, allgemeine Verwendung";
+            document.querySelector("#secondDiscTwo").innerHTML =
+              "Wie hoch ist Ihr Budget?";
+            document.querySelector("#secondAboutFour").innerHTML =
+              "Anschließend empfehle ich Ihnen die bestmögliche Lösung für Ihre Anforderungen und erkläre Ihnen alles in klaren, leicht verständlichen Worten. Kein überwältigender Fachjargon – nur ehrliche Beratung.";
+            document.querySelector("#Expe").innerHTML = "Für Fortgeschrittene:";
+            document.querySelector("#thirdAbout").innerHTML =
+              "Wenn Sie schon wissen, was Sie brauchen, können Sie Ihre benötigte Komponente direkt auswählen. Folgende stehen zur Auswahl:";
+            document.querySelector("#storage").innerHTML = "<b>Speicher</b>";
+            document.querySelector("#caseStyle").innerHTML = "<b>Gehäuse</b>";
+            document.querySelector("#priceRange").innerHTML =
+              "<b>Preisspanne</b>";
+            document.querySelector("#thirdAboutTwo").innerHTML =
+              "Nach dem Absenden überprüfe ich Ihre Auswahl und optimiere den Bau, um Kompatibilität, Leistung und Effizienz sicherzustellen.";
+            document.querySelector("#includeText").innerHTML =
+              "Was ist inbegriffen?";
+            document.querySelector("#fourAbout").innerHTML =
+              "Jeder PC kommt mit:";
+            document.querySelector("#fourDisc").innerHTML =
+              "Eine vollständige Einrichtung und ein Belastungstest vor der Auslieferung";
+            document.querySelector("#fourDiscTwo").innerHTML =
+              "Optionale Softwae Installation (soweit gewünscht).";
+            document.querySelector("#fourDiscThree").innerHTML =
+              "Direkter Support, falls sie nach dem Kauf Fragen haben";
+            document.querySelector("#fourAboutTwo").innerHTML =
+              "Ihr PC soll genau so funktionieren, wie sie es brauchen - und ich stelle sicher, dass er es tut! ";
+            document.querySelector("#supportText").innerHTML =
+              "Garantie und Support";
+            document.querySelector("#warrantyAbout").innerHTML =
+              "Ich biete auf jeden PC, den ich baue, eine zweijährige allgemeine Garantie, die sicherstellt, dass ich mich darum kümmere, wenn innerhalb dieses Zeitraums etwa schiefgeht. Ich gehe jedoch auch darüber hinaus – da jede Komponente mit einer eigenen Herstellergarantie ausgestattet ist, stelle ich sicher, dass Sie den bestmöglichen Schutz erhalten. Wenn für ein Teil wie Ihren RAM, Ihre CPU oder Ihre GPU eine Garantie gilt, die über meine zweijährige Abdeckung hinausgeht – beispielsweise eine fünfjährige Herstellergarantie –, prüfe ich persönlich beim Hersteller oder Händler, ob es noch repariert oder ersetzt werden kann. Mein Engagement endet nicht, wenn meine eigene Garantie endet. Ich werde Ihnen immer dabei helfen, sich im Garantieprozess zurechtzufinden, Probleme zu beheben und sicherzustellen, dass Sie das Beste aus Ihrem System herausholen. Ob es innerhalb meiner Garantiezeit liegt oder vom Hersteller abgedeckt wird, ich stelle sicher, dass Sie mit Problemen nicht allein gelassen werden";
           } else {
+            document.querySelector("#copyright").innerText =
+              "Copyright 2025 EPC-Tech";
+            document.querySelectorAll("[data-home]").forEach((items, i) => {
+              items.innerText = "Home";
+            });
+            document.querySelectorAll("[data-gallery]").forEach((items) => {
+              items.innerText = "Gallery";
+            });
+            document.querySelectorAll("[data-service]").forEach((items, i) => {
+              items.innerText = "Services";
+            });
+            document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
+              items.innerText = "About Us";
+            });
+
+            document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+              items.innerText = "Announcements";
+            });
+
+            document.querySelectorAll("[data-legal]").forEach((items, i) => {
+              items.innerText = "Legal Notice";
+            });
+            document.querySelector("[data-daten]").innerText = "Privacy Policy";
             document.querySelector("#aboutmeText").innerText = "About Me";
             document.querySelector("#aboutmePara").innerHTML =
-              "I've been passionate about <strong> PC building and tech repairs</strong>since I was young. What started as a hobby quickly turned into something more when I realized how overpriced pre-built systems were. I wanted to offer <strong>affordable, high-quality, and customized solutions</strong> or people who need a reliable PC that fits their exact needs.";
+              "I've been passionate about <b>PC building and tech repairs</b> since I was young. What started as a hobby quickly turned into something more when I realized how overpriced pre-built systems were—both online and in stores. Seeing this, I thought, this can’t be too hard—I know how to do this!";
             document.querySelector("#aboutmeParaTwo").innerHTML =
-              "Unlike big retailers, I work closely with my customers to ensure they get a personalized experience. Whether you're new to PCs or a tech enthusiast, I'm here to provide <strong>expert guidance, honest pricing, and hands-on support</strong> for your system. Let’s build something great together!";
-            document.querySelector("#aboutusTouchBtn").innerHTML =
-              "Get in Touch";
+              "Since then, I’ve been dedicated to <b>helping people get the best value for their money</b> by building and upgrading PCs that are both <b>affordable and high-quality.</b> Not everyone has the technical know-how, and I love being able to bridge that gap— whether it’s by guiding beginners or exchanging ideas with fellow tech enthusiasts.";
+            document.querySelector("#aboutmeParaThree").innerHTML =
+              "My goal isn’t just to make money—it’s to make technology <b>accessible and fair.</b> I believe in <b>honest pricing</b>, clear communication, and giving people exactly what they need without unnecessary extras. If you're looking for a <b>custom-built PC, an upgrade, or a small repair,</b> I’d be happy to help!";
+
             document.querySelector("#warrantyText").innerHTML =
+              "What Makes Me Different?";
+            document.querySelector("#firstSectionAbout").innerHTML =
+              "Unlike big retailers, I offer <b>fully custom-built PCs</b>—no generic pre-built systems, no one-size-fits-all solutions. I believe that <b>every person is different, and their PC should be too.</b> Whether you need a powerful workstation, a budget-friendly gaming setup, or something in between, I make sure that your build is tailored to your specific needs, preferences, and budget.";
+            document.querySelector("#firstSectionAboutTwo").innerHTML =
+              "What also sets me apart is my <b>direct and personal customer support.</b> There’s no AI chatbot, no long wait times—when you have a question or an issue, you can reach out to me directly. If something isn’t working, I’ll check it out—no hassle, no unnecessary delays. I value clear and open communication, meaning you won’t have to wait <b>three to five business days</b> for a response. If you text me, I’ll get back to you as soon as I can.";
+            document.querySelector("#firstSectionAboutThree").innerHTML =
+              "Additionally, I make sure that:";
+            document.querySelector("#firstSectionAboutFirstDisc").innerHTML =
+              "<b>Every PC is tested</b> before it reaches the customer";
+            document.querySelector("#firstSectionAboutSecondDisc").innerHTML =
+              "I provide <b>ongoing support,</b> so you're not left figuring things out alone.";
+            document.querySelector("#firstSectionAboutThirdDisc").innerHTML =
+              "I take the time to <b>understand your needs,</b> ensuring you get the best build possible. ";
+            document.querySelector("#firstSectionAboutFour").innerHTML =
+              "When you buy a PC from me, you're not just getting a product—you're getting <b>a service built on trust, expertise, and real customer care</b>";
+            document.querySelector("#PcText").innerHTML = "Custom PC Building";
+            document.querySelector("#secondAbout").innerHTML =
+              "Every PC I build is <b>fully custom-made,</b> designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.";
+            document.querySelector("#secondAboutTwo").innerHTML =
+              "<b>For Beginners</b>";
+            document.querySelector("#secondAboutThree").innerHTML =
+              "Not sure what you need? No problem! You’ll simply <b>check a box</b> indicating that this is your <b>first PC,</b> and I’ll guide you step by step. You’ll answer a few simple questions like:";
+            document.querySelector("#secondDiscOne").innerHTML =
+              "<b>What will you use the PC for?</b> (e.g., gaming, work, video editing, general use)";
+            document.querySelector("#secondDiscTwo").innerHTML =
+              "<b>What’s your budget?</b>";
+            document.querySelector("#secondAboutFour").innerHTML =
+              "From there, I’ll recommend the best possible build for your needs and explain everything in <b>clear, easy-to-understand terms.</b> No overwhelming tech jargon—just honest advice.";
+            //
+            document.querySelector("#thirdAbout").innerHTML =
+              "If you already know what you want, you can select your <b>preferred components</b> directly, including:";
+            document.querySelector("#storage").innerHTML = "<b>Storage</b>";
+            document.querySelector("#caseStyle").innerHTML =
+              "<b>Case style</b>";
+            document.querySelector("#priceRange").innerHTML =
+              "<b>Overall price range</b>";
+            document.querySelector("#thirdAboutTwo").innerHTML =
+              "  Once submitted, I’ll review your selections and fine-tune the build to ensure compatibility, performance, and efficiency.";
+            ///
+            document.querySelector("#includeText").innerHTML =
+              "What's Included?";
+            document.querySelector("#fourAbout").innerHTML =
+              "Every PC comes with:";
+            document.querySelector("#fourDisc").innerHTML =
+              "<b>A full setup and stress test</b> before delivery";
+            document.querySelector("#fourDiscTwo").innerHTML =
+              "<b> Optional software installation</b> (upon request).";
+            document.querySelector("#fourDiscThree").innerHTML =
+              "  <b>Direct support if you have any questions</b> after your purchase";
+            document.querySelector("#fourAboutTwo").innerHTML =
+              "Your PC should work <b>exactly how you need it t</b>o—and I make sure it does!";
+            document.querySelector("#supportText").innerHTML =
               "Warranty & Support";
-            document.querySelector("#warrantyPara").innerHTML =
-              "I offer a <strong>two-year general warranty</strong> on every PC I build, ensuring that if anything goes wrong within that time, I will take care of it. Every component also comes with its <strong>own manufacturer warranty,</strong> and if a part like your RAM, CPU, or GPU has extended coverage (up to 5 years in some cases), I will personally assist in navigating the warranty process.";
-            document.querySelector("#warrantyParaTwo").innerHTML =
-              "My commitment doesn’t stop when my own warranty ends. If something happens, I will check with the **manufacturer or retailer** to see if you’re still eligible for a replacement or repair. No unnecessary complications—just honest and reliable support to ensure your system runs smoothly.";
-            document.querySelector("#warrantyBtn").innerHTML = "Get Support";
+            document.querySelector("#warrantyAbout").innerHTML =
+              "I offer a <b>two-year general warranty</b> on every PC I build, ensuring that if anything goes wrong within that period, I’ll take care of it. However, I also go beyond that— since every component comes with its <b>own manufacturer warranty,</b> I make sure you get the best possible coverage. If a part like your <b>RAM, CPU, or GPU</b> has a warranty that extends beyond my two-year coverage—such as a b five-year manufacturer warranty—I will personally check with the manufacturer or retailer to see if it can still be repaired or replaced. My commitment doesn’t stop when my own warranty ends; I will always help you <b>navigate the warranty process, </b> troubleshoot issues, and ensure you get the most out of your system. Whether it’s within my warranty period or covered by the manufacturer, I’ll make sure you’re not left dealing with problems alone.";
+          }
+        });
+      });
+
+      const toggleBtn = document.querySelectorAll("#toggleBtn");
+      toggleBtn.forEach((items, index) => {
+        items.addEventListener("click", (e) => {
+          if (localStorage.getItem("theme") === "dark") {
+            document.querySelectorAll("[data-toggleDiv]").forEach((items2) => {
+              items2.classList.toggle("translate-x-[40px]");
+              items2.classList.remove("bg-white");
+              items2.classList.add("bg-slate-900");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-sun");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-moon");
+            });
+
+            toggleBtn.forEach((items2) => {
+              items2.classList.add("bg-slate-300");
+            });
+            toggleBtn.forEach((items2) => {
+              items2.classList.remove("bg-slate-900");
+            });
+            document
+              .querySelectorAll("#moonsun")
+              [index].classList.add("animate-[spin_.6s_ease-out]");
+            setTimeout(() => {
+              document
+                .querySelectorAll("#moonsun")
+                [index].classList.remove("animate-[spin_.6s_ease-out]");
+            }, 600);
+
+            document.querySelectorAll("[data-bggray500]").forEach((items) => {
+              items.classList.toggle("bg-gray-500");
+            });
+            document.querySelectorAll("[data-bggray500]").forEach((items) => {
+              items.classList.toggle("bg-zinc-800");
+            });
+            document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+              items.classList.toggle("bg-zinc-100");
+            });
+            document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+              items.classList.toggle("bg-zinc-800");
+            });
+            document.querySelector("[data-body]").classList.toggle("bg-white");
+            document.querySelector("[data-body]").classList.toggle("bg-black");
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-black");
+            });
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-white");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-zinc-700");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-[#d6d6d6]");
+            });
+
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-400");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-800");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
+
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("bg-slate-900");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("bg-white");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-black");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-white");
+              });
+            document.querySelectorAll("[data-whitemode]").forEach((items) => {
+              items.classList.toggle("text-white");
+              items.classList.toggle("text-black");
+            });
+            document
+              .querySelectorAll("[data-whitemodePara]")
+              .forEach((items) => {
+                items.classList.toggle("text-gray-200");
+                items.classList.toggle("text-black");
+              });
+            document
+              .querySelectorAll("[data-sectionColor]")
+              .forEach((items) => {
+                items.classList.toggle("bg-slate-200");
+                items.classList.toggle("bg-zinc-800");
+              });
+          } else {
+            document.querySelectorAll("[data-toggleDiv]").forEach((items2) => {
+              items2.classList.toggle("translate-x-[40px]");
+              items2.classList.add("bg-white");
+              items2.classList.remove("bg-slate-900");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-sun");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-moon");
+            });
+
+            toggleBtn.forEach((items2) => {
+              items2.classList.remove("bg-slate-300");
+            });
+            toggleBtn.forEach((items2) => {
+              items2.classList.add("bg-slate-900");
+            });
+
+            document
+              .querySelectorAll("#moonsun")
+              [index].classList.add("animate-[spin_.6s_ease-out]");
+            setTimeout(() => {
+              document
+                .querySelectorAll("#moonsun")
+                [index].classList.remove("animate-[spin_.6s_ease-out]");
+            }, 600);
+
+            document.querySelectorAll("[data-bggray500]").forEach((items) => {
+              items.classList.toggle("bg-gray-500");
+            });
+            document.querySelectorAll("[data-bggray500]").forEach((items) => {
+              items.classList.toggle("bg-zinc-800");
+            });
+            document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+              items.classList.toggle("bg-zinc-100");
+            });
+            document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+              items.classList.toggle("bg-zinc-800");
+            });
+            document.querySelector("[data-body]").classList.toggle("bg-white");
+            document.querySelector("[data-body]").classList.toggle("bg-black");
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-black");
+            });
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-white");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-zinc-700");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-[#d6d6d6]");
+            });
+
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-400");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("bg-zinc-800");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.toggle("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
+
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {});
+
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-black");
+                items.classList.toggle("bg-slate-900");
+                items.classList.toggle("bg-white");
+                items.classList.toggle("text-white");
+              });
+
+            document.querySelectorAll("[data-whitemode]").forEach((items) => {
+              items.classList.toggle("text-white");
+              items.classList.toggle("text-black");
+            });
+            document
+              .querySelectorAll("[data-whitemodePara]")
+              .forEach((items) => {
+                items.classList.toggle("text-gray-200");
+                items.classList.toggle("text-black");
+              });
+            document
+              .querySelectorAll("[data-sectionColor]")
+              .forEach((items) => {
+                console.log(items);
+
+                items.classList.toggle("bg-slate-200");
+                items.classList.toggle("bg-zinc-800");
+              });
           }
         });
       });
