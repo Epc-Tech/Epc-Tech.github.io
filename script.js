@@ -3,10 +3,10 @@ toggler.forEach((items) => {
   if (items.value == "Deutsch") {
     if (localStorage.getItem("theme") === "white") {
       document.querySelector("#heading").innerHTML =
-        "<span class='text-Primary font-[600]' id='spans'>Personalisierte PCs</span> für Sie";
+        "<span class='text-Primary font-[600]' id='spans'>Personalisierte PCs</span> <br> für Sie </br>";
     } else {
       document.querySelector("#heading").innerHTML =
-        "<span class='text-Accent font-[600]' id='spans'>Personalisierte PCs </span> für Sie";
+        "<span class='text-Accent font-[600]' id='spans'>Personalisierte PCs </span> <br> für Sie </br>";
     }
     document.querySelectorAll("[data-home]").forEach((items, i) => {
       items.innerText = "Startseite";
@@ -126,10 +126,10 @@ toggler.forEach((items) => {
       document.querySelector("[data-daten]").innerText = "Datenschutz";
       if (localStorage.getItem("theme") === "white") {
         document.querySelector("#heading").innerHTML =
-          "<span class='text-Primary font-[600]' id='spans'>Personalisierte PCs</span> für Sie";
+          "<span class='text-Primary font-[600]' id='spans'>Personalisierte PCs</span> <br> für Sie </br>";
       } else {
         document.querySelector("#heading").innerHTML =
-          "<span class='text-Accent font-[600]' id='spans'>Personalisierte PCs </span> für Sie";
+          "<span class='text-Accent font-[600]' id='spans'>Personalisierte PCs </span> <br> für Sie </br>";
       }
       document.querySelector("#copyright").innerText =
         "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
@@ -161,12 +161,12 @@ toggler.forEach((items) => {
         "Einblick in unsere Arbeit";
       document.querySelector("#ourservices").innerText = "Unsere Leistungen";
       document.querySelector("#servicesPara").innerText =
-        "Wir bieten eine Vielzahl an Reparatur- und Anpassungsservices. Egal, ob dueine schnelle Reparatur oder einen individuellen PC-Bau benötigst – wir helfendir weiter. Schau dir hier an, was wir anbieten, und finde die passende Lösung für dich.";
+        "Wir bieten eine Vielzahl an Reparatur- und Anpassungsservices. Egal, ob Sie eine schnelle Reparatur oder einen individuellen PC-Bau benötigen – wir helfen Ihnen weiter. Schauen Sie hier an, was wir anbieten, und finden Sie die passende Lösung.";
       document.querySelector("#servicesBtn").innerHTML =
         "Dienstleistungen<i class='fa-solid fa-arrow-right'></i>";
       document.querySelector("#ourgallery").innerHTML = "Unsere Galerie";
       document.querySelector("#galleryPara").innerHTML =
-        "Werfe einen Blick auf unsere bisherigen Projekte! Unsere Galerie zeigt die PC's Builds und Reparaturen, die wir bereits durchgeführt haben. Lass dich inspirieren!";
+        "Werfe einen Blick auf unsere bisherigen Projekte! Unsere Galerie zeigt die PC's Builds und Reparaturen, die wir bereits durchgeführt haben. Lassen Sie sich inspirieren!";
       document.querySelector("#galleryBtn").innerHTML =
         "Galerie<i class='fa-solid fa-arrow-right'></i>";
       document.querySelector("#aboutusText").innerHTML = "Über uns";
