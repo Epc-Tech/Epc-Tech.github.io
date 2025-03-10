@@ -31,7 +31,7 @@ toggler.forEach((items) => {
 
     document.querySelector("[data-daten]").innerText = "Datenschutz";
     document.querySelector("#titleP").innerText =
-      "Nie wieder zu viel für einen PC bezahlen. Individuell zusammengestellt für jeden Kunden.";
+      "Nie wieder zu viel für Ihren PC bezahlen. Individuell zusammengestellt für jeden Kunden.";
     document.querySelector("#quoteBtn").innerText =
       "Holen Sie sich ein Angebot";
     document.querySelector("#serviceweprovideHeading").innerText =
