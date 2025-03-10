@@ -46,14 +46,18 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
     <link href="dist/style.css" rel="stylesheet" />
-    <script defer src="menu.js"></script>
-    <script defer src="changeNav.js"></script>
-    <script defer src="toggleOthers.js"></script>
     <title>Document</title>
   </head>
-  <body class="bg-black scroll-smooth transition-all duration-300" data-body="">
-    <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
+  <body
+    class="bg-black min-h-[100vh] scroll-smooth transition-all duration-300"
+    data-body=""
+  >
+    <main
+      class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40 pt-5"
+      id="home"
+    >
       <nav
         class="flex items-center px-5 z-[200] justify-start lg:gap-x-0 2xl:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-5 xl:px-10"
         data-bgzinc400=""
@@ -95,7 +99,7 @@
               <option class="" value="English">English</option>
             </select>
             <i
-              class="fa-solid fa-bars cursor-pointer text-white text-2xl lg:hidden"
+              class="fa-solid fa-bars text-white text-2xl cursor-pointer lg:hidden"
               id="hamburger"
               data-textblack=""
             ></i>
@@ -103,7 +107,7 @@
         </div>
         <div class="flex items-center lg:w-full justify-between">
           <ul class="hidden lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
-            <a href="index.html#home">
+            <a href="index.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -121,7 +125,7 @@
                 Services
               </li>
             </a>
-            <a href="gallery.html#home">
+            <a href="gallery.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -140,7 +144,7 @@
               </li>
             </a>
 
-            <a href="about.html#home">
+            <a href="about.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -150,7 +154,7 @@
               </li>
             </a>
 
-            <a href="impressum.html#home">
+            <a href="impressum.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -164,7 +168,7 @@
             class="flex gap-x-5 sm:gap-x-5 2xl:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
           >
             <div
-              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all cursor-pointer"
+              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
               id="toggleBtn"
             >
               <div
@@ -208,13 +212,13 @@
               alt=""
             />
             <i
-              class="fa-solid fa-close text-white text-2xl cursor-pointer transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden cursor-pointer"
               id="close"
               data-textblack=""
             ></i>
           </div>
           <ul class="flex flex-col gap-y-5">
-            <a href="index.html#home">
+            <a href="index.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -232,7 +236,7 @@
                 Services
               </li>
             </a>
-            <a href="gallery.html#home">
+            <a href="gallery.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -251,7 +255,7 @@
               </li>
             </a>
 
-            <a href="about.html#home">
+            <a href="about.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -261,7 +265,7 @@
               </li>
             </a>
 
-            <a href="impressum.html#home">
+            <a href="impressum.html">
               <li
                 class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
@@ -273,38 +277,17 @@
           </ul>
         </div>
       </div>
-      <!--Impressum Section-->
-
-      <section
-        class="flex flex-col items-center justify-center mt-5 lg:mt-10 px-6 py-20"
-      >
-        <div
-          class="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full text-gray-800"
-        >
-          <h1
-            class="text-4xl font-bold text-center text-gray-900 border-b pb-4"
-          >
-            Impressum
-          </h1>
-          <div class="mt-5">
-            <div
-              class="itrk-legaltext"
-              data-itrk-legaltext-url="https://itrk.legal/PDp.0.JlS-iframe.html"
-            ></div>
-            <script src="https://www.it-recht-kanzlei.de/js/itrk-legaltext.js"></script>
-          </div>
-        </div>
-        <a href="datenschutz.html">
-          <button
-            class="text-white bg-Primary px-10 py-3 mt-5 rounded-md font-[500]"
-          >
-            Datenschutz
-          </button></a
-        >
-      </section>
     </main>
-    <!-- Footer Section -->
-    <footer class="bg-zinc-800 mt-20 text-white" data-bggray500="" id="footer">
+    <div class="font-Overpass text-center lg:px-10 xl:px-20 2xl:px-40 mt-10">
+      <div class="text-white bg-zinc-800 py-3 rounded-md" id="newNews">
+        <h1 class="text-xl mt-1 tracking-wide" id="news">No New News Yet</h1>
+      </div>
+    </div>
+    <footer
+      class="bg-zinc-800 absolute w-full bottom-0 mt-20 text-white"
+      data-bggray500=""
+      id="footer"
+    >
       <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
         <div
           class="font-Overpass flex flex-col items-start md:gap-x-5 2xl:gap-x-10"
@@ -360,7 +343,7 @@
                   Gallery
                 </li>
               </a>
-              <a href="announcement.html">
+              <a href="announcement.html#home">
                 <li
                   class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
                   data-allListItems=""
@@ -376,7 +359,7 @@
                   data-allListItems=""
                   data-legal=""
                 >
-                  Legal Notice
+                  Privacy Policy
                 </li>
               </a>
               <a href="datenschutz.html">
@@ -439,16 +422,17 @@
         </div>
       </div>
     </footer>
-    <!-- <script src="menu.js"></script> -->
+    <script src="toggleOthers.js"></script>
     <script>
       const toggleBtn = document.querySelectorAll("#toggleBtn");
+
       toggleBtn.forEach((items, index) => {
         items.addEventListener("click", (e) => {
           if (localStorage.getItem("theme") === "dark") {
-            document.querySelectorAll("[data-toggleDiv]").forEach((items3) => {
-              items3.classList.toggle("translate-x-[40px]");
-              items3.classList.remove("bg-white");
-              items3.classList.add("bg-slate-900");
+            document.querySelectorAll("[data-toggleDiv]").forEach((items2) => {
+              items2.classList.toggle("translate-x-[40px]");
+              items2.classList.remove("bg-white");
+              items2.classList.add("bg-slate-900");
             });
             document.querySelectorAll("#moonsun").forEach((items) => {
               items.classList.toggle("fa-sun");
@@ -463,18 +447,33 @@
             toggleBtn.forEach((items2) => {
               items2.classList.remove("bg-slate-900");
             });
-
-            document
-              .querySelectorAll("#moonsun")
-              [index].classList.add("animate-[spin_.6s_ease-out]");
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.add("animate-[spin_.6s_ease-out]");
+            });
             setTimeout(() => {
-              document
-                .querySelectorAll("#moonsun")
-                [index].classList.remove("animate-[spin_.6s_ease-out]");
+              document.querySelectorAll("#moonsun").forEach((items) => {
+                items.classList.remove("animate-[spin_.6s_ease-out]");
+              });
             }, 600);
 
-            document.querySelector("[data-body]").classList.add("bg-white");
-            document.querySelector("[data-body]").classList.remove("bg-black");
+            document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+              items.classList.toggle("bg-zinc-100");
+            });
+
+            document.querySelector("[data-body]").classList.toggle("bg-white");
+            document.querySelector("[data-body]").classList.toggle("bg-black");
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-black");
+            });
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-white");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-zinc-700");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-[#d6d6d6]");
+            });
 
             document
               .querySelector("[data-bgzinc400]")
@@ -482,39 +481,45 @@
             document
               .querySelector("[data-bgzinc400]")
               .classList.toggle("bg-zinc-800");
+
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("bg-slate-900");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("bg-white");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-black");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-white");
+              });
             document
               .querySelector("[data-bgzinc400]")
-              .classList.toggle("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
+              .classList.add("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
+            document.querySelector("#footer").classList.add("bg-gray-500");
+            document.querySelector("#footer").classList.remove("bg-zinc-800");
+            document.querySelector("#newNews").classList.remove("bg-zinc-800");
+            document.querySelector("#newNews").classList.add("bg-slate-400");
+          } else if (localStorage.getItem("theme") === "white") {
+            document.querySelector("#newNews").classList.add("bg-zinc-800");
+            document.querySelector("#newNews").classList.remove("bg-slate-400");
+            document
+              .querySelector("[data-bgzinc400]")
+              .classList.remove("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
 
-            document.querySelector("#footer").classList.toggle("bg-gray-500");
-            document.querySelector("#footer").classList.toggle("bg-zinc-800");
-            document
-              .querySelectorAll("[data-languageSelection]")
-              .forEach((items) => {
-                items.classList.toggle("text-black");
-                items.classList.toggle("bg-slate-900");
-                items.classList.toggle("bg-white");
-                items.classList.toggle("text-white");
-              });
-          } else {
-            document
-              .querySelectorAll("[data-languageSelection]")
-              .forEach((items) => {
-                items.classList.toggle("text-black");
-                items.classList.toggle("bg-slate-900");
-                items.classList.toggle("bg-white");
-                items.classList.toggle("text-white");
-              });
             document.querySelectorAll("[data-toggleDiv]").forEach((items2) => {
               items2.classList.toggle("translate-x-[40px]");
               items2.classList.add("bg-white");
               items2.classList.remove("bg-slate-900");
-            });
-            document.querySelectorAll("#moonsun").forEach((items) => {
-              items.classList.toggle("fa-sun");
-            });
-            document.querySelectorAll("#moonsun").forEach((items) => {
-              items.classList.toggle("fa-moon");
             });
 
             toggleBtn.forEach((items2) => {
@@ -523,17 +528,35 @@
             toggleBtn.forEach((items2) => {
               items2.classList.add("bg-slate-900");
             });
-            document
-              .querySelectorAll("#moonsun")
-              [index].classList.add("animate-[spin_.6s_ease-out]");
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.add("animate-[spin_.6s_ease-out]");
+            });
             setTimeout(() => {
-              document
-                .querySelectorAll("#moonsun")
-                [index].classList.remove("animate-[spin_.6s_ease-out]");
+              document.querySelectorAll("#moonsun").forEach((items) => {
+                items.classList.remove("animate-[spin_.6s_ease-out]");
+              });
             }, 600);
+            document.querySelector("#footer").classList.toggle("bg-gray-500");
+            document.querySelector("#footer").classList.toggle("bg-zinc-800");
 
-            document.querySelector("[data-body]").classList.toggle("bg-white");
-            document.querySelector("[data-body]").classList.toggle("bg-black");
+            document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+              items.classList.toggle("bg-zinc-100");
+            });
+
+            document.querySelector("[data-body]").classList.remove("bg-white");
+            document.querySelector("[data-body]").classList.add("bg-black");
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-black");
+            });
+            document.querySelectorAll("[data-textblack]").forEach((items) => {
+              items.classList.toggle("text-white");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-zinc-700");
+            });
+            document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+              items.classList.toggle("text-[#d6d6d6]");
+            });
 
             document
               .querySelector("[data-bgzinc400]")
@@ -541,18 +564,169 @@
             document
               .querySelector("[data-bgzinc400]")
               .classList.toggle("bg-zinc-800");
-            document
-              .querySelector("[data-bgzinc400]")
-              .classList.toggle("shadow-[0_0px_20px_0px_hsl(233_8%_62%)]");
 
-            document.querySelector("#footer").classList.toggle("bg-gray-500");
-            document.querySelector("#footer").classList.toggle("bg-zinc-800");
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("bg-slate-900");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("bg-white");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-black");
+              });
+            document
+              .querySelectorAll("[data-languageSelection]")
+              .forEach((items) => {
+                items.classList.toggle("text-white");
+              });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-sun");
+            });
+            document.querySelectorAll("#moonsun").forEach((items) => {
+              items.classList.toggle("fa-moon");
+            });
           }
         });
+        if (localStorage.getItem("theme") === "dark") {
+          document.querySelector("#newNews").classList.add("bg-zinc-800");
+          document.querySelector("#newNews").classList.remove("bg-slate-400");
+          document.querySelector("#footer").classList.toggle("bg-gray-500");
+          document.querySelector("#footer").classList.toggle("bg-zinc-800");
+
+          document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+            items.classList.toggle("bg-zinc-100");
+          });
+          document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+            items.classList.toggle("bg-zinc-800");
+          });
+
+          document.querySelector("[data-body]").classList.toggle("bg-white");
+          document.querySelector("[data-body]").classList.toggle("bg-black");
+          document.querySelectorAll("[data-textblack]").forEach((items) => {
+            items.classList.toggle("text-black");
+          });
+          document.querySelectorAll("[data-textblack]").forEach((items) => {
+            items.classList.toggle("text-white");
+          });
+          document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+            items.classList.toggle("text-zinc-700");
+          });
+          document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+            items.classList.toggle("text-[#d6d6d6]");
+          });
+          document.querySelectorAll("[data-toggleDiv]").forEach((items2) => {
+            items2.classList.toggle("translate-x-[40px]");
+            items2.classList.add("bg-white");
+            items2.classList.remove("bg-slate-900");
+          });
+          document.querySelectorAll("#moonsun").forEach((items) => {
+            items.classList.toggle("fa-sun");
+          });
+          document.querySelectorAll("#moonsun").forEach((items) => {
+            items.classList.toggle("fa-moon");
+          });
+
+          document
+            .querySelector("[data-bgzinc400]")
+            .classList.toggle("bg-zinc-400");
+
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("bg-slate-900");
+            });
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("bg-white");
+            });
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("text-black");
+            });
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("text-white");
+            });
+        } else if (localStorage.getItem("theme") === "white") {
+          document.querySelector("#newNews").classList.remove("bg-zinc-800");
+          document.querySelector("#newNews").classList.add("bg-slate-400");
+          document.querySelectorAll("[data-toggleDiv]").forEach((items2) => {
+            items2.classList.toggle("translate-x-[40px]");
+            // items2.classList.add("translate-x-[40px]");
+            items2.classList.remove("bg-white");
+            items2.classList.add("bg-slate-900");
+          });
+
+          document.querySelectorAll("#moonsun").forEach((items) => {
+            items.classList.toggle("fa-sun");
+          });
+          document.querySelectorAll("#moonsun").forEach((items) => {
+            items.classList.toggle("fa-moon");
+          });
+          document.querySelector("#footer").classList.toggle("bg-gray-500");
+          document.querySelector("#footer").classList.toggle("bg-zinc-800");
+
+          document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+            items.classList.toggle("bg-zinc-100");
+          });
+          document.querySelectorAll("[data-bgzinc100]").forEach((items) => {
+            items.classList.toggle("bg-zinc-800");
+          });
+          document.querySelector("[data-body]").classList.add("bg-white");
+          document.querySelector("[data-body]").classList.remove("bg-black");
+          document.querySelectorAll("[data-textblack]").forEach((items) => {
+            items.classList.toggle("text-black");
+          });
+          document.querySelectorAll("[data-textblack]").forEach((items) => {
+            items.classList.toggle("text-white");
+          });
+          document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+            items.classList.toggle("text-zinc-700");
+          });
+          document.querySelectorAll("[data-textzinc700]").forEach((items) => {
+            items.classList.toggle("text-[#d6d6d6]");
+          });
+
+          document
+            .querySelector("[data-bgzinc400]")
+            .classList.toggle("bg-zinc-400");
+
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("bg-slate-900");
+            });
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("bg-white");
+            });
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("text-black");
+            });
+          document
+            .querySelectorAll("[data-languageSelection]")
+            .forEach((items) => {
+              items.classList.toggle("text-white");
+            });
+        }
       });
       const toggler = document.querySelectorAll("[data-languageSelection]");
       toggler.forEach((items) => {
         if (items.value == "Deutsch") {
+          document.querySelector("#news").innerHTML = "keine neue nachrichten";
+
           document.querySelectorAll("[data-home]").forEach((items, i) => {
             items.innerText = "Startseite";
           });
@@ -571,10 +745,11 @@
           document.querySelectorAll("[data-legal]").forEach((items, i) => {
             items.innerText = "Impressum";
           });
-          document.querySelector("[data-daten]").innerText = "Datenschutz";
           document.querySelector("#copyright").innerText =
             "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
         } else {
+          document.querySelector("#news").innerText = "No New News yet";
+          document.querySelector("[data-daten]").innerText = "Privacy Policy";
           document.querySelectorAll("[data-home]").forEach((items, i) => {
             items.innerText = "Home";
           });
@@ -595,13 +770,13 @@
           document.querySelectorAll("[data-legal]").forEach((items, i) => {
             items.innerText = "Legal Notice";
           });
-          document.querySelector("[data-daten]").innerText = "Privacy Policy";
-
           document.querySelector("#copyright").innerText =
             "Copyright 2025 EPC-Tech";
         }
         items.addEventListener("change", () => {
           if (items.value == "Deutsch") {
+            document.querySelector("#news").innerHTML =
+              "keine neue nachrichten";
             document.querySelectorAll("[data-home]").forEach((items, i) => {
               items.innerText = "Startseite";
             });
@@ -620,10 +795,11 @@
             document.querySelectorAll("[data-legal]").forEach((items, i) => {
               items.innerText = "Impressum";
             });
-            document.querySelector("[data-daten]").innerText = "Datenschutz";
             document.querySelector("#copyright").innerText =
               "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
           } else {
+            document.querySelector("#news").innerText = "No New News yet";
+            document.querySelector("[data-daten]").innerText = "Privacy Policy";
             document.querySelectorAll("[data-home]").forEach((items, i) => {
               items.innerText = "Home";
             });
@@ -644,12 +820,12 @@
             document.querySelectorAll("[data-legal]").forEach((items, i) => {
               items.innerText = "Legal Notice";
             });
-            document.querySelector("[data-daten]").innerText = "Privacy Policy";
             document.querySelector("#copyright").innerText =
               "Copyright 2025 EPC-Tech";
           }
         });
       });
     </script>
+    <script src="menu.js"></script>
   </body>
 </html>

@@ -53,7 +53,7 @@
     <script type="text/javascript">
       (function () {
         emailjs.init({
-          publicKey: "t73ugZimhXqGDox_u",
+          publicKey: "TLT5RV3zQccRt4jjY",
         });
       })();
     </script>
@@ -66,7 +66,7 @@
   <body class="bg-black scroll-smooth transition-all duration-300" data-body="">
     <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
       <nav
-        class="flex items-center px-5 z-[200] justify-start lg:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-10"
+        class="flex items-center px-5 z-[200] justify-start lg:gap-x-0 2xl:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-5 xl:px-10"
         data-bgzinc400=""
       >
         <div
@@ -82,7 +82,7 @@
           >
             <div>
               <div
-                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all cursor-pointer"
                 id="toggleBtn"
               >
                 <div
@@ -106,73 +106,76 @@
               <option class="" value="English">English</option>
             </select>
             <i
-              class="fa-solid fa-bars text-white text-2xl lg:hidden"
+              class="fa-solid fa-bars text-white cursor-pointer text-2xl lg:hidden"
               id="hamburger"
               data-textblack=""
             ></i>
           </div>
         </div>
         <div class="flex items-center lg:w-full justify-between">
-          <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
-            <a href="index.html">
+          <ul class="hidden lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
                 data-home=""
               >
-                Startseite
+                Home
               </li>
             </a>
-            <a href="service.html#service">
+            <a href="service.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
                 data-service=""
               >
-                Unsere Leistungen
+                Services
               </li>
             </a>
-            <a href="gallery.html">
+            <a href="gallery.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
                 data-gallery=""
               >
-                Galerie
+                Gallery
               </li>
             </a>
-            <a href="non.html">
+            <a href="announcement.html">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-accounce=""
               >
-                Aktuelles
+                Announcements
               </li>
             </a>
-            <a href="about.html">
+
+            <a href="about.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
                 data-aboutus=""
               >
-                Über uns
+                About Us
               </li>
             </a>
-            <a href="impressum.html">
+
+            <a href="impressum.html#home">
               <li
-                class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
-                data-impressum=""
+                data-legal=""
               >
-                Impressum
+                Legal Notice
               </li>
             </a>
           </ul>
           <div
-            class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
+            class="flex gap-x-5 sm:gap-x-5 2xl:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
           >
             <div
-              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+              class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all cursor-pointer"
               id="toggleBtn"
             >
               <div
@@ -213,62 +216,66 @@
               alt=""
             />
             <i
-              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
+              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] cursor-pointer lg:hidden"
               id="close"
               data-textblack=""
             ></i>
           </div>
           <ul class="flex flex-col gap-y-5">
-            <a href="index.html">
+            <a href="index.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
                 data-home=""
               >
                 Home
               </li>
             </a>
-          <a href="service.html#service">
-            <li
-              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              data-allListItems=""
-              data-services=""
-            >
-              Services
-            </li>
-          </a>
-            <a href="gallery.html">
+            <a href="service.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-service=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="gallery.html#home">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
                 data-gallery=""
               >
                 Gallery
               </li>
-              </a>
-            <a href="non.html">
+            </a>
+            <a href="announcement.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-accounce=""
               >
                 Announcements
               </li>
             </a>
-            <a href="about.html">
+
+            <a href="about.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
                 data-aboutus=""
               >
                 About Us
               </li>
             </a>
-            <a href="impressum.html">
+
+            <a href="impressum.html#home">
               <li
-                class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
                 data-allListItems=""
+                data-legal=""
               >
-                Impressum
+                Legal Notice
               </li>
             </a>
           </ul>
@@ -393,8 +400,10 @@
                 data-textzinc700=""
                 id="servicesPara"
               >
-                We provide a lot of services. You can choose the service you
-                need by contacting us. we have been serving for 2 years.
+                We offer a range of repair and customization services. Whether
+                you need a simple fix or a complete PC build, we’ve got you
+                covered. Check out what we offer here and find the right service
+                for your needs.
               </p>
               <a
                 href="service.html#service"
@@ -430,8 +439,9 @@
                 id="galleryPara"
                 data-textzinc700=""
               >
-                Check out our gallery. The gallery shows the projects we have
-                done so far. Our RIG's contain a lot of PC's.
+                Take a look at our past projects! Our gallery showcases the
+                custom PC builds and repairs we’ve completed. See what we’ve
+                worked on and get inspired.
               </p>
               <a
                 href="service.html#service"
@@ -467,8 +477,10 @@
                 id="aboutusPara"
                 data-textzinc700=""
               >
-                We are EPC-Tech. We have been building PC's since 2019. With
-                over 3000+ customers served till now.
+                At EPC-Tech, we’ve been building and repairing PCs since 2019.
+                Our experience grows with every project we take on, ensuring
+                high-quality results for our customers. Your tech is in good
+                hands.
               </p>
               <a
                 href="service.html#service"
@@ -513,7 +525,7 @@
           <div class="lg:flex lg:gap-x-10">
             <div class="lg:w-full">
               <p class="mt-2 text-white" data-textblack="" id="contactPara">
-                Contact us via the methods provided below:
+                Contact us via:
               </p>
               <div class="">
                 <div class="mt-5">
@@ -522,14 +534,22 @@
                     class="flex items-center gap-x-2 text-white"
                     data-textblack=""
                     ><i class="fa-solid text-xl fa-envelope text-[16px]"></i>
-                    <p class="text-lg font-[500] mt-1">Email us</p></a
+                    <p class="text-lg font-[500] mt-1">Email</p></a
                   >
                   <a
                     href="tel: +49 176 41742121"
                     class="flex items-center gap-x-2 mt-2 text-white"
                     data-textblack=""
                     ><i class="fa-solid fa-phone text-xl text-[16px]"></i>
-                    <p class="text-lg font-[500] mt-1">Call us</p></a
+                    <p class="text-lg font-[500] mt-1" data-call>Call</p></a
+                  >
+
+                  <a
+                    href="whatsapp://send?text=Hallo, ich interessiere mich für einen PC!&phone=+49 176 41742121"
+                    class="flex items-center gap-x-2 mt-2 text-white"
+                    data-textblack=""
+                    ><i class="fa-brands fa-whatsapp text-xl"></i>
+                    <p class="text-lg font-[500] mt-1">Whatsapp</p></a
                   >
                   <a
                     href="tel: +49 176 41742121"
@@ -537,15 +557,6 @@
                     data-textblack=""
                     ><i class="fa-solid fa-location-dot text-xl"></i>
                     <p class="text-lg font-[500] mt-1">Nürnberg, Germany</p></a
-                  >
-                  <a
-                    href="whatsapp://send?text=Hallo, ich interessiere mich für einen PC!&phone=+49 176 41742121"
-                    class="flex items-center gap-x-2 mt-2 text-white"
-                    data-textblack=""
-                    ><i class="fa-brands fa-whatsapp text-xl"></i>
-                    <p class="text-lg font-[500] mt-1">
-                      Write us on Whatsapp
-                    </p></a
                   >
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.2189984431245!2d11.032724921755213!3d49.41863561456515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f56cf79bcd5d1%3A0xc33fcd0731675e89!2sR%C3%B6thenbacher%20Hauptstra%C3%9Fe%2031%2C%2090449%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1740953985303!5m2!1sde!2sde"
@@ -600,7 +611,7 @@
                   name=""
                   required
                   class="p-2 text-black outline-none h-[100px]"
-                  placeholder="Message"
+                  placeholder="Your Message"
                   id="textareaContact"
                 ></textarea>
               </div>
@@ -620,7 +631,9 @@
     </main>
     <footer class="bg-zinc-800 mt-20 text-white" data-bggray500="" id="footer">
       <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
-        <div class="font-Overpass flex items-start md:gap-x-5 2xl:gap-x-10">
+        <div
+          class="font-Overpass flex flex-col items-start md:gap-x-5 2xl:gap-x-10"
+        >
           <div class="">
             <a href="">
               <img
@@ -641,8 +654,69 @@
               >
             </div>
           </div>
+          <div class="mt-5">
+            <h1 class="font-[500] text-xl tracking-wide">Links</h1>
+
+            <ul class="flex flex-col md:flex-row gap-y-2 gap-x-5 mt-2">
+              <a href="index.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-home=""
+                >
+                  Home
+                </li>
+              </a>
+              <a href="service.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-service=""
+                >
+                  Services
+                </li>
+              </a>
+              <a href="gallery.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-gallery=""
+                >
+                  Gallery
+                </li>
+              </a>
+              <a href="announcement.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-accounce=""
+                >
+                  Announcements
+                </li>
+              </a>
+
+              <a href="impressum.html#home">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-legal=""
+                >
+                  Privacy Policy
+                </li>
+              </a>
+              <a href="datenschutz.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-daten=""
+                >
+                  Datenschutz
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div class="w-full h-[2px] bg-white mt-5 hidden sm:block"></div>
+        <div class="w-full h-[2px] bg-white mt-5 sm:block"></div>
         <div
           class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
         >
@@ -684,7 +758,8 @@
             </div>
           </div>
           <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Overpass">
-            <span>&#169;</span> Copyright 2025 EPC-Tech
+            <span>&#169;</span>
+            <span id="copyright">Copyright 2025 EPC-Tech</span>
           </h1>
         </div>
       </div>
@@ -692,22 +767,23 @@
     <script src="menu.js"></script>
     <script src="toggle.js"></script>
     <script>
-      function sendEmail(category) {
+      function sendEmail() {
         let params = {
-          subject: "Get a quote",
+          subject: "Contact Us",
           from: "mkvcinemas945@gmail.com",
           email: document.querySelector("#emailForContact").value,
           name: document.querySelector("#nameForContact").value,
-          message: document.querySelector("#messagePlaceholder").value,
+          message: document.querySelector("#textareaContact").value,
         };
         emailjs
-          .send("service_eeyxqg5", "<template-here-new>", params)
+          .send("service_tlxv4wh", "template_mrvbxt3", params)
           .then((message) => alert("Email Sent"));
       }
       document
         .querySelector("#formForContact")
         .addEventListener("submit", (e) => {
           e.preventDefault();
+          sendEmail();
           document.querySelector("#textareaContact").value = "";
           document.querySelectorAll("input").forEach((items) => {
             items.value = "";

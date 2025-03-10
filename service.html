@@ -64,21 +64,114 @@
   <body class="bg-black scroll-smooth transition-all duration-300" data-body="">
     <main class="font-Overpass relative lg:px-10 xl:px-20 2xl:px-40" id="home">
       <nav
-      class="flex items-center px-5 z-[200] justify-start lg:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-10"
-      data-bgzinc400=""
-    >
-      <div
-        class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
+        class="flex items-center px-5 z-[200] justify-start lg:gap-x-0 2xl:gap-x-10 sticky top-0 text-white py-5 w-full lg:sticky bg-zinc-800 lg:left-0 lg:rounded-full lg:top-[25px] lg:py-3 lg:mt-0 lg:px-5 xl:px-10"
+        data-bgzinc400=""
       >
-        <img
-          class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
-          src="assets/Logos/rounded-logo.jpg"
-          alt=""
-        />
         <div
-          class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
+          class="flex relative items-center justify-between w-full lg:w-fit px-0 500:px-2 md:px-7"
         >
-          <div>
+          <img
+            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+            src="assets/Logos/rounded-logo.jpg"
+            alt=""
+          />
+          <div
+            class="flex items-center gap-x-5 sm:gap-x-10 lg:ml-5 xl:ml-10 lg:hidden"
+          >
+            <div>
+              <div
+                class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
+                id="toggleBtn"
+              >
+                <div
+                  class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
+                  id="toggleDiv"
+                  data-toggleDiv=""
+                >
+                  <i
+                    class="fa-solid fa-moon text-yellow-400 transition-all"
+                    id="moonsun"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-white text-black px-1 rounded-md"
+            >
+              <option class="" value="Deutsch">Deutsch</option>
+              <option class="" value="English">English</option>
+            </select>
+            <i
+              class="fa-solid fa-bars text-white text-2xl cursor-pointer lg:hidden"
+              id="hamburger"
+              data-textblack=""
+            ></i>
+          </div>
+        </div>
+        <div class="flex items-center lg:w-full justify-between">
+          <ul class="hidden lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
+            <a href="index.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-home=""
+              >
+                Home
+              </li>
+            </a>
+            <a href="service.html#service">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-service=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-gallery=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="announcement.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-accounce=""
+              >
+                Announcements
+              </li>
+            </a>
+
+            <a href="about.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-aboutus=""
+              >
+                About Us
+              </li>
+            </a>
+
+            <a href="impressum.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-legal=""
+              >
+                Legal Notice
+              </li>
+            </a>
+          </ul>
+          <div
+            class="flex gap-x-5 sm:gap-x-5 2xl:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
+          >
             <div
               class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
               id="toggleBtn"
@@ -94,184 +187,100 @@
                 ></i>
               </div>
             </div>
+            <select
+              name=""
+              data-languageSelection=""
+              class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
+            >
+              <option class="outline-none" value="Deutsch">Deutsch</option>
+              <option class="outline-none" value="English">English</option>
+            </select>
+            <i
+              class="fa-solid fa-bars text-2xl lg:hidden cursor-pointer"
+              id="hamburger"
+            ></i>
           </div>
-          <select
-            name=""
-            data-languageSelection=""
-            class="py-2 bg-white text-black px-1 rounded-md"
-          >
-            <option class="" value="Deutsch">Deutsch</option>
-            <option class="" value="English">English</option>
-          </select>
-          <i
-            class="fa-solid fa-bars text-white text-2xl lg:hidden"
-            id="hamburger"
-            data-textblack=""
-          ></i>
         </div>
-      </div>
-      <div class="flex items-center lg:w-full justify-between">
-        <ul class="hidden lg:block lg:flex lg:gap-x-5 2xl:gap-x-7" id="list">
-          <a href="index.html">
-            <li
-              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              data-allListItems=""
-              data-home=""
-            >
-              Startseite
-            </li>
-          </a>
-          <a href="service.html#service">
-            <li
-              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              data-allListItems=""
-              data-service=""
-            >
-              Unsere Leistungen
-            </li>
-          </a>
-          <a href="gallery.html">
-            <li
-              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              data-allListItems=""
-              data-gallery=""
-            >
-              Galerie
-            </li>
-          </a>
-          <a href="non.html">
-            <li
-              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              data-allListItems=""
-            >
-              Aktuelles
-            </li>
-          </a>
-          <a href="about.html">
-            <li
-              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              data-allListItems=""
-              data-aboutus=""
-            >
-              Über uns
-            </li>
-          </a>
-          <a href="impressum.html">
-            <li
-              class="text-md 2xl:text-lg w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
-              data-allListItems=""
-              data-impressum=""
-            >
-              Impressum
-            </li>
-          </a>
-        </ul>
-        <div
-          class="flex gap-x-5 sm:gap-x-10 lg:ml-5 hidden lg:block xl:ml-10 lg:flex lg:items-center"
-        >
-          <div
-            class="bg-slate-900 w-[70px] h-[30px] flex items-center px-1 rounded-full transition-all"
-            id="toggleBtn"
-          >
-            <div
-              class="w-[22px] h-[22px] bg-slate-100 rounded-full flex items-center justify-center transition-all duration-[750ms]"
-              id="toggleDiv"
-              data-toggleDiv=""
-            >
-              <i
-                class="fa-solid fa-moon text-yellow-400 transition-all"
-                id="moonsun"
-              ></i>
-            </div>
-          </div>
-          <select
-            name=""
-            data-languageSelection=""
-            class="py-2 bg-slate-800 outline-none text-white px-1 rounded-md"
-          >
-            <option class="outline-none" value="Deutsch">Deutsch</option>
-            <option class="outline-none" value="English">English</option>
-          </select>
-          <i class="fa-solid fa-bars text-2xl lg:hidden" id="hamburger"></i>
-        </div>
-      </div>
-    </nav>
-    <div
-      class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
-      id="left"
-    >
+      </nav>
       <div
-        class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
-        id="list"
+        class="text-white z-[200] translate-x-[-150%] fixed w-full top-0 left-0"
+        id="left"
       >
-        <div class="flex items-center justify-between w-full mb-10">
-          <img
-            class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
-            src="assets/Logos/rounded-logo.jpg"
-            alt=""
-          />
-          <i
-            class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden"
-            id="close"
-            data-textblack=""
-          ></i>
-        </div>
-        <ul class="flex flex-col gap-y-5">
-          <a href="index.html">
-            <li
-              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              data-allListItems=""
-              data-home=""
-            >
-              Home
-            </li>
-          </a>
-        <a href="service.html#service">
-          <li
-            class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-            data-allListItems=""
-            data-services=""
-          >
-            Services
-          </li>
-        </a>
-          <a href="gallery.html">
-            <li
-              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              data-allListItems=""
-              data-gallery=""
-            >
-              Gallery
-            </li>
+        <div
+          class="flex flex-col px-5 500:px-7 md:px-12 pt-5 pb-14 absolute bg-gray-500 w-full left-0 top-0"
+          id="list"
+        >
+          <div class="flex items-center justify-between w-full mb-10">
+            <img
+              class="w-[70px] border-2 rounded-[2px] lg:w-[75px]"
+              src="assets/Logos/rounded-logo.jpg"
+              alt=""
+            />
+            <i
+              class="fa-solid fa-close text-white text-2xl transition-all duration-[300ms] ease-linear rotate-[90deg] lg:hidden cursor-pointer"
+              id="close"
+              data-textblack=""
+            ></i>
+          </div>
+          <ul class="flex flex-col gap-y-5">
+            <a href="index.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-home=""
+              >
+                Home
+              </li>
             </a>
-          <a href="non.html">
-            <li
-              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              data-allListItems=""
-            >
-              Announcements
-            </li>
-          </a>
-          <a href="about.html">
-            <li
-              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              data-allListItems=""
-              data-aboutus=""
-            >
-              About Us
-            </li>
-          </a>
-          <a href="impressum.html">
-            <li
-              class="text-xl w-fit b relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent"
-              data-allListItems=""
-            >
-              Impressum
-            </li>
-          </a>
-        </ul>
-      </div>
-    </div>
+            <a href="service.html#service">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-service=""
+              >
+                Services
+              </li>
+            </a>
+            <a href="gallery.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-gallery=""
+              >
+                Gallery
+              </li>
+            </a>
+            <a href="announcement.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-accounce=""
+              >
+                Announcements
+              </li>
+            </a>
+
+            <a href="about.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-aboutus=""
+              >
+                About Us
+              </li>
+            </a>
+
+            <a href="impressum.html">
+              <li
+                class="lg:text-[13px] xl:text-[15px] w-fit relative after:absolute after:bg-white after:h-[2px] after:bottom-0 after:w-full after:left-0 hover:after:bg-Accent cursor-pointer"
+                data-allListItems=""
+                data-legal=""
+              >
+                Legal Notice
+              </li>
+            </a>
+          </ul>
+        </div>
       </div>
 
       <div class="py-5 mt-10 px-5 sm:px-10 md:px-20 text-white" id="service">
@@ -300,9 +309,15 @@
           ><span
             data-services=""
             id="repairText"
-            class="px-3 py-2 rounded-r-sm lg:px-6 lg:py-3 font-[500] cursor-pointer"
+            class="px-3 py-2 lg:px-6 lg:py-3 font-[500] cursor-pointer"
             >Small Repairs</span
           >
+          <!-- <span
+            data-services=""
+            id="manageText"
+            class="px-3 py-2 rounded-r-sm lg:px-6 lg:py-3 font-[500] cursor-pointer"
+            >Data Management</span
+          > -->
         </div>
         <div
           class="500:w-[90%] sm:w-[80%] md:w-full lg:max-w-[1000px] mx-auto lg:flex lg:border lg:border-Accent lg:rounded-[4px] lg:mt-10"
@@ -318,22 +333,35 @@
               src="assets/services-asset/Screenshot_20190811_000858.jpg"
               alt=""
             />
-            <h1 class="text-3xl" id="pcbuildingPageText">PC Building</h1>
-            <p class="text-[17px] mt-5 lg:mt-5 lg:mb-7" id="pcbuildingPagePara">
+
+            <div class="flex items-center justify-between w-full">
+              <h1 class="text-3xl" id="pcbuildingPageText">PC Building</h1>
+              <button
+                class="bg-blue-600 w-[100px] py-2 rounded-md hidden lg:block"
+              >
+                More Info
+              </button>
+            </div>
+            <p class="text-[17px] mt-5 lg:mt-3 lg:mb-5" id="pcbuildingPagePara">
               Unable to build your first PC? Build your first pc from us and
               we'll take care of the rest.
             </p>
+            <button
+              class="bg-blue-600 w-[100px] py-2 rounded-md mt-3 lg:hidden"
+            >
+              More Info
+            </button>
           </div>
           <div
             class="flex lg:w-full flex-col gap-y-5 px-5 py-[20px] my-5 lg:my-0 lg:border-none rounded-[4px] border border-Accent lg:rounded-none lg:rounded-r-[4px] text-white bg-zinc-800"
             data-changeColor=""
           >
             <form class="" id="buildingForm">
-              <div class="flex flex-col items-start gap-y-3 lg:gap-y-5">
+              <div class="flex flex-col items-start gap-y-3 lg:gap-y-8">
                 <div class="w-full">
                   <div class="flex items-center gap-x-2">
                     <div class="rounded-full text-Accent mt-1">&ast;</div>
-                    <label for="" class="">Email</label>
+                    <label for="" class="" id="emailTxt">Email</label>
                   </div>
                   <input
                     type="email"
@@ -347,7 +375,9 @@
                 <div class="w-full">
                   <div class="flex items-center gap-x-2">
                     <div class="rounded-full text-Accent mt-1">&ast;</div>
-                    <label for="" class="">Computer Details</label>
+                    <label for="" class="" id="cDetails"
+                      >Computer Details</label
+                    >
                   </div>
                   <input
                     type="text"
@@ -368,7 +398,13 @@
                       >Select Price Category</label
                     >
                   </div>
-                  <select
+                  <input
+                    type="text"
+                    id="pricecategoryforpcbuilding"
+                    placeholder="Enter Your Budget..."
+                    class="rounded-sm px-4 w-full py-3 text-black text-[17px] font-Inter outline-Primary"
+                  />
+                  <!-- <select
                     name=""
                     id="pricecategoryforpcbuilding"
                     class="rounded-sm px-4 w-full py-3 text-black text-[17px] font-Inter outline-Primary"
@@ -380,7 +416,7 @@
                       Mid-Range ($1000 - $2000)
                     </option>
                     <option value="High-End ($2000+)">High-End ($2000+)</option>
-                  </select>
+                  </select> -->
                 </div>
                 <div class="w-full">
                   <div class="flex items-center gap-x-2">
@@ -446,71 +482,109 @@
           >
             <form class="w-full" id="upgradesForm">
               <div class="flex gap-y-2 flex-col">
-                <div class="flex items-center gap-x-2">
-                  <input
-                    type="checkbox"
-                    id="cpu"
-                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
-                  />
-                  <label for="cpu" class="cursor-pointer">CPU</label>
+                <label for="" id="upgradeapproval"
+                  >What part do you want to upgrade?</label
+                >
+                <div class="w-full mt-0 flex flex-col gap-y-3">
+                  <div class="w-full mt-0">
+                    <div class="flex items-center gap-x-2">
+                      <div class="rounded-full text-Accent mt-1">&ast;</div>
+                      <label for="" class="" id="emailforup">Email</label>
+                    </div>
+                    <input
+                      type="email"
+                      required
+                      id="emailsecond"
+                      placeholder="Email Address"
+                      class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                    />
+                  </div>
+                  <div class="w-full mt-0">
+                    <div class="flex items-center gap-x-2">
+                      <div class="rounded-full text-Accent mt-1">&ast;</div>
+                      <label for="" class="" id="aboutpc"
+                        >Tell us more about your pc</label
+                      >
+                    </div>
+                    <input
+                      type="number"
+                      required
+                      id="aboutpcholder"
+                      placeholder="Enter Your Budget..."
+                      class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
+                    />
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input
+                      type="checkbox"
+                      id="cpu"
+                      class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                    />
+                    <label for="cpu" class="cursor-pointer"
+                      >CPU (Processor)</label
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input
+                      type="checkbox"
+                      id="motherboard"
+                      class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                    />
+                    <label for="motherboard" id="mb" class="cursor-pointer"
+                      >Motherboard</label
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input
+                      type="checkbox"
+                      id="gpu"
+                      class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                    />
+                    <label for="gpu" id="gpu" class="cursor-pointer"
+                      >GPU (Graphics Card)</label
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input
+                      type="checkbox"
+                      id="cooler"
+                      class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                    />
+                    <label for="cooler" id="cooling" class="cursor-pointer"
+                      >Cooling / Fans</label
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input
+                      type="checkbox"
+                      id="ram"
+                      class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                    />
+                    <label for="ram" id="ram" class="cursor-pointer"
+                      >Ram (Memory)</label
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input
+                      type="checkbox"
+                      id="casing"
+                      class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                    />
+                    <label for="casing" id="case" class="cursor-pointer"
+                      >Case</label
+                    >
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <input
+                      type="checkbox"
+                      id="casing"
+                      class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
+                    />
+                    <label for="psu" id="psu" class="cursor-pointer"
+                      >Power Supply</label
+                    >
+                  </div>
                 </div>
-                <div class="flex items-center gap-x-2">
-                  <input
-                    type="checkbox"
-                    id="motherboard"
-                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
-                  />
-                  <label for="motherboard" class="cursor-pointer"
-                    >Motherboard</label
-                  >
-                </div>
-                <div class="flex items-center gap-x-2">
-                  <input
-                    type="checkbox"
-                    id="gpu"
-                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
-                  />
-                  <label for="gpu" class="cursor-pointer"
-                    >GPU (Graphics Card)</label
-                  >
-                </div>
-                <div class="flex items-center gap-x-2">
-                  <input
-                    type="checkbox"
-                    id="cooler"
-                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
-                  />
-                  <label for="cooler" class="cursor-pointer">Cooler</label>
-                </div>
-                <div class="flex items-center gap-x-2">
-                  <input
-                    type="checkbox"
-                    id="ram"
-                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
-                  />
-                  <label for="ram" class="cursor-pointer">RAM</label>
-                </div>
-                <div class="flex items-center gap-x-2">
-                  <input
-                    type="checkbox"
-                    id="casing"
-                    class="outline-none rounded-sm text-black text-lg size-5 cursor-pointer"
-                  />
-                  <label for="casing" class="cursor-pointer">Casing</label>
-                </div>
-              </div>
-              <div class="w-full mt-5">
-                <div class="flex items-center gap-x-2">
-                  <div class="rounded-full text-Accent mt-1">&ast;</div>
-                  <label for="" class="">Email</label>
-                </div>
-                <input
-                  type="email"
-                  required
-                  id="emailsecond"
-                  placeholder="Email Address"
-                  class="px-5 py-2 w-full outline-none rounded-sm text-black text-lg mt-2"
-                />
               </div>
               <div class="w-full mt-3">
                 <div class="flex items-center gap-x-2">
@@ -586,10 +660,10 @@
                     id="categoryofdevice"
                     class="rounded-sm px-4 w-full py-3 text-black text-[17px] font-Inter outline-Primary"
                   >
-                    <option value="Phone">Phone</option>
-                    <option value="Tablet">Tablet</option>
-                    <option value="Laptop">Laptop</option>
-                    <option value="Other">Other</option>
+                    <option id="phone" value="Phone">Phone</option>
+                    <option id="tablet" value="Tablet">Tablet</option>
+                    <option id="laptop" value="Laptop">Laptop</option>
+                    <option id="other" value="Other">Other</option>
                   </select>
                 </div>
 
@@ -622,37 +696,96 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-zinc-800 mt-20" id="footer">
+    <footer class="bg-zinc-800 mt-20 text-white" data-bggray500="" id="footer">
       <div class="flex gap-x-5 flex-col px-5 justify-center py-5 md:px-10">
-        <div class="flex font-Overpass items-start md:gap-x-5 2xl:gap-x-10">
+        <div
+          class="font-Overpass flex flex-col items-start md:gap-x-5 2xl:gap-x-10"
+        >
           <div class="">
-            <a href="#home">
+            <a href="">
               <img
                 class="rounded-md w-[85px]"
                 src="assets/Logos/rounded-logo.jpg"
                 alt=""
             /></a>
             <div class="mt-5">
-              <a
-                href="mailto:info@epc-tech.de"
-                class="flex items-start gap-x-2 text-white"
-                ><i
-                  class="fa-solid mt-1 fa-envelope text-white text-[16px]"
-                ></i>
+              <a href="mailto:info@epc-tech.de" class="flex items-start gap-x-2"
+                ><i class="fa-solid mt-1 fa-envelope text-[16px]"></i>
                 <p class="425:text-[17px]">info@epc-tech.de</p></a
               >
               <a
                 href="tel: +49 176 41742121"
-                class="flex items-start gap-x-2 mt-3 text-white"
-                ><i class="fa-solid fa-phone mt-1 text-white text-[16px]"></i>
+                class="flex items-start gap-x-2 mt-3"
+                ><i class="fa-solid fa-phone mt-1 text-[16px]"></i>
                 <p class="425:text-[17px]">+49 176 41742121</p></a
               >
             </div>
           </div>
+          <div class="mt-5">
+            <h1 class="font-[500] text-xl tracking-wide">Links</h1>
+
+            <ul class="flex flex-col md:flex-row gap-y-2 gap-x-5 mt-2">
+              <a href="index.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-home=""
+                >
+                  Home
+                </li>
+              </a>
+              <a href="service.html#service">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-service=""
+                >
+                  Services
+                </li>
+              </a>
+              <a href="gallery.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-gallery=""
+                >
+                  Gallery
+                </li>
+              </a>
+              <a href="announcement.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-accounce=""
+                >
+                  Announcements
+                </li>
+              </a>
+
+              <a href="impressum.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-legal=""
+                >
+                  Legal Notice
+                </li>
+              </a>
+              <a href="datenschutz.html">
+                <li
+                  class="text-md w-fit cursor-pointer text-gray-200 hover:scale-105 hover:text-white"
+                  data-allListItems=""
+                  data-daten=""
+                >
+                  Datenschutz
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-        <div class="w-full h-[2px] bg-slate-300 mt-5 hidden sm:block"></div>
+        <div class="w-full h-[2px] bg-white mt-5 sm:block"></div>
         <div
-          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5 text-white"
+          class="flex gap-x-5 flex-col sm:flex-row-reverse items-center justify-between mt-7 sm:mt-5"
         >
           <div class="flex gap-x-5">
             <div>
@@ -691,8 +824,9 @@
               </div>
             </div>
           </div>
-          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 text-white font-Overpass">
-            <span>&#169;</span> Copyright 2025 EPC-Tech
+          <h1 class="mt-5 sm:mt-0 mx-auto sm:mx-0 font-Overpass">
+            <span>&#169;</span>
+            <span id="copyright">Copyright 2025 EPC-Tech</span>
           </h1>
         </div>
       </div>
@@ -812,6 +946,8 @@
           document.querySelectorAll("[data-changeColor]").forEach((items) => {
             items.classList.toggle("bg-zinc-800");
             items.classList.toggle("bg-slate-300");
+            items.classList.add("border-Accent");
+            items.classList.remove("border-Primary");
           });
           document
             .querySelectorAll("[data-changeColorLeft]")
@@ -820,12 +956,9 @@
               items.classList.toggle("lg:bg-zinc-800");
             });
           document.querySelectorAll("[data-tabs]").forEach((items) => {
-            items.classList.toggle("lg:border-Accent");
-            items.classList.toggle("lg:border-Primary");
+            items.classList.add("lg:border-Accent");
+            items.classList.remove("lg:border-Primary");
           });
-
-          document.querySelector("#footer").classList.toggle("bg-zinc-800");
-          document.querySelector("#footer").classList.toggle("bg-gray-500");
 
           document
             .querySelector("[data-allService]")
@@ -840,36 +973,39 @@
           document
             .querySelector("[data-allService]")
             .classList.remove("bg-slate-100");
+
           document
             .querySelector("#buildingButton")
-            .classList.toggle("bg-Primary");
-          document.querySelector("#buildingButton");
+            .classList.remove("bg-Primary");
+          document
+            .querySelector("#upgradesButton")
+            .classList.remove("bg-Primary");
+          document
+            .querySelector("#repairsButton")
+            .classList.remove("bg-Primary");
+          document.querySelector("#buildingButton").classList.add("bg-Accent");
+          document.querySelector("#upgradesButton").classList.add("bg-Accent");
+          document.querySelector("#repairsButton").classList.add("bg-Accent");
           document
             .querySelector("#buildingButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#ce0d5e");
+            .classList.add("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
           document
             .querySelector("#buildingButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+            .classList.remove("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
           document
             .querySelector("#upgradesButton")
-            .classList.toggle("bg-Primary");
-          document.querySelector("#buildingButton");
+            .classList.add("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
           document
             .querySelector("#upgradesButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#ce0d5e");
-          document
-            .querySelector("#upgradesButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+            .classList.remove("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+
           document
             .querySelector("#repairsButton")
-            .classList.toggle("bg-Primary");
-          document.querySelector("#buildingButton");
+            .classList.add("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
           document
             .querySelector("#repairsButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#ce0d5e");
-          document
-            .querySelector("#repairsButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+            .classList.remove("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+
           services.forEach((items) => {
             if (items.classList.contains("bg-Accent")) {
               items.classList.add("bg-Primary");
@@ -999,10 +1135,10 @@
             items.classList.toggle("text-black");
           });
           document.querySelectorAll("[data-changeColor]").forEach((items) => {
-            // console.log(items);
-
             items.classList.toggle("bg-zinc-800");
             items.classList.toggle("bg-slate-300");
+            items.classList.remove("border-Accent");
+            items.classList.add("border-Primary");
           });
           document
             .querySelectorAll("[data-changeColorLeft]")
@@ -1011,12 +1147,10 @@
               items.classList.toggle("lg:bg-zinc-800");
             });
           document.querySelectorAll("[data-tabs]").forEach((items) => {
-            items.classList.toggle("lg:border-Accent");
-            items.classList.toggle("lg:border-Primary");
+            items.classList.remove("lg:border-Accent");
+            items.classList.add("lg:border-Primary");
           });
 
-          document.querySelector("#footer").classList.toggle("bg-zinc-800");
-          document.querySelector("#footer").classList.toggle("bg-gray-500");
           document.querySelectorAll("label").forEach((items2) => {
             items2.classList.add("text-black");
             items2.classList.remove("text-white");
@@ -1033,36 +1167,37 @@
           document
             .querySelector("[data-allService]")
             .classList.add("bg-slate-100");
+
+          document.querySelector("#buildingButton").classList.add("bg-Primary");
+          document.querySelector("#upgradesButton").classList.add("bg-Primary");
+          document.querySelector("#repairsButton").classList.add("bg-Primary");
           document
             .querySelector("#buildingButton")
-            .classList.toggle("bg-Primary");
-          document.querySelector("#buildingButton");
+            .classList.remove("bg-Accent");
+          document
+            .querySelector("#upgradesButton")
+            .classList.remove("bg-Accent");
+          document
+            .querySelector("#repairsButton")
+            .classList.remove("bg-Accent");
           document
             .querySelector("#buildingButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#ce0d5e");
+            .classList.remove("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
           document
             .querySelector("#buildingButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+            .classList.add("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
           document
             .querySelector("#upgradesButton")
-            .classList.toggle("bg-Primary");
-          document.querySelector("#buildingButton");
+            .classList.remove("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
           document
             .querySelector("#upgradesButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#ce0d5e");
-          document
-            .querySelector("#upgradesButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+            .classList.add("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
           document
             .querySelector("#repairsButton")
-            .classList.toggle("bg-Primary");
-          document.querySelector("#buildingButton");
+            .classList.remove("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
           document
             .querySelector("#repairsButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#ce0d5e");
-          document
-            .querySelector("#repairsButton")
-            .classList.toggle("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+            .classList.add("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
           services.forEach((items) => {
             if (items.classList.contains("bg-Accent")) {
               items.classList.add("bg-Primary");
@@ -1074,6 +1209,62 @@
           });
         }
       });
+
+      if (localStorage.getItem("theme") === "dark") {
+        document.querySelectorAll("[data-tabs]").forEach((items) => {
+          items.classList.add("lg:border-Accent");
+          items.classList.remove("lg:border-Primary");
+        });
+        document.querySelectorAll("[data-changeColor]").forEach((items) => {
+          items.classList.add("border-Accent");
+          items.classList.remove("border-Primary");
+        });
+        document
+          .querySelector("#buildingButton")
+          .classList.add("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
+        document
+          .querySelector("#buildingButton")
+          .classList.remove("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+        document
+          .querySelector("#upgradesButton")
+          .classList.add("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
+        document
+          .querySelector("#upgradesButton")
+          .classList.remove("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+        document
+          .querySelector("#repairsButton")
+          .classList.add("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
+        document
+          .querySelector("#repairsButton")
+          .classList.remove("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+      } else if (localStorage.getItem("theme") === "white") {
+        document.querySelectorAll("[data-tabs]").forEach((items) => {
+          items.classList.remove("lg:border-Accent");
+          items.classList.add("lg:border-Primary");
+        });
+        document.querySelectorAll("[data-changeColor]").forEach((items) => {
+          items.classList.remove("border-Accent");
+          items.classList.add("border-Primary");
+        });
+        document
+          .querySelector("#buildingButton")
+          .classList.remove("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
+        document
+          .querySelector("#buildingButton")
+          .classList.add("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+        document
+          .querySelector("#upgradesButton")
+          .classList.remove("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
+        document
+          .querySelector("#upgradesButton")
+          .classList.add("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+        document
+          .querySelector("#repairsButton")
+          .classList.remove("hover:shadow-[0px_0px_30px_0px_#ce0d5e]");
+        document
+          .querySelector("#repairsButton")
+          .classList.add("hover:shadow-[0px_0px_30px_0px_#1ccef2]");
+      }
     });
 
     function sendEmail(category) {
@@ -1093,7 +1284,7 @@
             : "--",
         options:
           category === "PC-Building"
-            ? document.getElementById("pricecategoryforpcbuilding").value
+            ? document.getElementById("pricecategoryforpcbuilding").value + "$"
             : "--",
         custom:
           category === "PC-Building"
@@ -1186,6 +1377,30 @@
     });
     toggler.forEach((items) => {
       if (items.value == "Deutsch") {
+        document.querySelector("#phone").innerText = "Handy";
+        document.querySelector("#other").innerText = "Andere Geräte";
+        document.querySelector("#copyright").innerText =
+          "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
+        document.querySelector("#mb").innerText = "Mutterplatine";
+        document.querySelector("#gpu").innerText = "GPU (Grafikkarte)";
+        document.querySelector("#ram").innerText = "Ram (Arbeitsspeicher)";
+        document.querySelector("#case").innerText = "Gehäuse";
+        document.querySelector("#cooling").innerText = "Kühlung / Lüfter";
+        document.querySelector("#psu").innerText = "Netzteil";
+
+        document.querySelector("#emailforup").innerText =
+          "Email/ Telefon Nummer";
+        document.querySelector("#aboutpc").innerText =
+          "Beschreiben Sie ihren Computer";
+        document.querySelector("#aboutpcholder").placeholder =
+          "Beschreiben Sie ihren Computer";
+
+        document.querySelector("#upgradeapproval").innerText =
+          "Welches Teil wollen Sie upgraden?";
+
+        document.querySelector("#messageforpcbuilding").placeholder =
+          "Fügen Sie ihre Infos ein";
+
         document.querySelectorAll("[data-home]").forEach((items, i) => {
           items.innerText = "Startseite";
         });
@@ -1195,48 +1410,99 @@
         document.querySelectorAll("[data-service]").forEach((items, i) => {
           items.innerText = "Unsere Leistungen";
         });
+        document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+          items.innerText = "Aktuelles";
+        });
         document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
           items.innerText = "Über uns";
         });
+        document.querySelectorAll("[data-legal]").forEach((items, i) => {
+          items.innerText = "Impressum";
+        });
 
-        document.querySelectorAll("[data-tabs]")[0].id = "pcgebäude";
-        document.querySelectorAll("[data-tabs]")[2].id = "kleinereparaturen";
-        document.querySelector("#pcbuildingText").innerText = "PC Gebäude";
-        document.querySelector("#pcbuildingPageText").innerText = "PC Gebäude";
-        document.querySelector("#repairText").innerText = "Kleine Reparaturen";
+        document.querySelectorAll("#manageText").id = "datenverwaltung";
+        document.querySelectorAll("#manageText").innerText = "Daten Verwaltung";
+
+        document.querySelector("[data-daten]").innerText = "Datenschutz";
+
+        document.querySelectorAll("[data-tabs]")[0].id = "pcerstellung";
+        document.querySelector("#pcbuildingText").innerText = "PC Erstellung";
+        document.querySelector("#pcbuildingPageText").innerText =
+          "PC - Erstellung";
+        document.querySelector("#emailTxt").innerText = "Kontakt Information:";
+        document.querySelector("#emailfirst").placeholder =
+          "Email/Telefon Nummer";
+        document.querySelector("#cDetails").innerText =
+          "Wofür benutzt du deinen Computer:";
+
         document.querySelector("#pcbuildingPagePara").innerText =
-          "Sie können Ihren ersten PC nicht bauen? Bauen Sie Ihren ersten PC bei uns und wir kümmern uns um den Rest.";
-        document.querySelector("#emailfirst").placeholder = "Email Adresse";
+          "Jeder PC, den ich baue, ist komplett Maßgefertigt, genau für ihre Bedürfnisse angepasst – keine generisch vorgefertigten Systeme. Egal, ob Sie ein erstmaliger Käufer sind oder ein Technik Enthusiast, Ich leite Sie durch den Prozess und stelle sicher, dass sie das bestmögliche Setup erhalten.";
+
+        document.querySelectorAll("[data-tabs]")[2].id =
+          "elektronischereparaturen";
+        document.querySelector("#repairText").innerText =
+          "Elektronische Reparaturen";
+
         document.querySelector("#priceCatLabel").innerText =
-          "Wählen Sie die Preiskategorie aus";
-        document.querySelector("#customReqText").innerText =
-          "Benutzerdefinierte Anfragen";
-        document.querySelector("#custom").placeholder =
-          "Benutzerdefinierte Anfragen";
+          "Wähle deine Preis Kategorie";
+        document.querySelector("#pricecategoryforpcbuilding").placeholder =
+          "Füge dein Budget ein";
+        document.querySelector("#emailsecond").placeholder =
+          "Email/ Telefon Nummer";
+
+        document.querySelector("#customReqText").innerText = "Sonstige Wünsche";
+        document.querySelector("#custom").placeholder = "Weitere Anliegen";
+        document.querySelector("#buildingButton").innerText =
+          "Holen Sie sich Ihr  Angebot";
+
         document.querySelector("#priorExpText").innerText =
-          "Haben Sie bereits Erfahrungen mit PCs?";
+          "Haben Sie bereits Erfahrung mit PCs?";
+
         document.querySelector("#upgradesPara").innerText =
           "Warum bringen Sie Ihren Computer nicht zu uns? So können wir Ihren PC nach Ihren Wünschen aufrüsten.";
-        document.querySelector("#emailsecond").placeholder = "Email Adresse";
+
         document.querySelector("#enterbudgetText").innerText =
-          "Geben Sie Ihr Budget ein";
+          "Geben Sie Ihr Budget an";
         document.querySelector("#budget").placeholder =
-          "Geben Sie Ihr Budget ein";
+          "Geben Sie Ihr Budget an";
         document.querySelector("#upgradesButton").innerText =
           "Holen Sie sich ein Angebot";
         document.querySelector("#smallrepairsTxt").innerText =
           "Kleine Reparaturen";
         document.querySelector("#smallrepairsPara").innerText =
-          "Haben Sie ein Telefon, Tablet oder Laptop, das überprüft werden muss? Kontaktieren Sie uns oder bringen Sie Ihr Gerät zu uns.";
+          "Haben Sie ein Telefon, Tablet oder Laptop, das werden muss? Zögern Sie nicht uns zu Kontaktieren";
         document.querySelector("#emailthird").placeholder = "Email Adresse";
         document.querySelector("#deviceText").innerText = "Gerät";
         document.querySelector("#describeissueText").innerText =
-          "Beschreiben Sie das Problem";
-        document.querySelector("#issue").placeholder =
-          "Beschreiben Sie das Problem";
+          "Welches Problem haben Sie mit ihrem Computer/ Elektronischem Gerät?";
+        document.querySelector("#issue").placeholder = "Was ist Kaputt";
         document.querySelector("#repairsButton").innerText =
           "Holen Sie sich ein Angebot";
       } else {
+        document.querySelector("#phone").innerText = "Phone";
+        document.querySelector("#other").innerText = "Other";
+        document.querySelector("#copyright").innerText =
+          "Copyright 2025 EPC-Tech";
+        document.querySelector("#mb").innerText = "Motherboard";
+        document.querySelector("#gpu").innerText = "GPU (Graphics Card)";
+        document.querySelector("#ram").innerText = "Ram (Memory)";
+        document.querySelector("#case").innerText = "Case";
+        document.querySelector("#cooling").innerText = "Cooling / Fans";
+        document.querySelector("#psu").innerText = "Power Supply";
+        document.querySelector("#emailforup").innerText = "Email/Phone number";
+
+        document.querySelector("#aboutpc").innerText =
+          "Tell us about your Computer";
+        document.querySelector("#aboutpcholder").placeholder =
+          "Tell us about your Computer";
+        document.querySelector("#upgradeapproval").innerText =
+          "What part do you want to upgrade?";
+        document.querySelectorAll("#manageText").innerText = "Data Mangement";
+        document.querySelector("#messageforpcbuilding").placeholder =
+          "Enter your Infos";
+        document.querySelector("#cDetails").innerText =
+          "What do you use your Computer for:";
+        document.querySelector("[data-daten]").innerText = "Privacy Policy";
         document.querySelectorAll("[data-home]").forEach((items, i) => {
           items.innerText = "Home";
         });
@@ -1249,41 +1515,99 @@
         document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
           items.innerText = "About Us";
         });
-        document.querySelectorAll("[data-tabs]")[0].id = "pcbuilding";
-        document.querySelectorAll("[data-tabs]")[2].id = "smallrepairs";
-        document.querySelector("#pcbuildingText").innerText = "PC Building";
-        document.querySelector("#repairText").innerText = "Small Repairs";
-        document.querySelector("#pcbuildingPageText").innerText = "PC Building";
+
+        document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+          items.innerText = "Announcements";
+        });
+
+        document.querySelectorAll("[data-legal]").forEach((items, i) => {
+          items.innerText = "Legal Notice";
+        });
+
+        document.querySelectorAll("#manageText").id = "datemanagement";
+        document.querySelectorAll("#manageText").innerText = "Data Management";
+        document.querySelectorAll("[data-tabs]")[0].id = "buildingapc";
+        document.querySelector("#pcbuildingText").innerText = "Building a PC";
+
+        document.querySelectorAll("[data-tabs]")[2].id = "electronicrepairs";
+        document.querySelector("#repairText").innerText = "Electronic Repairs";
+        document.querySelector("#pcbuildingPageText").innerText = "PC-Building";
         document.querySelector("#pcbuildingPagePara").innerText =
-          "Unable to build your first PC? Build your first pc from us and we'll take care of the rest.";
-        document.querySelector("#emailfirst").placeholder = "Email Address";
+          "Every PC I build is fully custom-made, designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.";
+        document.querySelector("#emailTxt").innerText = "Contact Information:";
+        document.querySelector("#emailfirst").placeholder =
+          "Email/Phone number";
+
         document.querySelector("#priceCatLabel").innerText =
-          "Select Price Category";
-        document.querySelector("#customReqText").innerText = "Custom Requests";
+          "Select your Price Category";
+        document.querySelector("#pricecategoryforpcbuilding").placeholder =
+          "Enter your Budget";
+
+        document.querySelector("#customReqText").innerText = "Other Notes";
+        document.querySelector("#custom").placeholder = "Further details";
+
         document.querySelector("#priorExpText").innerText =
-          "Do your have prior experience of PCs?";
+          "Do you have Expierence with PC’s already?";
         document.querySelector("#custom").placeholder = "Custom Request";
         document.querySelector("#upgradesPara").innerText =
           "Why not bring your computer to us? So, we can upgrade your pc to your liking.";
-        document.querySelector("#emailsecond").placeholder = "Email Address";
+
+        document.querySelector("#emailsecond").placeholder =
+          "Email/Phone number";
         document.querySelector("#enterbudgetText").innerText =
           "Enter Your Budget";
         document.querySelector("#budget").placeholder =
           "Geben Sie Ihr Budget ein";
         document.querySelector("#upgradesButton").innerText = "Get a quote";
 
+        document.querySelector("#buildingButton").innerText = "Get an offer";
         document.querySelector("#smallrepairsTxt").innerText = "Small Repaires";
-        document.querySelector("#smallrepairsPara").text =
-          "Have a phone, tablet or laptop that needs some checkup? Contact us or bring your device to us.";
+        document.querySelector("#smallrepairsPara").innerText =
+          "Have a phone, tablet or laptop that needs some checkup? Do not hesitate to contact us!";
         document.querySelector("#emailthird").placeholder = "Email Address";
         document.querySelector("#deviceText").innerText = "Device";
         document.querySelector("#describeissueText").innerText =
-          "Describe the issue";
+          "What problem do you have with your Computer / Electronic Device?";
         document.querySelector("#issue").placeholder = "Describe the issue";
         document.querySelector("#repairsButton").innerText = "Get a quote";
       }
       items.addEventListener("change", () => {
         if (items.value == "Deutsch") {
+          document.querySelector("#phone").innerText = "Handy";
+          document.querySelector("#other").innerText = "Andere Geräte";
+          document.querySelector("#copyright").innerText =
+            "Alle Rechte Vorbehalten -  EPC-Tech - 2025";
+
+          document.querySelector("#mb").innerText = "Mutterplatine";
+          document.querySelector("#gpu").innerText = "GPU (Grafikkarte)";
+          document.querySelector("#ram").innerText = "Ram (Arbeitsspeicher)";
+          document.querySelector("#case").innerText = "Gehäuse";
+          document.querySelector("#cooling").innerText = "Kühlung / Lüfter";
+          document.querySelector("#psu").innerText = "Netzteil";
+
+          document.querySelector("#emailforup").innerText =
+            "Email/ Telefon Nummer";
+
+          document.querySelector("#aboutpc").innerText =
+            "Beschreiben Sie ihren Computer";
+          document.querySelector("#aboutpcholder").placeholder =
+            "Beschreiben Sie ihren Computer";
+
+          document.querySelector("#upgradeapproval").innerText =
+            "Welches Teil wollen Sie upgraden?";
+
+          document.querySelectorAll("#manageText").innerText =
+            "Daten Verwaltung";
+
+          document.querySelector("#messageforpcbuilding").placeholder =
+            "Fügen Sie ihre Infos ein";
+
+          document.querySelector("#cDetails").innerText =
+            "Wofür benutzt du deinen Computer:";
+
+          document.querySelector("#emailTxt").innerText =
+            "Kontakt Information:";
+          document.querySelector("[data-daten]").innerText = "Datenschutz";
           document.querySelectorAll("[data-home]").forEach((items, i) => {
             items.innerText = "Startseite";
           });
@@ -1293,49 +1617,98 @@
           document.querySelectorAll("[data-service]").forEach((items, i) => {
             items.innerText = "Unsere Leistungen";
           });
+          document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+            items.innerText = "Aktuelles";
+          });
           document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
             items.innerText = "Über uns";
           });
-          document.querySelectorAll("[data-tabs]")[0].id = "pcgebäude";
-          document.querySelectorAll("[data-tabs]")[2].id = "kleinereparaturen";
-          document.querySelector("#pcbuildingText").innerText = "PC Gebäude";
-          document.querySelector("#pcbuildingPageText").innerText =
-            "PC Gebäude";
+          document.querySelectorAll("[data-legal]").forEach((items, i) => {
+            items.innerText = "Impressum";
+          });
+          document.querySelectorAll("#manageText").id = "datenverwaltung";
+          document.querySelectorAll("#manageText").innerText =
+            "Daten Verwaltung";
+
+          document.querySelectorAll("[data-tabs]")[0].id = "pcerstellung";
+          document.querySelector("#pcbuildingText").innerText = "PC Erstellung";
+          document.querySelectorAll("[data-tabs]")[2].id =
+            "elektronischereparaturen";
           document.querySelector("#repairText").innerText =
-            "Kleine Reparaturen";
+            "Elektronische Reparaturen";
+
+          document.querySelector("#pcbuildingPageText").innerText =
+            "PC - Erstellung";
           document.querySelector("#pcbuildingPagePara").innerText =
-            "Sie können Ihren ersten PC nicht bauen? Bauen Sie Ihren ersten PC bei uns und wir kümmern uns um den Rest.";
-          document.querySelector("#emailfirst").placeholder = "Email Adresse";
+            "Jeder PC, den ich baue, ist komplett Maßgefertigt, genau für ihre Bedürfnisse angepasst – keine generisch vorgefertigten Systeme. Egal, ob Sie ein erstmaliger Käufer sind oder ein Technik Enthusiast, Ich leite Sie durch den Prozess und stelle sicher, dass sie das bestmögliche Setup erhalten.";
+
+          document.querySelector("#emailfirst").placeholder =
+            "Email/Telefon Nummer";
           document.querySelector("#priceCatLabel").innerText =
-            "Wählen Sie die Preiskategorie aus";
+            "Wähle deine Preis Kategorie";
+          document.querySelector("#pricecategoryforpcbuilding").placeholder =
+            "Füge dein Budget ein";
+
           document.querySelector("#customReqText").innerText =
-            "Benutzerdefinierte Anfragen";
-          document.querySelector("#custom").placeholder =
-            "Benutzerdefinierte Anfragen";
+            "Sonstige Wünsche";
+          document.querySelector("#custom").placeholder = "Weitere Anliegen";
+
           document.querySelector("#priorExpText").innerText =
-            "Haben Sie bereits Erfahrungen mit PCs?";
+            "Haben Sie bereits Erfahrung mit PCs?";
+          document.querySelector("#buildingButton").innerText =
+            "Holen Sie sich Ihr  Angebot";
+
           document.querySelector("#upgradesPara").innerText =
             "Warum bringen Sie Ihren Computer nicht zu uns? So können wir Ihren PC nach Ihren Wünschen aufrüsten.";
-          document.querySelector("#emailsecond").placeholder = "Email Adresse";
+          document.querySelector("#emailsecond").placeholder =
+            "Email/ Telefon Nummer";
           document.querySelector("#enterbudgetText").innerText =
-            "Geben Sie Ihr Budget ein";
+            "Geben Sie Ihr Budget an";
           document.querySelector("#budget").placeholder =
-            "Geben Sie Ihr Budget ein";
+            "Geben Sie Ihr Budget an";
           document.querySelector("#upgradesButton").innerText =
             "Holen Sie sich ein Angebot";
           document.querySelector("#smallrepairsTxt").innerText =
             "Kleine Reparaturen";
+          document.querySelector("#emailsecond").placeholder =
+            "Email/ Telefon Nummer";
+
           document.querySelector("#smallrepairsPara").innerText =
-            "Haben Sie ein Telefon, Tablet oder Laptop, das überprüft werden muss? Kontaktieren Sie uns oder bringen Sie Ihr Gerät zu uns.";
+            "Haben Sie ein Telefon, Tablet oder Laptop, das werden muss? Zögern Sie nicht uns zu Kontaktieren";
           document.querySelector("#emailthird").placeholder = "Email Adresse";
           document.querySelector("#deviceText").innerText = "Gerät";
           document.querySelector("#describeissueText").innerText =
-            "Beschreiben Sie das Problem";
-          document.querySelector("#issue").placeholder =
-            "Beschreiben Sie das Problem";
+            "Welches Problem haben Sie mit ihrem Computer/ Elektronischem Gerät?";
+          document.querySelector("#issue").placeholder = "Was ist Kaputt";
           document.querySelector("#repairsButton").innerText =
             "Holen Sie sich ein Angebot";
         } else {
+          document.querySelector("#phone").innerText = "Phone";
+          document.querySelector("#other").innerText = "Other";
+          document.querySelector("#copyright").innerText =
+            "Copyright 2025 EPC-Tech";
+          document.querySelector("#mb").innerText = "Motherboard";
+          document.querySelector("#gpu").innerText = "GPU (Graphics Card)";
+          document.querySelector("#ram").innerText = "Ram (Memory)";
+          document.querySelector("#case").innerText = "Case";
+          document.querySelector("#cooling").innerText = "Cooling / Fans";
+          document.querySelector("#psu").innerText = "Power Supply";
+          document.querySelector("#emailforup").innerText =
+            "Email/Phone number";
+          document.querySelector("#emailsecond").placeholder =
+            "Email/Phone number";
+          document.querySelector("#aboutpc").innerText =
+            "Tell us about your Computer";
+          document.querySelector("#aboutpcholder").placeholder =
+            "Tell us about your Computer";
+          document.querySelector("#upgradeapproval").innerText =
+            "What part do you want to upgrade?";
+          document.querySelectorAll("#manageText").innerText = "Data Mangement";
+          document.querySelector("#messageforpcbuilding").placeholder =
+            "Enter your Infos";
+          document.querySelector("#cDetails").innerText =
+            "What do you use your Computer for:";
+          document.querySelector("[data-daten]").innerText = "Privacy Policy";
           document.querySelectorAll("[data-home]").forEach((items, i) => {
             items.innerText = "Home";
           });
@@ -1348,25 +1721,54 @@
           document.querySelectorAll("[data-aboutus]").forEach((items, i) => {
             items.innerText = "About Us";
           });
-          document.querySelectorAll("[data-tabs]")[0].id = "pcbuilding";
-          document.querySelectorAll("[data-tabs]")[2].id = "smallrepairs";
-          document.querySelector("#pcbuildingText").innerText = "PC Building";
-          document.querySelector("#repairText").innerText = "Small Repairs";
+
+          document.querySelectorAll("[data-accounce]").forEach((items, i) => {
+            items.innerText = "Announcements";
+          });
+
+          document.querySelectorAll("[data-legal]").forEach((items, i) => {
+            items.innerText = "Legal Notice";
+          });
+
+          document.querySelectorAll("#manageText").id = "datemanagement";
+          document.querySelectorAll("#manageText").innerText =
+            "Data Management";
+          document.querySelectorAll("[data-tabs]")[2].id = "electronicrepairs";
+          document.querySelector("#repairText").innerText =
+            "Electronic Repairs";
+
+          document.querySelectorAll("[data-tabs]")[0].id = "buildingapc";
+          document.querySelector("#pcbuildingText").innerText = "Building a PC";
+
           document.querySelector("#pcbuildingPageText").innerText =
-            "PC Building";
+            "PC-Building";
+
           document.querySelector("#pcbuildingPagePara").innerText =
-            "Unable to build your first PC? Build your first pc from us and we'll take care of the rest.";
-          document.querySelector("#emailfirst").placeholder = "Email Address";
+            "Every PC I build is fully custom-made, designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.";
+          document.querySelector("#emailTxt").innerText =
+            "Contact Information:";
+          document.querySelector("#emailfirst").placeholder =
+            "Email/Phone number";
           document.querySelector("#priceCatLabel").innerText =
-            "Select Price Category";
-          document.querySelector("#customReqText").innerText =
-            "Custom Requests";
+            "Wähle deine Preis Kategorie";
+          document.querySelector("#pricecategoryforpcbuilding").placeholder =
+            "Füge dein Budget ein";
+          document.querySelector("#priceCatLabel").innerText =
+            "Select your Price Category";
+          document.querySelector("#pricecategoryforpcbuilding").placeholder =
+            "Enter your Budget";
+
+          document.querySelector("#customReqText").innerText = "Other Notes";
+          document.querySelector("#custom").placeholder = "Further details";
+
+          document.querySelector("#buildingButton").innerText = "Get an offer";
+
           document.querySelector("#priorExpText").innerText =
-            "Do your have prior experience of PCs?";
+            "Do you have Expierence with PC’s already?";
           document.querySelector("#custom").placeholder = "Custom Request";
           document.querySelector("#upgradesPara").innerText =
             "Why not bring your computer to us? So, we can upgrade your pc to your liking.";
-          document.querySelector("#emailsecond").placeholder = "Email Address";
+
           document.querySelector("#enterbudgetText").innerText =
             "Enter Your Budget";
           document.querySelector("#budget").placeholder =
@@ -1375,12 +1777,13 @@
 
           document.querySelector("#smallrepairsTxt").innerText =
             "Small Repaires";
-          document.querySelector("#smallrepairsPara").text =
-            "Have a phone, tablet or laptop that needs some checkup? Contact us or bring your device to us.";
+          document.querySelector("#smallrepairsPara").innerText =
+            "Have a phone, tablet or laptop that needs some checkup? Do not hesitate to contact us!";
+
           document.querySelector("#emailthird").placeholder = "Email Address";
           document.querySelector("#deviceText").innerText = "Device";
           document.querySelector("#describeissueText").innerText =
-            "Describe the issue";
+            "What problem do you have with your Computer / Electronic Device?";
           document.querySelector("#issue").placeholder = "Describe the issue";
           document.querySelector("#repairsButton").innerText = "Get a quote";
         }
@@ -1390,7 +1793,9 @@
     function getItems() {
       services.forEach((items) => {
         items.addEventListener("click", (e) => {
-          gtItems(items.innerText.replace(" ", "").toLowerCase());
+          console.log(items.innerText.replace(/\s+/g, "").toLowerCase().trim());
+
+          gtItems(items.innerText.replace(/\s+/g, "").toLowerCase().trim());
           if (!document.body.classList.contains("bg-white")) {
             items.classList.remove("bg-Primary");
             items.classList.add("bg-Accent");
@@ -1423,33 +1828,6 @@
       });
     }
   </script>
-  <!-- <script src="script.js"></script> -->
-  <!-- <script>
-    document.querySelectorAll("[data-services]").forEach((service) => {
-      service.addEventListener("click", function () {
-        var infoBox = document.getElementById("serviceInfoBox");
-        var title = document.getElementById("serviceTitle");
-        var description = document.getElementById("serviceDescription");
 
-        // Define service descriptions
-        var serviceDetails = {
-          "PC Building":
-            "Every PC I build is fully custom-made, designed specifically for your needs—no generic pre-built systems. Whether you’re a first-time buyer or a tech enthusiast, I’ll guide you through the process to ensure you get the best possible setup.",
-          Upgrades:
-            "I offer personalized PC upgrades tailored to your needs. If you're unsure what to upgrade, I can analyze your system and recommend improvements, or if you already know, I can provide and install the components for you.",
-          "Small Repairs":
-            "I provide repair services for phones, tablets, and laptops. Whether you have a cracked screen, a battery issue, or software problems, I can diagnose and fix the issue efficiently.",
-        };
-
-        // Update title and description
-        title.innerText = this.innerText;
-        description.innerText =
-          serviceDetails[this.innerText] || "Service details coming soon.";
-
-        // Show the info box
-        infoBox.classList.remove("hidden");
-      });
-    });
-  </script> -->
   <script src="menu.js"></script>
 </html>
